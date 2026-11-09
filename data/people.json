@@ -1,0 +1,150 @@
+{
+  "en": [
+    {
+      "img": "1da05618eebf63c2dc195700357ddd19.jpg",
+      "name": "[Name]",
+      "role": "[Role]",
+      "team": "[Team]",
+      "short": "[One line about this colleague]",
+      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+    },
+    {
+      "img": "56c79f5d80bb9a2b13154cd9a6bea8f1.jpg",
+      "name": "[Name]",
+      "role": "[Role]",
+      "team": "[Team]",
+      "short": "[One line about this colleague]",
+      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+    },
+    {
+      "img": "a73ce95000db8b7afdee43eedf97ad14.jpg",
+      "name": "[Name]",
+      "role": "[Role]",
+      "team": "[Team]",
+      "short": "[One line about this colleague]",
+      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+    },
+    {
+      "img": "b5f8f75363124b71dca452be1c69d242.jpg",
+      "name": "[Name]",
+      "role": "[Role]",
+      "team": "[Team]",
+      "short": "[One line about this colleague]",
+      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+    },
+    {
+      "img": "44627ae6e41163e7fb020df241f6ef13.jpg",
+      "name": "[Name]",
+      "role": "[Role]",
+      "team": "[Team]",
+      "short": "[One line about this colleague]",
+      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+    },
+    {
+      "img": "655ee11afc0449ae15edef2f0d1ba0f3.jpg",
+      "name": "[Name]",
+      "role": "[Role]",
+      "team": "[Team]",
+      "short": "[One line about this colleague]",
+      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+    },
+    {
+      "img": "90bfbaff7a4780e812fda24cdf7cc7ee.jpg",
+      "name": "[Name]",
+      "role": "[Role]",
+      "team": "[Team]",
+      "short": "[One line about this colleague]",
+      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+    },
+    {
+      "img": "ad1f3f34333eaf9b0172bac145cce25e.jpg",
+      "name": "[Name]",
+      "role": "[Role]",
+      "team": "[Team]",
+      "short": "[One line about this colleague]",
+      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+    },
+    {
+      "img": "53ca335b960755ee421067c8fb5ebd66.jpg",
+      "name": "[Name]",
+      "role": "[Role]",
+      "team": "[Team]",
+      "short": "[One line about this colleague]",
+      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+    }
+  ],
+  "nl": [
+    {
+      "img": "1da05618eebf63c2dc195700357ddd19.jpg",
+      "name": "[Naam]",
+      "role": "[Functie]",
+      "team": "[Team]",
+      "short": "[Eén regel over deze collega]",
+      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+    },
+    {
+      "img": "56c79f5d80bb9a2b13154cd9a6bea8f1.jpg",
+      "name": "[Naam]",
+      "role": "[Functie]",
+      "team": "[Team]",
+      "short": "[Eén regel over deze collega]",
+      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+    },
+    {
+      "img": "a73ce95000db8b7afdee43eedf97ad14.jpg",
+      "name": "[Naam]",
+      "role": "[Functie]",
+      "team": "[Team]",
+      "short": "[Eén regel over deze collega]",
+      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+    },
+    {
+      "img": "b5f8f75363124b71dca452be1c69d242.jpg",
+      "name": "[Naam]",
+      "role": "[Functie]",
+      "team": "[Team]",
+      "short": "[Eén regel over deze collega]",
+      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+    },
+    {
+      "img": "44627ae6e41163e7fb020df241f6ef13.jpg",
+      "name": "[Naam]",
+      "role": "[Functie]",
+      "team": "[Team]",
+      "short": "[Eén regel over deze collega]",
+      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+    },
+    {
+      "img": "655ee11afc0449ae15edef2f0d1ba0f3.jpg",
+      "name": "[Naam]",
+      "role": "[Functie]",
+      "team": "[Team]",
+      "short": "[Eén regel over deze collega]",
+      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+    },
+    {
+      "img": "90bfbaff7a4780e812fda24cdf7cc7ee.jpg",
+      "name": "[Naam]",
+      "role": "[Functie]",
+      "team": "[Team]",
+      "short": "[Eén regel over deze collega]",
+      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+    },
+    {
+      "img": "ad1f3f34333eaf9b0172bac145cce25e.jpg",
+      "name": "[Naam]",
+      "role": "[Functie]",
+      "team": "[Team]",
+      "short": "[Eén regel over deze collega]",
+      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+    },
+    {
+      "img": "53ca335b960755ee421067c8fb5ebd66.jpg",
+      "name": "[Naam]",
+      "role": "[Functie]",
+      "team": "[Team]",
+      "short": "[Eén regel over deze collega]",
+      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+    }
+  ]
+}

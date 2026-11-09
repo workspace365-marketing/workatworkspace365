@@ -1,0 +1,272 @@
+<!--title:Workspace 365: It starts with us-->
+<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;family=Gochi+Hand&amp;display=swap">-->
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Mulish',Arial,sans-serif;background:#ffffff;color:#000000}
+a{color:#DE0954;text-decoration:none}
+a:hover{color:#A6124B}
+h1,h2,h3{font-family:'Mulish',Arial,sans-serif;margin:0}
+p{margin:0}
+button{font-family:'Mulish',Arial,sans-serif;cursor:pointer}
+table{border-collapse:collapse;width:100%}
+.zw-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.zw-card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -22px rgba(84,0,71,.38);border-color:#DE0954}
+.zw-btn{transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.zw-btn:hover{transform:translateY(-2px);box-shadow:0 14px 28px -12px rgba(84,0,71,.5);filter:saturate(1.1)}
+.zw-step{transition:transform .2s ease,box-shadow .2s ease}
+.zw-step:hover{transform:translateX(4px);box-shadow:0 14px 30px -18px rgba(84,0,71,.4)}
+.zw-grad{position:relative;display:inline-block;color:inherit;padding-bottom:.06em}.zw-grad::after{content:'';position:absolute;left:0;bottom:-.06em;width:88%;height:.13em;border-radius:999px;background:#DE0954;transform:rotate(-.6deg)}
+.zw-grad-o{color:inherit}
+.zw-float{animation:zwFloat 7s ease-in-out infinite}
+@keyframes zwFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.zw-shift{background-size:200% 200% !important;animation:zwShift 14s ease-in-out infinite}
+@keyframes zwShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.zw-reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.zw-reveal.zw-in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.zw-float,.zw-shift{animation:none}.zw-card:hover,.zw-btn:hover,.zw-step:hover{transform:none}.zw-reveal{opacity:1;transform:none;transition:none}}
+</style>
+<div style="width:100%;min-height:100vh;background:#ffffff;">
+
+  <!-- HEADER -->
+  <header style="width:100%;background:#ffffff;border-bottom:1px solid #EEE6ED;position:sticky;top:0;z-index:20;">
+    <div style="max-width:1180px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+      <a href="/en/" aria-label="Workspace 365 careers, home"><img src="/assets/img/88533d4398e728b6dead6ac51a36abfb.svg" alt="Workspace 365" style="height:30px;width:auto;display:block;"></a>
+      <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;">
+        <a href="/en/company/" style="font-weight:600;font-size:14px;color:#000000;">Company</a>
+        <a href="/en/culture/" style="font-weight:600;font-size:14px;color:#000000;">Culture</a>
+        <a href="/en/teams/" style="font-weight:600;font-size:14px;color:#000000;">Teams</a>
+        <a href="/en/open-roles/" style="font-weight:600;font-size:14px;color:#000000;">Open roles</a>
+        <a href="/en/contact/" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14px;">Get in touch</a>
+        <span data-lang-toggle="true" style="display:inline-flex;align-items:center;gap:2px;font-size:13px;font-weight:800;border:1px solid #EEE6ED;border-radius:999px;padding:3px;"><span style="padding:5px 11px;border-radius:999px;background:#540047;color:#ffffff;" aria-current="true">EN</span><a href="/nl/" lang="nl" title="Nederlands" style="padding:5px 11px;border-radius:999px;color:#540047;">NL</a></span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section style="width:100%;background:radial-gradient(circle at 88% 18%, rgba(222,9,84,0.16), transparent 42%), radial-gradient(circle at 6% 92%, rgba(245,78,17,0.12), transparent 40%), linear-gradient(180deg,#FCE7EE 0%,#FEEDE7 100%);">
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:88px 40px 104px;display:grid;grid-template-columns:minmax(0,1fr);gap:56px;align-items:center;">
+      <div style="display:flex;flex-direction:column;gap:20px;max-width:760px;">
+        <div style="display:inline-flex;align-items:center;gap:8px;background:#ffffff;border:1px solid #EEE6ED;border-radius:999px;padding:7px 16px;width:fit-content;">
+          <span style="width:8px;height:8px;border-radius:50%;background:#DE0954;display:inline-block;"></span>
+          <span style="font-size:13px;font-weight:700;color:#A6124B;">Careers at Workspace 365</span>
+        </div>
+        <h1 style="font-size:clamp(40px,5.2vw,58px);line-height:1.08;font-weight:900;color:#540047;">Everything simplified. <span class="zw-grad">It starts with us.</span></h1>
+        <p style="font-size:18px;line-height:1.6;color:#000000;max-width:520px;">We promise our customers a simple and intelligent workspace. <span style="color:#540047;font-weight:800;">Here, that starts with how we work ourselves.</span></p>
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-top:8px;">
+          <a href="#open-roles" class="zw-btn" style="display:inline-block;padding:15px 28px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:15px;">See open roles</a>
+          <a href="#culture" style="font-weight:700;font-size:15px;color:#540047;">How we work →</a>
+        </div>
+      </div>
+    </div>
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:56px;"><path d="M0,34 C420,70 1000,6 1440,30 L1440,80 L0,80 Z" fill="#ffffff"></path></svg>
+  </section>
+
+  <!-- OPEN ROLES -->
+  <section id="open-roles" style="scroll-margin-top:80px;width:100%;background:#ffffff;">
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:56px 40px 96px;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;">
+        <div>
+          <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Open roles</p>
+          <h2 style="font-size:clamp(30px,3.6vw,40px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">Find the challenge <span class="zw-grad">that is yours.</span></h2>
+        </div>
+        <a href="/en/open-roles/" style="font-weight:800;font-size:15px;color:#A6124B;">All open roles →</a>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;padding-top:36px;">
+        <!--@roles-home-->
+        <a href="https://jobs.workspace365.net/o/open-sollicitatie-nijkerk" target="_blank" rel="noopener" class="zw-card zw-shift" style="display:flex;flex-direction:column;justify-content:space-between;gap:20px;background:linear-gradient(135deg,#540047 0%,#DE0954 100%);border-radius:24px;padding:32px;color:#ffffff;min-height:320px;">
+          <span style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Open application</span>
+          <span style="display:flex;flex-direction:column;gap:12px;">
+            <span style="font-size:28px;font-weight:900;line-height:1.15;color:#ffffff;">Don't see your role?</span>
+            <span style="font-size:15.5px;line-height:1.6;color:#ffffff;">Tell us what you would make simpler. We would love to hear from you.</span>
+          </span>
+          <span style="display:inline-block;width:fit-content;padding:12px 22px;border-radius:999px;background:#ffffff;color:#540047;font-weight:800;font-size:14.5px;">Send an open application</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES -->
+  <section id="culture" style="scroll-margin-top:80px;width:100%;background:#EEE6ED;">
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:48px 40px 96px;">
+      <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Our culture</p>
+      <h2 style="font-size:clamp(30px,3.6vw,40px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;max-width:720px;">Three ways of working that <span class="zw-grad">shape every day.</span></h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px;padding-top:44px;">
+        <article class="zw-card" style="background:#FCE7EE;border:1px solid #EEE6ED;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;">
+          <div style="padding:28px;display:flex;flex-direction:column;gap:12px;flex:1;">
+            <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Ownership</p>
+            <h3 style="font-family:'Mulish',Arial,sans-serif;font-weight:900;font-size:40px;line-height:1.08;color:#540047;">Own it</h3>
+            <p style="font-size:16px;line-height:1.65;color:#000000;">You get trust, influence and responsibility. And you want to win.</p>
+            <a href="/en/culture/#own-it" style="font-size:14.5px;font-weight:800;color:#A6124B;padding-top:4px;">Read more about Own it →</a>
+          </div>
+        </article>
+        <article class="zw-card" style="background:#FEEDE7;border:1px solid #EEE6ED;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;">
+          <div style="padding:28px;display:flex;flex-direction:column;gap:12px;flex:1;">
+            <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Collaboration</p>
+            <h3 style="font-family:'Mulish',Arial,sans-serif;font-weight:900;font-size:40px;line-height:1.08;color:#540047;">Build together</h3>
+            <p style="font-size:16px;line-height:1.65;color:#000000;">We make each other better. By being honest and having fun.</p>
+            <a href="/en/culture/#build-together" style="font-size:14.5px;font-weight:800;color:#A6124B;padding-top:4px;">Read more about Build together →</a>
+          </div>
+        </article>
+        <article class="zw-card" style="background:#FCE7EE;border:1px solid #EEE6ED;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;">
+          <div style="padding:28px;display:flex;flex-direction:column;gap:12px;flex:1;">
+            <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Simplify</p>
+            <h3 style="font-family:'Mulish',Arial,sans-serif;font-weight:900;font-size:40px;line-height:1.08;color:#540047;">Keep it simple</h3>
+            <p style="font-size:16px;line-height:1.65;color:#000000;">We remove what doesn't help and automate what we can.</p>
+            <a href="/en/culture/#keep-it-simple" style="font-size:14.5px;font-weight:800;color:#A6124B;padding-top:4px;">Read more about Keep it simple →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVERY DAY (interactive) -->
+  <section style="width:100%;background:#EEE6ED;border-top:1px solid #EEE6ED;border-bottom:1px solid #EEE6ED;">
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:96px 40px;">
+      <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;text-align:center;">What it looks like every day</p>
+      <h2 style="font-size:clamp(28px,3.4vw,34px);font-weight:900;color:#540047;padding-top:12px;text-align:center;">Trust, honesty and a bias for simple</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:center;padding-top:56px;max-width:980px;margin:0 auto;">
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <button type="button" class="zw-step" id="wb-step-0" data-step="0" aria-pressed="true" style="text-align:left;cursor:pointer;background:#FCE7EE;border:2px solid #540047;border-radius:18px;padding:22px 24px;font-family:'Mulish',Arial,sans-serif;">
+            <span style="display:block;font-size:17px;font-weight:800;color:#540047;">Own it</span>
+            <span style="display:block;font-size:15px;line-height:1.55;color:#540047;padding-top:6px;">You set priorities, make decisions and plan the work with the team, without waiting for permission.</span>
+          </button>
+          <button type="button" class="zw-step" id="wb-step-1" data-step="1" aria-pressed="false" style="text-align:left;cursor:pointer;background:#ffffff;border:2px solid #EEE6ED;border-radius:18px;padding:22px 24px;font-family:'Mulish',Arial,sans-serif;">
+            <span style="display:block;font-size:17px;font-weight:800;color:#540047;">Build together</span>
+            <span style="display:block;font-size:15px;line-height:1.55;color:#540047;padding-top:6px;">You ask for feedback, listen without becoming defensive and act on it.</span>
+          </button>
+          <button type="button" class="zw-step" id="wb-step-2" data-step="2" aria-pressed="false" style="text-align:left;cursor:pointer;background:#ffffff;border:2px solid #EEE6ED;border-radius:18px;padding:22px 24px;font-family:'Mulish',Arial,sans-serif;">
+            <span style="display:block;font-size:17px;font-weight:800;color:#540047;">Keep it simple</span>
+            <span style="display:block;font-size:15px;line-height:1.55;color:#540047;padding-top:6px;">With every task, you ask what can go, what can be smarter and what can be simpler.</span>
+          </button>
+        </div>
+        <div style="border-radius:28px;background:linear-gradient(135deg,#540047 0%,#A6124B 100%);padding:40px 36px;min-height:360px;display:flex;flex-direction:column;justify-content:center;gap:20px;box-shadow:0 30px 60px -30px rgba(84,0,71,0.55);">
+          <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">You will see it when</p>
+          <h3 id="wb-step-title" style="font-size:34px;font-weight:900;line-height:1.1;color:#ffffff;">Own it</h3>
+          <ul id="wb-step-points" style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;">
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#F54E11;margin-top:8px;"></span><span>Finishes what was agreed and flags blockers early.</span></li><li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#F54E11;margin-top:8px;"></span><span>Owns the result, good or bad, without blaming others.</span></li><li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#F54E11;margin-top:8px;"></span><span>Wants to win: with customers, in the market and as a team.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOGETHER -->
+  <section style="width:100%;background:#ffffff;">
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:96px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:64px;align-items:center;">
+      <div>
+        <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Build together</p>
+        <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">Building together also means <span class="zw-grad">having fun together.</span></h2>
+        <p style="font-size:17px;line-height:1.75;color:#000000;padding-top:20px;max-width:540px;">We know each other, spend time together, are there for each other and celebrate success. A customer won, a successful release or a colleague taking a step forward. Sometimes over drinks, sometimes just around the table with the team.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;">
+        <img class="zw-card" src="/assets/img/fb46ab85bd3ccf989524ef6fbb66276b.jpg" alt="The Workspace 365 team on a day out by the harbour" style="grid-column:span 2;width:100%;height:260px;object-fit:cover;object-position:center 75%;border-radius:22px;display:block;">
+        <img class="zw-card" src="/assets/img/4183b9075a7ec45395a3afb08b9683f3.jpg" alt="Colleagues doing a workout together outside the office" style="width:100%;height:180px;object-fit:cover;border-radius:22px;display:block;">
+        <img class="zw-card" src="/assets/img/071152f6e78230e050f411f9ac7e83a3.jpg" alt="Colleagues preparing lunch together" style="width:100%;height:180px;object-fit:cover;border-radius:22px;display:block;">
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section style="width:100%;background:#ffffff;">
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:0 40px 96px;">
+      <figure class="zw-card" style="margin:0 auto;max-width:880px;text-align:center;background:linear-gradient(120deg,#540047 0%,#DE0954 100%);border-radius:28px;padding:56px 64px;box-shadow:0 30px 60px -30px rgba(84,0,71,0.55);">
+        <blockquote style="margin:0;font-style:italic;font-size:clamp(20px,2.4vw,26px);line-height:1.5;color:#ffffff;">We give you the trust and the space. You take the responsibility and go for the result.</blockquote>
+        <figcaption style="font-size:13px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;padding-top:20px;">Own it</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section id="follow-us" style="width:100%;background:#EEE6ED;border-top:1px solid #EEE6ED;">
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:88px 40px 96px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px 64px;align-items:end;">
+        <div>
+          <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Follow us</p>
+          <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">Get to know us <span class="zw-grad">before you meet us.</span></h2>
+        </div>
+        <p style="font-size:17px;line-height:1.7;color:#000000;">Behind the scenes, team moments and the people you would work with. Follow along on the channel you like best.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding-top:44px;">
+        <a href="https://www.instagram.com/workspace.365/" target="_blank" rel="noopener" class="zw-card" aria-label="Workspace 365 on Instagram" style="background:#ffffff;border:1px solid #EEE6ED;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px;color:#000000;">
+          <span style="width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,#540047 0%,#DE0954 100%);display:inline-flex;align-items:center;justify-content:center;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="#ffffff"></circle></svg>
+          </span>
+          <span style="font-size:20px;font-weight:900;color:#540047;">Instagram</span>
+          <span style="font-size:15.5px;line-height:1.6;color:#000000;flex:1;">Team moments and a look behind the scenes.</span>
+          <span style="font-size:14.5px;font-weight:800;color:#A6124B;">@workspace.365 →</span>
+        </a>
+        <a href="https://www.tiktok.com/@life.at.workspace365" target="_blank" rel="noopener" class="zw-card" aria-label="Workspace 365 on TikTok" style="background:#ffffff;border:1px solid #EEE6ED;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px;color:#000000;">
+          <span style="width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,#A6124B 0%,#F54E11 100%);display:inline-flex;align-items:center;justify-content:center;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l11-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="17" cy="16" r="3"></circle></svg>
+          </span>
+          <span style="font-size:20px;font-weight:900;color:#540047;">TikTok</span>
+          <span style="font-size:15.5px;line-height:1.6;color:#000000;flex:1;">Short videos from the office and the people you would work with.</span>
+          <span style="font-size:14.5px;font-weight:800;color:#A6124B;">@life.at.workspace365 →</span>
+        </a>
+        <a href="https://www.linkedin.com/company/new-day-at-work" target="_blank" rel="noopener" class="zw-card" aria-label="Workspace 365 on LinkedIn" style="background:#ffffff;border:1px solid #EEE6ED;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px;color:#000000;">
+          <span style="width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,#540047 0%,#A6124B 100%);display:inline-flex;align-items:center;justify-content:center;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M3 13h18"></path></svg>
+          </span>
+          <span style="font-size:20px;font-weight:900;color:#540047;">LinkedIn</span>
+          <span style="font-size:15.5px;line-height:1.6;color:#000000;flex:1;">Company news, new roles and stories from colleagues.</span>
+          <span style="font-size:14.5px;font-weight:800;color:#A6124B;">Workspace 365 →</span>
+        </a>
+        <a href="https://www.youtube.com/@workspace_365" target="_blank" rel="noopener" class="zw-card" aria-label="Workspace 365 on YouTube" style="background:#ffffff;border:1px solid #EEE6ED;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px;color:#000000;">
+          <span style="width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,#DE0954 0%,#F54E11 100%);display:inline-flex;align-items:center;justify-content:center;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"></rect><path d="M10 9l5 3l-5 3z"></path></svg>
+          </span>
+          <span style="font-size:20px;font-weight:900;color:#540047;">YouTube</span>
+          <span style="font-size:15.5px;line-height:1.6;color:#000000;flex:1;">See the intelligent workspace and Kelly in action.</span>
+          <span style="font-size:14.5px;font-weight:800;color:#A6124B;">@workspace_365 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="zw-shift" style="width:100%;background:linear-gradient(120deg,#DE0954 0%,#F54E11 100%);">
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:80px 40px;display:flex;flex-direction:column;gap:18px;align-items:flex-start;">
+      <h2 style="font-size:clamp(32px,4.2vw,46px);font-weight:900;line-height:1.1;color:#ffffff;max-width:700px;">A challenge that is yours.</h2>
+      <p style="font-size:18px;line-height:1.65;color:#FFFFFF;max-width:560px;">With us, you don't get a list of tasks. You get the trust and the space to pick it up and finish it.</p>
+      <a href="/en/open-roles/" class="zw-btn" style="display:inline-block;margin-top:8px;padding:15px 30px;border-radius:999px;background:#ffffff;color:#540047;font-weight:800;font-size:15px;">See open roles</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#540047;">
+    <div style="max-width:1180px;margin:0 auto;padding:56px 40px 32px;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+      <div style="display:flex;flex-direction:column;gap:18px;max-width:340px;">
+        <img src="/assets/img/b990ae75806ae001834cc1ea424c2fa8.svg" alt="Workspace 365" style="height:28px;width:auto;align-self:flex-start;">
+        <p style="font-family:'Gochi Hand','Comic Sans MS',cursive;font-size:30px;color:#ffffff;line-height:1.1;">It starts with us.</p>
+      </div>
+      <div style="display:flex;gap:64px;flex-wrap:wrap;">
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <span style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Explore</span>
+          <a href="/en/company/" style="font-size:15px;color:#FFFFFF;">Company</a>
+          <a href="/en/culture/" style="font-size:15px;color:#FFFFFF;">Culture</a>
+          <a href="/en/teams/" style="font-size:15px;color:#FFFFFF;">Teams</a>
+          <a href="/en/open-roles/" style="font-size:15px;color:#FFFFFF;">Open roles</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <span style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Contact</span>
+          <a href="mailto:work@workspace365.net" style="font-size:15px;color:#FFFFFF;">work@workspace365.net</a>
+          <a href="https://workspace365.net" style="font-size:15px;color:#FFFFFF;">workspace365.net</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <span style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Follow us</span>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="https://www.instagram.com/workspace.365/" target="_blank" rel="noopener" class="zw-btn" aria-label="Workspace 365 on Instagram" title="Instagram" style="display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:44px;"><img src="/assets/img/21f5af74af3c14e1bbb203bdf9f411d2.png" alt="" style="width:36px;height:36px;display:block;"></a>
+            <a href="https://www.tiktok.com/@life.at.workspace365" target="_blank" rel="noopener" class="zw-btn" aria-label="Workspace 365 on TikTok" title="TikTok" style="display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:44px;"><img src="/assets/img/8dfac24e19a0bc56c93012828f923ae4.png" alt="" style="width:36px;height:36px;display:block;"></a>
+            <a href="https://www.linkedin.com/company/new-day-at-work" target="_blank" rel="noopener" class="zw-btn" aria-label="Workspace 365 on LinkedIn" title="LinkedIn" style="display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:44px;"><img src="/assets/img/77781bf65fe64b3f219735f850f38db2.png" alt="" style="width:36px;height:36px;display:block;"></a>
+            <a href="https://www.youtube.com/@workspace_365" target="_blank" rel="noopener" class="zw-btn" aria-label="Workspace 365 on YouTube" title="YouTube" style="display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:44px;"><img src="/assets/img/12d7c0c86d26fd219a7caa1e6c7135eb.png" alt="" style="width:40px;height:auto;display:block;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1180px;margin:0 auto;padding:0 40px 32px;">
+      <p style="font-size:13px;color:#FCE7EE;">© 2026 Workspace 365.</p>
+    </div>
+  </footer>
+
+</div>
+<script>window.__STEPS=[{"title": "Own it", "points": ["Finishes what was agreed and flags blockers early.", "Owns the result, good or bad, without blaming others.", "Wants to win: with customers, in the market and as a team."]}, {"title": "Build together", "points": ["Addresses colleagues directly on agreements and behaviour, never behind their back.", "Raises disagreement in the meeting, not afterwards, and keeps it about the content.", "Celebrates successes and builds trust and fun in the team."]}, {"title": "Keep it simple", "points": ["Automates repetitive work with AI and tooling, starting with own work.", "Embraces change and gives a new approach a fair try.", "Says no to work that adds little value, and explains why."]}];window.__STEP_LI="<li style=\"display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;\"><span aria-hidden=\"true\" style=\"flex:none;width:10px;height:10px;border-radius:50%;background:#F54E11;margin-top:8px;\"></span><span>{{ pt.text }}</span></li>";</script>

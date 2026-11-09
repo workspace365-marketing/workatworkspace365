@@ -1,0 +1,201 @@
+<!--title:Workspace 365: Neem contact op-->
+<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;family=Gochi+Hand&amp;display=swap">-->
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Mulish',Arial,sans-serif;background:#ffffff;color:#000000}
+a{color:#DE0954;text-decoration:none}
+a:hover{color:#A6124B}
+h1,h2,h3{font-family:'Mulish',Arial,sans-serif;margin:0}
+p{margin:0}
+button{font-family:'Mulish',Arial,sans-serif;cursor:pointer}
+table{border-collapse:collapse;width:100%}
+.zw-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.zw-card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -22px rgba(84,0,71,.38);border-color:#DE0954}
+.zw-btn{transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.zw-btn:hover{transform:translateY(-2px);box-shadow:0 14px 28px -12px rgba(84,0,71,.5);filter:saturate(1.1)}
+.zw-step{transition:transform .2s ease,box-shadow .2s ease}
+.zw-step:hover{transform:translateX(4px);box-shadow:0 14px 30px -18px rgba(84,0,71,.4)}
+.zw-grad{position:relative;display:inline-block;color:inherit;padding-bottom:.06em}.zw-grad::after{content:'';position:absolute;left:0;bottom:-.06em;width:88%;height:.13em;border-radius:999px;background:#DE0954;transform:rotate(-.6deg)}
+.zw-grad-o{color:inherit}
+.zw-float{animation:zwFloat 7s ease-in-out infinite}
+@keyframes zwFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.zw-shift{background-size:200% 200% !important;animation:zwShift 14s ease-in-out infinite}
+@keyframes zwShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+input,select,textarea{font-family:'Mulish',Arial,sans-serif;font-size:16px;color:#000000}
+.zw-field{width:100%;min-height:48px;padding:12px 16px;border:1.5px solid #EEE6ED;border-radius:14px;background:#ffffff;box-sizing:border-box}
+.zw-field:focus{outline:none;border-color:#DE0954;box-shadow:0 0 0 4px #FCE7EE}
+@media (max-width:760px){.zw-formcol{grid-column:auto !important}}
+.zw-reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.zw-reveal.zw-in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.zw-float,.zw-shift{animation:none}.zw-card:hover,.zw-btn:hover,.zw-step:hover{transform:none}.zw-reveal{opacity:1;transform:none;transition:none}}
+</style>
+<div style="width:100%;min-height:100vh;background:#ffffff;">
+
+  <!-- HEADER -->
+  <header style="width:100%;background:#ffffff;border-bottom:1px solid #EEE6ED;position:sticky;top:0;z-index:20;">
+    <div style="max-width:1180px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+      <a href="/nl/" aria-label="Werken bij Workspace 365, home"><img src="/assets/img/88533d4398e728b6dead6ac51a36abfb.svg" alt="Workspace 365" style="height:30px;width:auto;display:block;"></a>
+      <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;">
+        <a href="/nl/over-ons/" style="font-weight:600;font-size:14px;color:#000000;">Over ons</a>
+        <a href="/nl/cultuur/" style="font-weight:600;font-size:14px;color:#000000;">Cultuur</a>
+        <a href="/nl/teams/" style="font-weight:600;font-size:14px;color:#000000;">Teams</a>
+        <a href="/nl/vacatures/" style="font-weight:600;font-size:14px;color:#000000;">Vacatures</a>
+        <a href="/nl/vacatures/#get-in-touch" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14px;">Neem contact op</a>
+        <span data-lang-toggle="true" style="display:inline-flex;align-items:center;gap:2px;font-size:13px;font-weight:800;border:1px solid #EEE6ED;border-radius:999px;padding:3px;"><a href="/en/contact/" lang="en" title="English" style="padding:5px 11px;border-radius:999px;color:#540047;">EN</a><span style="padding:5px 11px;border-radius:999px;background:#540047;color:#ffffff;" aria-current="true">NL</span></span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section style="width:100%;background:radial-gradient(circle at 88% 18%, rgba(222,9,84,0.16), transparent 42%), radial-gradient(circle at 6% 92%, rgba(245,78,17,0.12), transparent 40%), linear-gradient(180deg,#FCE7EE 0%,#FEEDE7 100%);">
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:72px 40px 64px;display:flex;flex-direction:column;gap:18px;">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:#ffffff;border:1px solid #EEE6ED;border-radius:999px;padding:7px 16px;width:fit-content;">
+        <span style="width:8px;height:8px;border-radius:50%;background:#DE0954;display:inline-block;"></span>
+        <span style="font-size:13px;font-weight:700;color:#A6124B;">Neem contact op</span>
+      </div>
+      <h1 style="font-size:clamp(40px,5.2vw,58px);line-height:1.08;font-weight:900;color:#540047;max-width:820px;">Laten we kennis <span class="zw-grad">met elkaar maken.</span></h1>
+      <p style="font-size:18px;line-height:1.6;color:#000000;max-width:600px;">Nieuwsgierig naar een functie, een team of een stage? Of wil je ons gewoon vertellen wat jij eenvoudiger zou maken? Laat je gegevens achter, dan nemen we contact met je op.</p>
+    </div>
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:56px;"><path d="M0,34 C420,70 1000,6 1440,30 L1440,80 L0,80 Z" fill="#ffffff"></path></svg>
+  </section>
+
+  <!-- FORM -->
+  <section style="width:100%;background:#ffffff;">
+    <div style="max-width:1180px;margin:0 auto;padding:32px 40px 96px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px 64px;align-items:start;">
+      <div style="grid-column:span 2;min-width:0;" class="zw-formcol">
+        <div id="sent-panel" hidden>
+          <div role="status" style="background:#FCE7EE;border:1px solid #EEE6ED;border-radius:24px;padding:48px 40px;display:flex;flex-direction:column;gap:14px;">
+            <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Bericht verstuurd</p>
+            <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;">Bedankt, we hebben het ontvangen.</h2>
+            <p style="font-size:17px;line-height:1.7;color:#000000;max-width:520px;">We lezen elk bericht zelf. Je hoort van ons binnen [aantal] werkdagen.</p>
+            <div style="display:flex;gap:14px;flex-wrap:wrap;padding-top:8px;">
+              <a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:14px 26px;border-radius:999px;background:#540047;color:#ffffff;font-weight:800;font-size:15px;">Bekijk de vacatures</a>
+              <button type="button" id="reset-form" style="min-height:44px;padding:13px 24px;border-radius:999px;border:1.5px solid #540047;background:#ffffff;color:#540047;font-weight:800;font-size:15px;">Stuur nog een bericht</button>
+            </div>
+          </div>
+        </div>
+        <div id="form-wrap">
+          <form id="contact-form" name="contact" method="POST" action="/" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" data-error="Versturen is niet gelukt. Probeer het opnieuw of mail ons op work@workspace365.net." style="background:#ffffff;border:1px solid #EEE6ED;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:22px;box-shadow:0 30px 60px -40px rgba(84,0,71,0.35);">
+<input type="hidden" name="form-name" value="contact">
+<p hidden><label>Niet invullen: <input name="bot-field"></label></p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;">
+            <div>
+              <label for="first" style="display:block;font-size:14.5px;font-weight:800;color:#540047;padding-bottom:8px;">Voornaam</label>
+              <input id="first" name="first" type="text" class="zw-field" placeholder="" autocomplete="given-name" required>
+            </div>
+            <div>
+              <label for="last" style="display:block;font-size:14.5px;font-weight:800;color:#540047;padding-bottom:8px;">Achternaam</label>
+              <input id="last" name="last" type="text" class="zw-field" placeholder="" autocomplete="family-name" required>
+            </div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;">
+            <div>
+              <label for="email" style="display:block;font-size:14.5px;font-weight:800;color:#540047;padding-bottom:8px;">E-mailadres</label>
+              <input id="email" name="email" type="email" class="zw-field" placeholder="" autocomplete="email" required>
+            </div>
+            <div>
+              <label for="phone" style="display:block;font-size:14.5px;font-weight:800;color:#540047;padding-bottom:8px;">Telefoonnummer <span style="font-weight:600;color:#A6124B;">(optioneel)</span></label>
+              <input id="phone" name="phone" type="tel" class="zw-field" placeholder="" autocomplete="tel">
+            </div>
+            </div>
+            <div>
+              <label for="about" style="display:block;font-size:14.5px;font-weight:800;color:#540047;padding-bottom:8px;">Waar gaat het over?</label>
+              <select id="about" name="about" class="zw-field" required>
+                <option value="">Kies een optie</option>
+                <option>Een openstaande vacature</option>
+                <option>Een open sollicitatie</option>
+                <option>Een stage of afstudeerproject</option>
+                <option>Gewoon een vraag</option>
+              </select>
+            </div>
+            <div>
+              <label for="team" style="display:block;font-size:14.5px;font-weight:800;color:#540047;padding-bottom:8px;">Welk team spreekt je aan? <span style="font-weight:600;color:#A6124B;">(optioneel)</span></label>
+              <select id="team" name="team" class="zw-field">
+                <option value="">Nog geen voorkeur</option>
+                <option>Kelly AI</option>
+                <option>Zorgworkspace</option>
+                <option>Sovereign Workspace</option>
+                <option>Workspace 365</option>
+                <option>Ventures</option>
+                <option>Operations</option>
+                <option>Finance &amp; Data</option>
+                <option>Talent</option>
+                <option>Company Strategy</option>
+              </select>
+            </div>
+            <div>
+              <label for="linkedin" style="display:block;font-size:14.5px;font-weight:800;color:#540047;padding-bottom:8px;">LinkedIn-profiel <span style="font-weight:600;color:#A6124B;">(optioneel)</span></label>
+              <input id="linkedin" name="linkedin" type="url" class="zw-field" placeholder="https://linkedin.com/in/">
+            </div>
+            <div>
+              <label for="message" style="display:block;font-size:14.5px;font-weight:800;color:#540047;padding-bottom:8px;">Je bericht</label>
+              <textarea id="message" name="message" class="zw-field" rows="5" placeholder="Vertel kort wie je bent en wat je zoekt." required style="resize:vertical;min-height:140px;"></textarea>
+            </div>
+            <div>
+              <label for="cv" style="display:block;font-size:14.5px;font-weight:800;color:#540047;padding-bottom:8px;">CV <span style="font-weight:600;color:#A6124B;">(optioneel, pdf of Word)</span></label>
+              <input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx" class="zw-field" style="padding:10px 12px;">
+            </div>
+            <label style="display:flex;gap:12px;align-items:flex-start;font-size:14.5px;line-height:1.55;color:#000000;cursor:pointer;">
+              <input type="checkbox" name="consent" required style="width:20px;height:20px;margin-top:2px;accent-color:#540047;flex:none;">
+              <span>Ik ga ermee akkoord dat Workspace 365 mijn gegevens opslaat om contact met me op te nemen. Lees onze <a href="#" style="font-weight:800;color:#A6124B;">[privacyverklaring]</a>.</span>
+            </label>
+            <div><button type="submit" class="zw-btn" style="min-height:48px;padding:15px 32px;border-radius:999px;border:0;background:#540047;color:#ffffff;font-weight:800;font-size:15.5px;cursor:pointer;">Verstuur bericht</button></div>
+          </form>
+        </div>
+      </div>
+      <aside style="display:flex;flex-direction:column;gap:20px;">
+        <div style="background:#540047;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:12px;">
+          <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Liever een e-mail sturen?</p>
+          <a href="mailto:work@workspace365.net" style="font-size:20px;font-weight:900;color:#ffffff;">work@workspace365.net</a>
+          <p style="font-size:15.5px;line-height:1.65;color:#ffffff;">Ons Talent team leest elk bericht.</p>
+        </div>
+        <div style="background:#FEEDE7;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:12px;">
+          <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Kom langs</p>
+          <p style="font-size:16px;line-height:1.65;color:#000000;">Workspace 365<br>Berencamperweg 6D<br>3861 MC Nijkerk</p>
+        </div>
+        <div style="background:#FCE7EE;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:12px;">
+          <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Al een functie gevonden?</p>
+          <a href="/nl/vacatures/" style="font-size:16px;font-weight:800;color:#540047;">Solliciteer direct via de vacatures →</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#540047;">
+    <div style="max-width:1180px;margin:0 auto;padding:56px 40px 32px;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+      <div style="display:flex;flex-direction:column;gap:18px;max-width:340px;">
+        <img src="/assets/img/b990ae75806ae001834cc1ea424c2fa8.svg" alt="Workspace 365" style="height:28px;width:auto;align-self:flex-start;">
+        <p style="font-family:'Gochi Hand','Comic Sans MS',cursive;font-size:30px;color:#ffffff;line-height:1.1;">Het begint bij ons.</p>
+      </div>
+      <div style="display:flex;gap:64px;flex-wrap:wrap;">
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <span style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Ontdek</span>
+          <a href="/nl/over-ons/" style="font-size:15px;color:#FFFFFF;">Over ons</a>
+          <a href="/nl/cultuur/" style="font-size:15px;color:#FFFFFF;">Cultuur</a>
+          <a href="/nl/teams/" style="font-size:15px;color:#FFFFFF;">Teams</a>
+          <a href="/nl/vacatures/" style="font-size:15px;color:#FFFFFF;">Vacatures</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <span style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Contact</span>
+          <a href="mailto:work@workspace365.net" style="font-size:15px;color:#FFFFFF;">work@workspace365.net</a>
+          <a href="https://workspace365.net" style="font-size:15px;color:#FFFFFF;">workspace365.net</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <span style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Volg ons</span>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="https://www.instagram.com/workspace.365/" target="_blank" rel="noopener" class="zw-btn" aria-label="Workspace 365 op Instagram" title="Instagram" style="display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:44px;"><img src="/assets/img/21f5af74af3c14e1bbb203bdf9f411d2.png" alt="" style="width:36px;height:36px;display:block;"></a>
+            <a href="https://www.tiktok.com/@life.at.workspace365" target="_blank" rel="noopener" class="zw-btn" aria-label="Workspace 365 op TikTok" title="TikTok" style="display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:44px;"><img src="/assets/img/8dfac24e19a0bc56c93012828f923ae4.png" alt="" style="width:36px;height:36px;display:block;"></a>
+            <a href="https://www.linkedin.com/company/new-day-at-work" target="_blank" rel="noopener" class="zw-btn" aria-label="Workspace 365 op LinkedIn" title="LinkedIn" style="display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:44px;"><img src="/assets/img/77781bf65fe64b3f219735f850f38db2.png" alt="" style="width:36px;height:36px;display:block;"></a>
+            <a href="https://www.youtube.com/@workspace_365" target="_blank" rel="noopener" class="zw-btn" aria-label="Workspace 365 op YouTube" title="YouTube" style="display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:44px;"><img src="/assets/img/12d7c0c86d26fd219a7caa1e6c7135eb.png" alt="" style="width:40px;height:auto;display:block;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1180px;margin:0 auto;padding:0 40px 32px;">
+      <p style="font-size:13px;color:#FCE7EE;">© 2026 Workspace 365.</p>
+    </div>
+  </footer>
+
+</div>
+

@@ -1,0 +1,18 @@
+{
+  "en": {
+    "index": "/en/",
+    "vacatures": "/en/open-roles/",
+    "cultuur": "/en/culture/",
+    "teams": "/en/teams/",
+    "company": "/en/company/",
+    "contact": "/en/contact/"
+  },
+  "nl": {
+    "index": "/nl/",
+    "vacatures": "/nl/vacatures/",
+    "cultuur": "/nl/cultuur/",
+    "teams": "/nl/teams/",
+    "company": "/nl/over-ons/",
+    "contact": "/nl/contact/"
+  }
+}

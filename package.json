@@ -1,0 +1,12 @@
+{
+  "name": "workatworkspace365",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Werken bij Workspace 365 (NL en EN)",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs && npx --yes serve dist"
+  },
+  "engines": { "node": ">=20" }
+}

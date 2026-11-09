@@ -1,0 +1,18 @@
+<a href="{{ r.url }}" data-kind="{{ r.kind }}" target="_blank" rel="noopener" class="zw-card" style="display:flex;flex-direction:column;background:#ffffff;border:1px solid #EEE6ED;border-radius:24px;overflow:hidden;color:#000000;">
+          <span style="position:relative;display:block;">
+            <img src="{{ r.img }}" alt="" style="display:block;width:100%;height:220px;object-fit:cover;object-position:center 45%;">
+            <span style="position:absolute;left:16px;top:16px;display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;border:1px solid {{ r.badgeBorder }};background:{{ r.badgeBg }};color:{{ r.badgeColor }};font-size:13px;font-weight:700;">{{ r.badge }}</span>
+          </span>
+          <span style="display:flex;flex-direction:column;gap:12px;padding:24px;flex:1;">
+            <span style="font-size:19px;font-weight:900;line-height:1.25;color:#540047;">{{ r.title }}</span>
+            <span style="font-size:15.5px;line-height:1.55;color:#000000;flex:1;">{{ r.pitch }}</span>
+            <span style="display:flex;flex-wrap:wrap;gap:8px;">
+              <span style="display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;background:#ffffff;border:1px solid #EEE6ED;font-size:13px;font-weight:700;color:#540047;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>Nijkerk</span>
+              <span style="display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;background:#ffffff;border:1px solid #EEE6ED;font-size:13px;font-weight:700;color:#540047;">{{ r.work }}</span>
+              <sc-if value="{{ r.hasSalary }}" hint-placeholder-val="{{ true }}">
+              <span style="display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;background:#ffffff;border:1.5px solid #540047;font-size:13px;font-weight:800;color:#540047;">{{ r.salary }}</span>
+              </sc-if>
+            </span>
+            <span style="font-size:14.5px;font-weight:800;color:#A6124B;padding-top:4px;">View role →</span>
+          </span>
+        </a>

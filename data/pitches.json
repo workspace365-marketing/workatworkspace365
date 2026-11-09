@@ -1,0 +1,37 @@
+{
+  "senior-customer-succes-manager": {
+    "img": "416f83ec391851493132ae321b6d267b.jpg",
+    "pitch": {
+      "en": "Help customers get lasting value from Workspace 365.",
+      "nl": "Help klanten blijvend waarde te halen uit Workspace 365."
+    }
+  },
+  "senior-sales-development-representative": {
+    "img": "d3ba4ee9ccc6b541c52626af7ded9476.jpg",
+    "pitch": {
+      "en": "Help organisations with their digital transformation. And do more than hit quotas.",
+      "nl": "Help organisaties met hun digitale transformatie. En doe meer dan alleen targets halen."
+    }
+  },
+  "junior-sales-development-representative": {
+    "img": "9f25e0a6aafc3a28f8f7e5f6f483698e.jpg",
+    "pitch": {
+      "en": "Employers ask for experience you can’t have yet. Here you get the chance to show what you can do.",
+      "nl": "Werkgevers vragen om ervaring die je nog niet kunt hebben. Hier krijg je de kans te laten zien wat je kunt."
+    }
+  },
+  "meewerkstage-content-marketing": {
+    "img": "206b9c8d73c1d5c576fc66c3e568d08a.jpg",
+    "pitch": {
+      "en": "Join a small marketing team where you learn a lot and make a real contribution.",
+      "nl": "Loop mee in een klein marketingteam waar je veel leert en echt bijdraagt."
+    }
+  },
+  "stage-sales-development-representative": {
+    "img": "3d256ee61442cccd3cd9428cffbeb77f.jpg",
+    "pitch": {
+      "en": "Kickstart your career. For real.",
+      "nl": "Geef je carrière een vliegende start. Echt."
+    }
+  }
+}
