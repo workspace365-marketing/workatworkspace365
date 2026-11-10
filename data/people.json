@@ -1,150 +1,762 @@
 {
   "en": [
     {
-      "img": "1da05618eebf63c2dc195700357ddd19.jpg",
-      "name": "[Name]",
-      "role": "[Role]",
-      "team": "[Team]",
-      "short": "[One line about this colleague]",
-      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+      "img": "6da1ac9391d5a61dc3867fce9b098632.jpg",
+      "name": "Hans de Graaf",
+      "role": "CEO and founder",
+      "team": "Strategy and story",
+      "short": "",
+      "intro": "",
+      "kk": "support"
     },
     {
-      "img": "56c79f5d80bb9a2b13154cd9a6bea8f1.jpg",
-      "name": "[Name]",
-      "role": "[Role]",
-      "team": "[Team]",
-      "short": "[One line about this colleague]",
-      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+      "img": "d7425b181b617d85dd27d0028012b365.jpg",
+      "name": "Erik Nicolai",
+      "role": "CEO and founder",
+      "team": "Strategy and story",
+      "short": "",
+      "intro": "",
+      "kk": "support"
     },
     {
-      "img": "a73ce95000db8b7afdee43eedf97ad14.jpg",
-      "name": "[Name]",
-      "role": "[Role]",
-      "team": "[Team]",
-      "short": "[One line about this colleague]",
-      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Axel van der Meijden Ruiz",
+      "role": "Sales Development Representative Intern",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "b5f8f75363124b71dca452be1c69d242.jpg",
-      "name": "[Name]",
-      "role": "[Role]",
-      "team": "[Team]",
-      "short": "[One line about this colleague]",
-      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Laurens Holtkamp",
+      "role": "Product Manager",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "44627ae6e41163e7fb020df241f6ef13.jpg",
-      "name": "[Name]",
-      "role": "[Role]",
-      "team": "[Team]",
-      "short": "[One line about this colleague]",
-      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Moses Okolo",
+      "role": "Python Engineer",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "655ee11afc0449ae15edef2f0d1ba0f3.jpg",
-      "name": "[Name]",
-      "role": "[Role]",
-      "team": "[Team]",
-      "short": "[One line about this colleague]",
-      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+      "img": "4ddcf5733807656dbaf296b67f865c24.jpg",
+      "name": "Roman Zabrovskiy",
+      "role": "Manual QA Engineer",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "90bfbaff7a4780e812fda24cdf7cc7ee.jpg",
-      "name": "[Name]",
-      "role": "[Role]",
-      "team": "[Team]",
-      "short": "[One line about this colleague]",
-      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+      "img": "f0e82ff5662003cb7a747de20770c4c3.jpg",
+      "name": "Silvan van Hierden",
+      "role": "GTM Lead, Kelly",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "ad1f3f34333eaf9b0172bac145cce25e.jpg",
-      "name": "[Name]",
-      "role": "[Role]",
-      "team": "[Team]",
-      "short": "[One line about this colleague]",
-      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+      "img": "f95b18a6abe61e51175a40d5bc52ebcf.jpg",
+      "name": "Sudhakaran Jain",
+      "role": "AI Engineer",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "53ca335b960755ee421067c8fb5ebd66.jpg",
-      "name": "[Name]",
-      "role": "[Role]",
-      "team": "[Team]",
-      "short": "[One line about this colleague]",
-      "intro": "[A short introduction. What they work on, what they like about working here and which core value suits them best.]"
+      "img": "94c96f94002a3a9ff85e5082f76962be.jpg",
+      "name": "Wesley de Graaf",
+      "role": "Product Lead, Kelly",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
+    },
+    {
+      "img": "3ec53bd3e0719bdb73d9f7144723a775.jpg",
+      "name": "Amir Ghadimi",
+      "role": "Front-end Developer",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "36e33081e15910f1410af30793d9033b.jpg",
+      "name": "Axel Evers",
+      "role": "Teamlead Sales",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Cas Hoogendoorn",
+      "role": "Sales Development Representative Intern",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Chihoi Man",
+      "role": "Sales Development Representative",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Ilya Tiunov",
+      "role": "Full Stack Developer",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "b8b7ed7f709c2bb3ef2d35530afcd008.jpg",
+      "name": "Jacco Timmer",
+      "role": "Customer Success Manager",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "31b26cb303359a4804d1cc35a830edc0.jpg",
+      "name": "Leonie Oosterhoff",
+      "role": "Demand Generation Manager",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Michael Nigbur",
+      "role": "UX/UI Designer",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "63651e18e0246869a23330b2291c581d.jpg",
+      "name": "Nienke de Ruiter",
+      "role": "Customer Success Manager",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "3ea32a63e4ed7d9acbe6468af0a46295.jpg",
+      "name": "Sergey Moroz",
+      "role": "Quality Assurance Engineer",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "c1e50f8191333f4bbb88774a7232653f.jpg",
+      "name": "Davey Manuputty",
+      "role": "Account Executive",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Frans de Graaf",
+      "role": "Cloud Support Engineer",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "6d4f62b5ffe3799851f9578c24f24d1b.jpg",
+      "name": "Jos Berpee",
+      "role": "Account Executive",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Milan Kroes",
+      "role": "Sales Development Representative Intern",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "b3ad14fc97a67e4aaeb6be06aaef24cf.jpg",
+      "name": "Pim Scholten",
+      "role": "UX/UI Designer",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Sven de Jong",
+      "role": "Sales Development Representative",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Willem-Jan Groenestein",
+      "role": "Software Engineer",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Gert-Jan Eijlders",
+      "role": "Back-end Developer",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "eb39f757ad1ca7b27b9d3f8a2b5c2c74.jpg",
+      "name": "Ivo van Bilsen",
+      "role": "Integration & Support Consultant",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "b784192742a95c3db9e834ee59cdb85a.jpg",
+      "name": "Jack van Dijkhuizen",
+      "role": "Cloud Support Engineer",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Kelly van der Horst",
+      "role": "Customer Marketer",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Oleksandr Kostenko",
+      "role": "Quality Assurance Engineer",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "21d1416381ee7ef370911143b4f83ad1.jpg",
+      "name": "Reinier Bakker",
+      "role": "Customer Success Manager",
+      "team": "Workspace 365",
+      "short": "Full of ambition",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Yanis Belkacem",
+      "role": "Front-end Developer",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "8cc7f8ae54bfccd7baea8c1e0357dbcc.jpg",
+      "name": "Fabian Brocken",
+      "role": "Security Officer & IT Manager",
+      "team": "Supporting teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Sybren de Jong",
+      "role": "Cloud Engineer",
+      "team": "Supporting teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Willem van der Mheen",
+      "role": "Cloud Engineer",
+      "team": "Supporting teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "f1f4dd4d2b1a750f06acdcb1e87e67bc.jpg",
+      "name": "Hennie van Ginkel",
+      "role": "Finance Specialist",
+      "team": "Supporting teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Mathijs van der Meer",
+      "role": "Data Engineer",
+      "team": "Supporting teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "900ab676658376436c1be102193c81d8.jpg",
+      "name": "Wouter Laseur",
+      "role": "Head of Finance",
+      "team": "Supporting teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "21b3dc2def7a890c8e16b70da58af9a5.jpg",
+      "name": "Ingrid van den Rijen",
+      "role": "Head of Talent",
+      "team": "Supporting teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "75cb71f8476102e016fbaa3073672873.jpg",
+      "name": "Julia van Bergen",
+      "role": "Corporate Recruiter",
+      "team": "Supporting teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Maaike de Jong",
+      "role": "Office Manager",
+      "team": "Supporting teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
     }
   ],
   "nl": [
     {
-      "img": "1da05618eebf63c2dc195700357ddd19.jpg",
-      "name": "[Naam]",
-      "role": "[Functie]",
-      "team": "[Team]",
-      "short": "[Eén regel over deze collega]",
-      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+      "img": "6da1ac9391d5a61dc3867fce9b098632.jpg",
+      "name": "Hans de Graaf",
+      "role": "CEO en oprichter",
+      "team": "Strategie en verhaal",
+      "short": "",
+      "intro": "",
+      "kk": "support"
     },
     {
-      "img": "56c79f5d80bb9a2b13154cd9a6bea8f1.jpg",
-      "name": "[Naam]",
-      "role": "[Functie]",
-      "team": "[Team]",
-      "short": "[Eén regel over deze collega]",
-      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+      "img": "d7425b181b617d85dd27d0028012b365.jpg",
+      "name": "Erik Nicolai",
+      "role": "CEO en oprichter",
+      "team": "Strategie en verhaal",
+      "short": "",
+      "intro": "",
+      "kk": "support"
     },
     {
-      "img": "a73ce95000db8b7afdee43eedf97ad14.jpg",
-      "name": "[Naam]",
-      "role": "[Functie]",
-      "team": "[Team]",
-      "short": "[Eén regel over deze collega]",
-      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Axel van der Meijden Ruiz",
+      "role": "Stagiair Sales Development Representative",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "b5f8f75363124b71dca452be1c69d242.jpg",
-      "name": "[Naam]",
-      "role": "[Functie]",
-      "team": "[Team]",
-      "short": "[Eén regel over deze collega]",
-      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Laurens Holtkamp",
+      "role": "Product Manager",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "44627ae6e41163e7fb020df241f6ef13.jpg",
-      "name": "[Naam]",
-      "role": "[Functie]",
-      "team": "[Team]",
-      "short": "[Eén regel over deze collega]",
-      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Moses Okolo",
+      "role": "Python Engineer",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "655ee11afc0449ae15edef2f0d1ba0f3.jpg",
-      "name": "[Naam]",
-      "role": "[Functie]",
-      "team": "[Team]",
-      "short": "[Eén regel over deze collega]",
-      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+      "img": "4ddcf5733807656dbaf296b67f865c24.jpg",
+      "name": "Roman Zabrovskiy",
+      "role": "Manual QA Engineer",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "90bfbaff7a4780e812fda24cdf7cc7ee.jpg",
-      "name": "[Naam]",
-      "role": "[Functie]",
-      "team": "[Team]",
-      "short": "[Eén regel over deze collega]",
-      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+      "img": "f0e82ff5662003cb7a747de20770c4c3.jpg",
+      "name": "Silvan van Hierden",
+      "role": "GTM Lead, Kelly",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "ad1f3f34333eaf9b0172bac145cce25e.jpg",
-      "name": "[Naam]",
-      "role": "[Functie]",
-      "team": "[Team]",
-      "short": "[Eén regel over deze collega]",
-      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+      "img": "f95b18a6abe61e51175a40d5bc52ebcf.jpg",
+      "name": "Sudhakaran Jain",
+      "role": "AI Engineer",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
     },
     {
-      "img": "53ca335b960755ee421067c8fb5ebd66.jpg",
-      "name": "[Naam]",
-      "role": "[Functie]",
-      "team": "[Team]",
-      "short": "[Eén regel over deze collega]",
-      "intro": "[Een korte introductie. Waar diegene aan werkt, wat diegene leuk vindt aan werken hier en welke kernwaarde het best past.]"
+      "img": "94c96f94002a3a9ff85e5082f76962be.jpg",
+      "name": "Wesley de Graaf",
+      "role": "Product Lead, Kelly",
+      "team": "Kelly AI",
+      "short": "",
+      "intro": "",
+      "kk": "kelly"
+    },
+    {
+      "img": "3ec53bd3e0719bdb73d9f7144723a775.jpg",
+      "name": "Amir Ghadimi",
+      "role": "Front-end Developer",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "36e33081e15910f1410af30793d9033b.jpg",
+      "name": "Axel Evers",
+      "role": "Teamlead Sales",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Cas Hoogendoorn",
+      "role": "Stagiair Sales Development Representative",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Chihoi Man",
+      "role": "Sales Development Representative",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Ilya Tiunov",
+      "role": "Full Stack Developer",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "b8b7ed7f709c2bb3ef2d35530afcd008.jpg",
+      "name": "Jacco Timmer",
+      "role": "Customer Success Manager",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "31b26cb303359a4804d1cc35a830edc0.jpg",
+      "name": "Leonie Oosterhoff",
+      "role": "Demand Generation Manager",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Michael Nigbur",
+      "role": "UX/UI Designer",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "63651e18e0246869a23330b2291c581d.jpg",
+      "name": "Nienke de Ruiter",
+      "role": "Customer Success Manager",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "3ea32a63e4ed7d9acbe6468af0a46295.jpg",
+      "name": "Sergey Moroz",
+      "role": "Quality Assurance Engineer",
+      "team": "Zorgworkspace",
+      "short": "",
+      "intro": "",
+      "kk": "zorg"
+    },
+    {
+      "img": "c1e50f8191333f4bbb88774a7232653f.jpg",
+      "name": "Davey Manuputty",
+      "role": "Account Executive",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Frans de Graaf",
+      "role": "Cloud Support Engineer",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "6d4f62b5ffe3799851f9578c24f24d1b.jpg",
+      "name": "Jos Berpee",
+      "role": "Account Executive",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Milan Kroes",
+      "role": "Stagiair Sales Development Representative",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "b3ad14fc97a67e4aaeb6be06aaef24cf.jpg",
+      "name": "Pim Scholten",
+      "role": "UX/UI Designer",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Sven de Jong",
+      "role": "Sales Development Representative",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Willem-Jan Groenestein",
+      "role": "Software Engineer",
+      "team": "Sovereign Workspace",
+      "short": "",
+      "intro": "",
+      "kk": "gov"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Gert-Jan Eijlders",
+      "role": "Back-end Developer",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "eb39f757ad1ca7b27b9d3f8a2b5c2c74.jpg",
+      "name": "Ivo van Bilsen",
+      "role": "Integration & Support Consultant",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "b784192742a95c3db9e834ee59cdb85a.jpg",
+      "name": "Jack van Dijkhuizen",
+      "role": "Cloud Support Engineer",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Kelly van der Horst",
+      "role": "Customer Marketeer",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Oleksandr Kostenko",
+      "role": "Quality Assurance Engineer",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "21d1416381ee7ef370911143b4f83ad1.jpg",
+      "name": "Reinier Bakker",
+      "role": "Customer Success Manager",
+      "team": "Workspace 365",
+      "short": "Vol ambitie",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Yanis Belkacem",
+      "role": "Front-end Developer",
+      "team": "Workspace 365",
+      "short": "",
+      "intro": "",
+      "kk": "w365"
+    },
+    {
+      "img": "8cc7f8ae54bfccd7baea8c1e0357dbcc.jpg",
+      "name": "Fabian Brocken",
+      "role": "Security Officer & IT Manager",
+      "team": "Ondersteunende teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Sybren de Jong",
+      "role": "Cloud Engineer",
+      "team": "Ondersteunende teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Willem van der Mheen",
+      "role": "Cloud Engineer",
+      "team": "Ondersteunende teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "f1f4dd4d2b1a750f06acdcb1e87e67bc.jpg",
+      "name": "Hennie van Ginkel",
+      "role": "Finance Specialist",
+      "team": "Ondersteunende teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Mathijs van der Meer",
+      "role": "Data Engineer",
+      "team": "Ondersteunende teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "900ab676658376436c1be102193c81d8.jpg",
+      "name": "Wouter Laseur",
+      "role": "Head of Finance",
+      "team": "Ondersteunende teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "21b3dc2def7a890c8e16b70da58af9a5.jpg",
+      "name": "Ingrid van den Rijen",
+      "role": "Head of Talent",
+      "team": "Ondersteunende teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "75cb71f8476102e016fbaa3073672873.jpg",
+      "name": "Julia van Bergen",
+      "role": "Corporate Recruiter",
+      "team": "Ondersteunende teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
+    },
+    {
+      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
+      "name": "Maaike de Jong",
+      "role": "Office Manager",
+      "team": "Ondersteunende teams",
+      "short": "",
+      "intro": "",
+      "kk": "support"
     }
   ]
 }

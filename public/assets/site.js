@@ -43,7 +43,7 @@
   // 3. Vacatures filteren
   var filterBtns = document.querySelectorAll('[data-filter]');
   if (filterBtns.length) {
-    var cards = document.querySelectorAll('a[data-kind]');
+    var cards = document.querySelectorAll('[data-kind]');
     filterBtns.forEach(function (b) {
       b.addEventListener('click', function () {
         var f = b.getAttribute('data-filter');

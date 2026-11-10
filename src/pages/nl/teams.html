@@ -1,12 +1,15 @@
 <!--title:Workspace 365: Teams-->
-<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;family=Gochi+Hand&amp;display=swap">-->
+<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;display=swap">-->
 <style>
+@font-face{font-family:'Janitor';src:url('/assets/img/8a28093b0240cd674ef05fa221186a1c.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Mulish',Arial,sans-serif;background:#ffffff;color:#000000}
 a{color:#DE0954;text-decoration:none}
 a:hover{color:#A6124B}
 h1,h2,h3{font-family:'Mulish',Arial,sans-serif;margin:0}
 p{margin:0}
+p{max-width:24em!important}
+[style*="text-align:center"] p,p[style*="text-align:center"]{margin-left:auto!important;margin-right:auto!important}
 button{font-family:'Mulish',Arial,sans-serif;cursor:pointer}
 table{border-collapse:collapse;width:100%}
 .zw-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
@@ -23,8 +26,9 @@ table{border-collapse:collapse;width:100%}
 @keyframes zwShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .zw-reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
 .zw-reveal.zw-in{opacity:1;transform:none}
-.zw-person .zw-person-tip{opacity:0;transform:translateY(8px);transition:opacity .25s ease,transform .25s ease}.zw-person:hover .zw-person-tip,.zw-person:focus-visible .zw-person-tip{opacity:1;transform:none}.zw-person img{transition:transform .4s ease}.zw-person:hover img{transform:scale(1.04)}.zw-person:focus-visible{outline:3px solid #DE0954;outline-offset:3px}
+.zw-person .zw-person-tip{opacity:1;transform:none}.zw-person:hover .zw-person-tip,.zw-person:focus-visible .zw-person-tip{opacity:1;transform:none}.zw-person img{transition:transform .4s ease}.zw-person:hover img{transform:scale(1.04)}.zw-person:focus-visible{outline:3px solid #DE0954;outline-offset:3px}
 @media (hover: none){.zw-person .zw-person-tip{opacity:1;transform:none}}
+a.zw-btn[style*="background:#DE0954"]{box-shadow:0 12px 26px -12px rgba(222,9,84,0.75)}a.zw-btn[style*="background:#DE0954"]:hover{color:#ffffff;filter:brightness(1.05)}
 @media (prefers-reduced-motion: reduce){.zw-float,.zw-shift{animation:none}.zw-card:hover,.zw-btn:hover,.zw-step:hover{transform:none}.zw-reveal{opacity:1;transform:none;transition:none}}
 </style>
 <div style="width:100%;min-height:100vh;background:#ffffff;">
@@ -38,7 +42,7 @@ table{border-collapse:collapse;width:100%}
         <a href="/nl/cultuur/" style="font-weight:600;font-size:14px;color:#000000;">Cultuur</a>
         <a href="/nl/teams/" style="font-weight:800;font-size:14px;color:#540047;">Teams</a>
         <a href="/nl/vacatures/" style="font-weight:600;font-size:14px;color:#000000;">Vacatures</a>
-        <a href="/nl/contact/" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14px;">Neem contact op</a>
+        <a href="/nl/contact/" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:14px;">Neem contact op</a>
         <span data-lang-toggle="true" style="display:inline-flex;align-items:center;gap:2px;font-size:13px;font-weight:800;border:1px solid #EEE6ED;border-radius:999px;padding:3px;"><a href="/en/teams/" lang="en" title="English" style="padding:5px 11px;border-radius:999px;color:#540047;">EN</a><span style="padding:5px 11px;border-radius:999px;background:#540047;color:#ffffff;" aria-current="true">NL</span></span>
       </nav>
     </div>
@@ -52,7 +56,7 @@ table{border-collapse:collapse;width:100%}
         <span style="font-size:13px;font-weight:700;color:#A6124B;">Onze teams</span>
       </div>
       <h1 style="font-size:clamp(40px,5.2vw,58px);line-height:1.08;font-weight:900;color:#540047;max-width:800px;">De mensen met wie <span class="zw-grad">je bouwt.</span></h1>
-      <p style="font-size:18px;line-height:1.6;color:#000000;max-width:600px;">Eén team. Eén vertical. Eén product. We organiseren ons rond de markten die we bedienen, want domeinkennis is cruciaal. Vijf productteams, gesteund door teams die ze allemaal ondersteunen.</p>
+      <p style="font-size:18px;line-height:1.6;color:#000000;max-width:600px;">Elk productteam werkt voor één markt, met één product. Daardoor kennen we de sector waarvoor we bouwen goed. Er zijn vijf productteams en een paar teams die ze allemaal ondersteunen.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;padding-top:8px;">
         <a href="#kelly-ai" class="zw-btn" style="display:inline-flex;align-items:center;min-height:44px;padding:10px 20px;border-radius:999px;background:#ffffff;border:1px solid #EEE6ED;color:#540047;font-weight:800;font-size:14.5px;">Kelly AI</a>
         <a href="#zorgworkspace" class="zw-btn" style="display:inline-flex;align-items:center;min-height:44px;padding:10px 20px;border-radius:999px;background:#ffffff;border:1px solid #EEE6ED;color:#540047;font-weight:800;font-size:14.5px;">Zorgworkspace</a>
@@ -77,12 +81,12 @@ table{border-collapse:collapse;width:100%}
         </div>
         <h2 style="font-size:clamp(34px,4.4vw,48px);font-weight:900;line-height:1.08;color:#540047;">Kelly AI</h2>
         <p style="font-size:15px;line-height:1.5;color:#000000;"><span style="font-weight:800;color:#A6124B;">Het probleem:</span> Te veel administratie, te weinig tijd voor cliënten.</p>
-        <p style="font-size:clamp(18px,1.8vw,21px);font-weight:700;line-height:1.45;color:#000000;max-width:560px;">Kelly is ons nieuwste product, gebouwd voor de zorg. Geen chatbot, maar een AI-collega die weet waar alles staat.</p>
-        <p style="font-size:16.5px;line-height:1.75;color:#000000;max-width:560px;">Zorgmedewerkers stellen een vraag in gewone taal en krijgen direct antwoord uit alle gekoppelde systemen: protocollen, HR, de kennisbank en het intranet. Afgestemd op hun rol, op elk apparaat, zonder training. En zij helpt ze sneller rapporteren, zodat ze weer bij hun cliënten kunnen zijn.</p>
+        <p style="font-size:clamp(18px,1.8vw,21px);font-weight:700;line-height:1.45;color:#000000;max-width:560px;">Kelly is ons nieuwste product, gebouwd voor de zorg. Geen chatbot, maar een digitale collega die weet waar alles staat.</p>
+        <p style="font-size:16.5px;line-height:1.75;color:#000000;max-width:560px;">Zorgmedewerkers stellen een vraag in gewone taal en krijgen direct antwoord. Uit alle gekoppelde systemen: protocollen, HR, de kennisbank en het intranet. Afgestemd op hun rol, op elk apparaat, zonder training. En zij helpt ze sneller rapporteren, zodat ze weer bij hun cliënten kunnen zijn.</p>
       </div>
-      <div class="zw-card" style="background:#FCE7EE;border:1px solid #EEE6ED;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px;">
-        <p style="font-size:16.5px;line-height:1.75;color:#000000;">Kelly is nieuw, de markt niet. Je brengt haar eerst naar zorgorganisaties die we al kennen. De technologie gaat snel en wij ook. Elke verbetering die je oplevert, komt terecht bij mensen die de tijd terug nodig hebben. Vertrouwen telt hier. Dat hebben zorgorganisaties precies nodig voordat ze AI in hun dagelijkse werk toelaten. Jij bepaalt wat een AI-collega in de zorg kan, test dat met echte zorgteams en ziet hoe het dagelijkse routines verandert.</p>
-        <div style="padding-top:6px;"><a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:13px 24px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14.5px;">Bekijk de vacatures</a></div>
+      <div class="zw-card" style="background:linear-gradient(160deg,#FCE7EE 0%,#EEE6ED 100%);border:1px solid #EEE6ED;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px;">
+        <p style="font-size:16.5px;line-height:1.75;color:#000000;">Kelly is nieuw, de markt kennen we al. Je brengt haar eerst naar zorgorganisaties waar we al mee werken. Die kennen en vertrouwen ons, en dat is nodig voordat ze AI in hun dagelijkse werk toelaten. Elke verbetering die je oplevert, scheelt zorgmedewerkers tijd. Jij bepaalt wat een digitale collega in de zorg kan en test dat met echte zorgteams. Je ziet direct wat het in hun werkdag verandert.</p>
+        <div style="padding-top:6px;"><a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:13px 24px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:14.5px;">Bekijk de vacatures</a></div>
       </div>
     </div>
   </section>
@@ -92,7 +96,7 @@ table{border-collapse:collapse;width:100%}
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:88px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px 64px;align-items:start;">
       <div style="display:flex;flex-direction:column;gap:18px;">
         <div style="display:flex;align-items:center;gap:14px;">
-          <span style="width:56px;height:56px;border-radius:18px;background:linear-gradient(135deg,#A6124B 0%,#DE0954 100%);display:inline-flex;align-items:center;justify-content:center;flex:none;">
+          <span style="width:56px;height:56px;border-radius:18px;background:linear-gradient(135deg,#540047 0%,#DE0954 100%);display:inline-flex;align-items:center;justify-content:center;flex:none;">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path><path d="M12 9.5v5M9.5 12h5"></path></svg>
           </span>
           <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Zorg</p>
@@ -100,11 +104,11 @@ table{border-collapse:collapse;width:100%}
         <h2 style="font-size:clamp(34px,4.4vw,48px);font-weight:900;line-height:1.08;color:#540047;">Zorgworkspace</h2>
         <p style="font-size:15px;line-height:1.5;color:#000000;"><span style="font-weight:800;color:#A6124B;">Het probleem:</span> Zorgwerk kost uren aan overdrachten en samenvattingen.</p>
         <p style="font-size:clamp(18px,1.8vw,21px);font-weight:700;line-height:1.45;color:#000000;max-width:560px;">Zorgmedewerkers kiezen hun werk voor mensen, niet voor inlogschermen en formulieren.</p>
-        <p style="font-size:16.5px;line-height:1.75;color:#000000;max-width:560px;">Zorgworkspace is speciaal voor de zorg gebouwd, op basis van alles wat we in deze sector hebben geleerd. Het is ontworpen rond de mensen op de zorgvloer: één plek om hun dienst te starten, met alles wat ze nodig hebben binnen handbereik. Minder zoeken, minder administratie en meer tijd voor zorg.</p>
+        <p style="font-size:16.5px;line-height:1.75;color:#000000;max-width:560px;">Zorgworkspace is speciaal voor de zorg gebouwd, op basis van alles wat we in deze sector hebben geleerd. Het is ontworpen rond de mensen op de zorgvloer. Eén plek om hun dienst te starten, met alles wat ze nodig hebben binnen handbereik. Minder zoeken, minder administratie en meer tijd voor zorg.</p>
       </div>
       <div class="zw-card" style="background:#ffffff;border:1px solid #EEE6ED;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px;">
-        <p style="font-size:16.5px;line-height:1.75;color:#000000;">Je brengt een product dat voor de zorg is gebouwd naar de klanten die het het hardst nodig hebben. Je eerste grote missie: onze bestaande Workspace 365 klanten in de zorg laten overstappen naar Zorgworkspace en van die overgang een echte stap vooruit maken voor elke zorgmedewerker. Je werkt met klanten die ons al kennen en vertrouwen, dus je hebt vanaf dag één echte gebruikers en snelle feedback. Daarna ga je dieper en win je de zorgorganisaties die nog vastzitten in digitale chaos.</p>
-        <div style="padding-top:6px;"><a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:13px 24px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14.5px;">Bekijk de vacatures</a></div>
+        <p style="font-size:16.5px;line-height:1.75;color:#000000;">Je brengt een product dat voor de zorg is gebouwd naar de klanten die het het hardst nodig hebben. Je eerste grote missie is onze bestaande klanten in de zorg laten overstappen naar Zorgworkspace. En van die overstap een echte stap vooruit maken voor elke zorgmedewerker. Je werkt met klanten die ons al kennen en vertrouwen. Je hebt dus vanaf dag één echte gebruikers en snelle feedback. Daarna ga je dieper en win je de zorgorganisaties die nog met losse systemen werken.</p>
+        <div style="padding-top:6px;"><a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:13px 24px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:14.5px;">Bekijk de vacatures</a></div>
       </div>
     </div>
   </section>
@@ -114,7 +118,7 @@ table{border-collapse:collapse;width:100%}
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:88px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px 64px;align-items:start;">
       <div style="display:flex;flex-direction:column;gap:18px;">
         <div style="display:flex;align-items:center;gap:14px;">
-          <span style="width:56px;height:56px;border-radius:18px;background:linear-gradient(135deg,#540047 0%,#A6124B 100%);display:inline-flex;align-items:center;justify-content:center;flex:none;">
+          <span style="width:56px;height:56px;border-radius:18px;background:linear-gradient(135deg,#540047 0%,#DE0954 100%);display:inline-flex;align-items:center;justify-content:center;flex:none;">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
           </span>
           <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Overheid</p>
@@ -124,9 +128,9 @@ table{border-collapse:collapse;width:100%}
         <p style="font-size:clamp(18px,1.8vw,21px);font-weight:700;line-height:1.45;color:#000000;max-width:560px;">Overheden willen controle over hun data en hun digitale toekomst.</p>
         <p style="font-size:16.5px;line-height:1.75;color:#000000;max-width:560px;">Sovereign Workspace geeft hen een veilige, intelligente werkplek met minder afhankelijkheid van Big Tech. Data blijft waar die hoort en de overheid beslist zelf welke tools ze gebruikt.</p>
       </div>
-      <div class="zw-card" style="background:#FCE7EE;border:1px solid #EEE6ED;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px;">
-        <p style="font-size:16.5px;line-height:1.75;color:#000000;">Digitale soevereiniteit is van debat naar actie gegaan en de markt opent zich nu. Niemand heeft haar nog gewonnen. Jij opent deuren, leert hoe de overheid beslist en inkoopt en helpt bepalen hoe de veilige overheidswerkplek van de toekomst eruitziet. Elke eerste klant wordt de referentie die de volgende deur opent.</p>
-        <div style="padding-top:6px;"><a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:13px 24px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14.5px;">Bekijk de vacatures</a></div>
+      <div class="zw-card" style="background:linear-gradient(160deg,#FCE7EE 0%,#EEE6ED 100%);border:1px solid #EEE6ED;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px;">
+        <p style="font-size:16.5px;line-height:1.75;color:#000000;">Overheden gaan nu echt aan de slag met digitale soevereiniteit en de markt gaat open. Niemand heeft haar nog gewonnen. Jij opent deuren en leert hoe de overheid beslist en inkoopt. En je helpt bepalen hoe de veilige overheidswerkplek van de toekomst eruitziet. Elke nieuwe klant maakt het makkelijker om de volgende te winnen.</p>
+        <div style="padding-top:6px;"><a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:13px 24px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:14.5px;">Bekijk de vacatures</a></div>
       </div>
     </div>
   </section>
@@ -147,8 +151,8 @@ table{border-collapse:collapse;width:100%}
         <p style="font-size:16.5px;line-height:1.75;color:#000000;max-width:560px;">Klanten in veel sectoren vertrouwen er elke dag op om hun apps, informatie en communicatie samen te brengen. Binnen dit team richt je je op de drie verticals die het meest tellen, naast overheid en zorg.</p>
       </div>
       <div class="zw-card" style="background:#ffffff;border:1px solid #EEE6ED;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px;">
-        <p style="font-size:16.5px;line-height:1.75;color:#000000;">Zonder dit team zijn er geen andere teams. Elke euro die Workspace 365 verdient, houdt ons in beweging en financiert de innovatie in andere producten. Je werkt met een grote, trouwe klantenkring en een product dat zich bewezen heeft. Samen beslis je op welke drie verticals je je richt. Jouw taak is klanten tevreden houden, met hen groeien en slimmer werken met AI en automatisering, zodat de motor steeds sterker blijft draaien.</p>
-        <div style="padding-top:6px;"><a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:13px 24px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14.5px;">Bekijk de vacatures</a></div>
+        <p style="font-size:16.5px;line-height:1.75;color:#000000;">Workspace 365 verdient het geld waarmee we ook onze nieuwe producten bouwen. Je werkt met een grote, trouwe klantenkring en een product dat zich bewezen heeft. Samen beslis je op welke drie verticals je je richt. Jouw taak is klanten tevreden houden en met hen groeien. Je werkt slimmer met AI en automatisering, zodat het product steeds beter wordt.</p>
+        <div style="padding-top:6px;"><a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:13px 24px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:14.5px;">Bekijk de vacatures</a></div>
       </div>
     </div>
   </section>
@@ -168,9 +172,9 @@ table{border-collapse:collapse;width:100%}
         <p style="font-size:clamp(18px,1.8vw,21px);font-weight:700;line-height:1.45;color:#000000;max-width:560px;">Bij Ventures bouwen we wat nog niet bestaat.</p>
         <p style="font-size:16.5px;line-height:1.75;color:#000000;max-width:560px;">Nieuwe ideeën, nieuwe producten en nieuwe markten, voorbij wat we vandaag bieden. Het is onze ruimte om de toekomst van Workspace 365 te verkennen.</p>
       </div>
-      <div class="zw-card" style="background:#FCE7EE;border:1px solid #EEE6ED;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px;">
-        <p style="font-size:16.5px;line-height:1.75;color:#000000;">Je begint met een blanco pagina. Je ziet een probleem dat het oplossen waard is, test een idee met echte klanten in weken in plaats van maanden en beslist snel wat je opschaalt en waarmee je stopt. Met AI bouw en valideer je sneller dan ooit, zodat een klein team veel impact kan maken. Het voelt als een start-up, met een bedrijf achter je dat klanten, kennis en een platform heeft om op te bouwen. Als een idee aanslaat, kan het uitgroeien tot een eigen product.</p>
-        <div style="padding-top:6px;"><a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:13px 24px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14.5px;">Bekijk de vacatures</a></div>
+      <div class="zw-card" style="background:linear-gradient(160deg,#FCE7EE 0%,#EEE6ED 100%);border:1px solid #EEE6ED;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px;">
+        <p style="font-size:16.5px;line-height:1.75;color:#000000;">Je begint met een leeg vel. Je zoekt een probleem dat echt speelt en test binnen een paar weken een idee met echte klanten. Daarna beslis je snel wat je opschaalt en waarmee je stopt. AI helpt je sneller bouwen en testen, dus met een klein team kom je ver. Het voelt als een startup. Alleen heb je een bedrijf achter je met klanten, kennis en een platform. Als een idee aanslaat, kan het uitgroeien tot een eigen product.</p>
+        <div style="padding-top:6px;"><a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:13px 24px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:14.5px;">Bekijk de vacatures</a></div>
       </div>
     </div>
   </section>
@@ -192,7 +196,7 @@ table{border-collapse:collapse;width:100%}
           </span>
           <p style="font-size:12px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Ondersteuning</p>
           <h3 style="font-size:24px;font-weight:900;line-height:1.15;color:#ffffff;">Operations</h3>
-          <p style="font-size:15.5px;line-height:1.65;color:#ffffff;">Houdt onze processen, tools en planning op orde. Zodat elk team zich kan richten op zijn klanten.</p>
+          <p style="font-size:15.5px;line-height:1.65;color:#ffffff;">Houdt onze processen, tools en planning op orde, zodat de productteams hun handen vrij hebben.</p>
         </article>
         <article class="zw-card" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.22);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px;">
           <span style="width:52px;height:52px;border-radius:16px;background:#ffffff;display:inline-flex;align-items:center;justify-content:center;">
@@ -216,7 +220,7 @@ table{border-collapse:collapse;width:100%}
           </span>
           <p style="font-size:12px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Ondersteuning</p>
           <h3 style="font-size:24px;font-weight:900;line-height:1.15;color:#ffffff;">Company Strategy</h3>
-          <p style="font-size:15.5px;line-height:1.65;color:#ffffff;">Bepaalt de koers van het bedrijf als geheel en helpt elk team op één lijn te blijven over waar we naartoe gaan.</p>
+          <p style="font-size:15.5px;line-height:1.65;color:#ffffff;">Bepaalt de koers van het bedrijf als geheel. En helpt elk team op één lijn te blijven over waar we naartoe gaan.</p>
         </article>
       </div>
     </div>
@@ -224,18 +228,12 @@ table{border-collapse:collapse;width:100%}
 
   <!-- PEOPLE -->
   <section id="people" style="width:100%;background:#ffffff;border-top:1px solid #EEE6ED;">
-    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:88px 40px 96px;">
-      <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Maak kennis met de mensen</p>
-      <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;max-width:720px;">Verschillende teams. <span class="zw-grad">Eén manier van werken.</span></h2>
-      <p style="font-size:17px;line-height:1.7;color:#000000;padding-top:16px;max-width:560px;">In welk team je ook werkt, je werkt met collega's die het oppakken, samen bouwen en het simpel houden.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;padding-top:40px;">
-        <!--@people-->
-      </div>
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:88px 40px 96px;"><p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Maak kennis met de mensen</p><h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;max-width:720px;">Verschillende teams. Eén manier van werken.</h2><p style="font-size:17px;line-height:1.7;color:#000000;padding-top:16px;max-width:560px;">In welk team je ook werkt, je werkt met collega's die het oppakken, samen bouwen en het simpel houden.</p><div role="group" aria-label="Filter op team" style="display:flex;flex-wrap:wrap;gap:10px;padding-top:32px;"><button type="button" data-filter="all" aria-pressed="true" style="min-height:44px;padding:10px 20px;border-radius:999px;border:1.5px solid #540047;background:#540047;color:#ffffff;font-weight:700;font-size:14.5px;cursor:pointer;font-family:'Mulish',Arial,sans-serif;">Alles</button><button type="button" data-filter="kelly" aria-pressed="false" style="min-height:44px;padding:10px 20px;border-radius:999px;border:1.5px solid #EEE6ED;background:#ffffff;color:#540047;font-weight:700;font-size:14.5px;cursor:pointer;font-family:'Mulish',Arial,sans-serif;">Kelly AI</button><button type="button" data-filter="zorg" aria-pressed="false" style="min-height:44px;padding:10px 20px;border-radius:999px;border:1.5px solid #EEE6ED;background:#ffffff;color:#540047;font-weight:700;font-size:14.5px;cursor:pointer;font-family:'Mulish',Arial,sans-serif;">Zorgworkspace</button><button type="button" data-filter="gov" aria-pressed="false" style="min-height:44px;padding:10px 20px;border-radius:999px;border:1.5px solid #EEE6ED;background:#ffffff;color:#540047;font-weight:700;font-size:14.5px;cursor:pointer;font-family:'Mulish',Arial,sans-serif;">Sovereign Workspace</button><button type="button" data-filter="w365" aria-pressed="false" style="min-height:44px;padding:10px 20px;border-radius:999px;border:1.5px solid #EEE6ED;background:#ffffff;color:#540047;font-weight:700;font-size:14.5px;cursor:pointer;font-family:'Mulish',Arial,sans-serif;">Workspace 365</button><button type="button" data-filter="support" aria-pressed="false" style="min-height:44px;padding:10px 20px;border-radius:999px;border:1.5px solid #EEE6ED;background:#ffffff;color:#540047;font-weight:700;font-size:14.5px;cursor:pointer;font-family:'Mulish',Arial,sans-serif;">Ondersteuning</button></div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px;padding-top:28px;"><!--@people--></div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="zw-shift" style="width:100%;background:linear-gradient(120deg,#DE0954 0%,#F54E11 100%);">
+  <section class="zw-shift" style="width:100%;background:linear-gradient(120deg,#540047 0%,#DE0954 100%);">
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:72px 40px;display:flex;flex-direction:column;gap:16px;align-items:flex-start;">
       <h2 style="font-size:clamp(30px,4vw,42px);font-weight:900;line-height:1.1;color:#ffffff;max-width:700px;">Het team gevonden dat bij je past?</h2>
       <a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;margin-top:8px;padding:15px 30px;border-radius:999px;background:#ffffff;color:#540047;font-weight:800;font-size:15px;">Bekijk de vacatures</a>
@@ -264,7 +262,7 @@ table{border-collapse:collapse;width:100%}
     <div style="max-width:1180px;margin:0 auto;padding:56px 40px 32px;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;">
       <div style="display:flex;flex-direction:column;gap:18px;max-width:340px;">
         <img src="/assets/img/b990ae75806ae001834cc1ea424c2fa8.svg" alt="Workspace 365" style="height:28px;width:auto;align-self:flex-start;">
-        <p style="font-family:'Gochi Hand','Comic Sans MS',cursive;font-size:30px;color:#ffffff;line-height:1.1;">Het begint bij ons.</p>
+        <p style="font-family:'Janitor',Arial,sans-serif;font-size:30px;color:#ffffff;line-height:1.1;">Het begint bij ons.</p>
       </div>
       <div style="display:flex;gap:64px;flex-wrap:wrap;">
         <div style="display:flex;flex-direction:column;gap:12px;">
