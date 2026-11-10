@@ -1,12 +1,15 @@
 <!--title:Workspace 365: Over ons-->
-<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;family=Gochi+Hand&amp;display=swap">-->
+<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;display=swap">-->
 <style>
+@font-face{font-family:'Janitor';src:url('/assets/img/8a28093b0240cd674ef05fa221186a1c.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Mulish',Arial,sans-serif;background:#ffffff;color:#000000}
 a{color:#DE0954;text-decoration:none}
 a:hover{color:#A6124B}
 h1,h2,h3{font-family:'Mulish',Arial,sans-serif;margin:0}
 p{margin:0}
+p{max-width:24em!important}
+[style*="text-align:center"] p,p[style*="text-align:center"]{margin-left:auto!important;margin-right:auto!important}
 button{font-family:'Mulish',Arial,sans-serif;cursor:pointer}
 table{border-collapse:collapse;width:100%}
 .zw-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
@@ -23,6 +26,7 @@ table{border-collapse:collapse;width:100%}
 @keyframes zwShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .zw-reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
 .zw-reveal.zw-in{opacity:1;transform:none}
+a.zw-btn[style*="background:#DE0954"]{box-shadow:0 12px 26px -12px rgba(222,9,84,0.75)}a.zw-btn[style*="background:#DE0954"]:hover{color:#ffffff;filter:brightness(1.05)}
 @media (prefers-reduced-motion: reduce){.zw-float,.zw-shift{animation:none}.zw-card:hover,.zw-btn:hover,.zw-step:hover{transform:none}.zw-reveal{opacity:1;transform:none;transition:none}}
 </style>
 <div style="width:100%;min-height:100vh;background:#ffffff;">
@@ -36,7 +40,7 @@ table{border-collapse:collapse;width:100%}
         <a href="/nl/cultuur/" style="font-weight:600;font-size:14px;color:#000000;">Cultuur</a>
         <a href="/nl/teams/" style="font-weight:600;font-size:14px;color:#000000;">Teams</a>
         <a href="/nl/vacatures/" style="font-weight:600;font-size:14px;color:#000000;">Vacatures</a>
-        <a href="/nl/contact/" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14px;">Neem contact op</a>
+        <a href="/nl/contact/" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:14px;">Neem contact op</a>
         <span data-lang-toggle="true" style="display:inline-flex;align-items:center;gap:2px;font-size:13px;font-weight:800;border:1px solid #EEE6ED;border-radius:999px;padding:3px;"><a href="/en/company/" lang="en" title="English" style="padding:5px 11px;border-radius:999px;color:#540047;">EN</a><span style="padding:5px 11px;border-radius:999px;background:#540047;color:#ffffff;" aria-current="true">NL</span></span>
       </nav>
     </div>
@@ -62,24 +66,37 @@ table{border-collapse:collapse;width:100%}
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:24px 40px 96px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px 72px;align-items:start;">
       <div style="display:flex;flex-direction:column;gap:20px;">
         <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Zo zijn we begonnen</p>
-        <h2 style="font-size:clamp(30px,3.6vw,42px);font-weight:900;line-height:1.15;color:#540047;">Werk hoort simpel te zijn. Technologie hoort te <span class="zw-grad">helpen.</span></h2>
+        <h2 style="font-size:clamp(30px,3.6vw,42px);font-weight:900;line-height:1.15;color:#540047;">Werk hoort simpel te zijn. Technologie hoort te helpen.</h2>
         <p style="font-size:clamp(19px,2vw,22px);font-weight:800;line-height:1.45;color:#000000;">Te vaak doet het juist het tegenovergestelde. Wij begonnen Workspace 365 om dat te veranderen.</p>
-        <div style="position:relative;overflow:hidden;margin-top:12px;background:linear-gradient(135deg,#540047 0%,#A6124B 100%);border-radius:28px;padding:44px 40px 40px;">
-          <span style="position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:#DE0954;opacity:0.35;"></span>
-          <span style="position:absolute;right:56px;bottom:-34px;width:84px;height:84px;border-radius:50%;background:#F54E11;opacity:0.55;"></span>
-          <span style="position:absolute;right:150px;top:36px;width:18px;height:18px;border-radius:50%;background:#FCE7EE;opacity:0.8;"></span>
+        <div style="position:relative;overflow:hidden;margin-top:12px;background:#DE0954;border-radius:28px;padding:44px 40px 40px;">
+          <span style="position:absolute;right:40px;top:40px;width:18px;height:18px;border-radius:50%;background:#540047;"></span>
           <div style="position:relative;">
-            <p style="font-family:'Gochi Hand',cursive;font-size:26px;line-height:1;color:#FEEDE7;transform:rotate(-2deg);display:inline-block;">onze missie</p>
-            <p style="font-size:clamp(34px,4.4vw,48px);font-weight:900;line-height:1.08;color:#ffffff;margin-top:14px;max-width:420px;">Wij maken alles <span class="zw-grad">eenvoudig.</span></p>
+            <p style="font-family:'Janitor',Arial,sans-serif;font-size:26px;line-height:1;color:#FCE7EE;transform:rotate(-2deg);display:inline-block;">onze missie</p>
+            <p style="font-size:clamp(34px,4.4vw,48px);font-weight:900;line-height:1.08;color:#ffffff;margin-top:14px;max-width:420px;">Wij maken alles eenvoudig.</p>
             <p style="font-size:17px;line-height:1.6;color:#FCE7EE;margin-top:18px;max-width:380px;">We maken werk simpel, zodat mensen zich kunnen richten op hun werk.</p>
           </div>
         </div>
       </div>
       <div style="display:flex;flex-direction:column;gap:22px;">
-        <p style="font-size:18px;line-height:1.75;color:#000000;">Denk aan de apps, documenten, apparaten en wachtwoorden die een werkdag vullen. Erik en Hans, twee mensen uit Spakenburg, zagen wat dat met mensen doet. Ze verliezen hun focus. Samenwerken wordt lastiger. Werk wordt minder leuk. Niet door de mensen, maar door de tools.</p>
-        <p style="font-size:18px;line-height:1.75;color:#000000;">Ze besloten dat software simpeler kon. Dus moest het ook. In 2010 begonnen ze New Day at Work om dat te bewijzen. In 2013 werd het Workspace 365.</p>
-        <p style="font-size:18px;line-height:1.75;color:#000000;">Vandaag werken we vanuit ons kantoor in Nijkerk. Workspace 365 is uitgegroeid tot een intelligente werkplek en Kelly, onze AI-collega, helpt mensen sneller antwoorden te vinden. De vraag waarmee we begonnen, is niet veranderd. Hoe maken we werk simpeler voor de mens achter het scherm?</p>
+        <p style="font-size:18px;line-height:1.75;color:#000000;">Denk aan de apps, documenten, apparaten en wachtwoorden die een werkdag vullen. Erik en Hans, twee mensen uit Spakenburg, zagen wat dat met mensen doet. Ze verliezen hun focus. Samenwerken wordt lastiger. Werk wordt minder leuk. Dat ligt aan de tools.</p>
+        <p style="font-size:18px;line-height:1.75;color:#000000;">Ze wisten dat software simpeler kon. In 2010 begonnen ze New Day at Work om dat te laten zien. In 2013 werd het Workspace 365.</p>
+        <p style="font-size:18px;line-height:1.75;color:#000000;">Vandaag werken we vanuit ons kantoor in Nijkerk. Ons product is uitgegroeid tot een intelligente werkplek en Kelly, onze digitale collega, helpt mensen sneller antwoorden te vinden. De vraag waarmee we begonnen, is niet veranderd. Hoe maken we werk simpeler voor de mens achter het scherm?</p>
       </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT TEASER -->
+  <section style="width:100%;background:#ffffff;">
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:0 40px 96px;">
+      <a href="Product-nl.dc.html" class="zw-card" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px 56px;align-items:center;background:#FCE7EE;border:1px solid #EEE6ED;border-radius:28px;padding:40px;color:#000000;">
+        <span style="display:flex;flex-direction:column;gap:16px;">
+          <span style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Ons product</span>
+          <span style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;">Wat we bouwen.</span>
+          <span style="font-size:17px;line-height:1.7;color:#000000;">Eén startpunt voor alle apps, documenten en informatie van een medewerker. Met Kelly, onze digitale collega, die meezoekt en antwoorden geeft. Dat geeft mensen meer overzicht en rust in hun werkdag.</span>
+          <span style="display:inline-block;width:fit-content;margin-top:6px;padding:14px 26px;border-radius:999px;background:#540047;color:#ffffff;font-weight:800;font-size:15px;">Ontdek ons product →</span>
+        </span>
+        <img src="/assets/img/81813ed116cee34cf460f39b9ff8baec.jpg" alt="Het startscherm van Workspace 365 met mededelingen, taken, apps en Kelly" style="display:block;width:100%;height:auto;border-radius:18px;border:1px solid #EEE6ED;box-shadow:0 2px 6px rgba(84,0,71,0.08), 0 30px 60px -20px rgba(84,0,71,0.45), 0 60px 120px -40px rgba(222,9,84,0.30);">
+      </a>
     </div>
   </section>
 
@@ -88,6 +105,13 @@ table{border-collapse:collapse;width:100%}
     <div data-reveal="true" style="max-width:760px;margin:0 auto;padding:88px 40px 96px;">
       <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Onze tijdlijn</p>
       <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">Het verhaal tot nu toe.</h2>
+      <figure style="margin:36px 0 0;">
+        <img src="/assets/img/55dd4ebfb54406945e89fa36380b68c1.jpg" alt="Erik Nicolai en Hans de Graaf, de oprichters van Workspace 365, samen aan tafel met een laptop" style="display:block;width:100%;height:auto;border-radius:24px;box-shadow:0 2px 6px rgba(84,0,71,0.08), 0 30px 60px -20px rgba(84,0,71,0.45), 0 60px 120px -40px rgba(222,9,84,0.30);">
+        <figcaption style="font-family:'Janitor',Arial,sans-serif;font-size:24px;line-height:1.2;color:#A6124B;padding-top:16px;transform:rotate(-1.5deg);transform-origin:left center;">Erik en Hans, onze oprichters.</figcaption>
+      </figure>
+      <div style="padding-top:32px;"><button type="button" class="zw-btn" id="tl-toggle" aria-expanded="false" aria-controls="tl-panel" style="display:inline-flex;align-items:center;gap:12px;min-height:48px;padding:14px 26px;border-radius:999px;border:0;background:#540047;color:#ffffff;font-weight:800;font-size:15px;">Hoe het allemaal begon<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-tl-chev="true" style="transform:none;transition:transform .25s ease;"><path d="M6 9l6 6 6-6"></path></svg></button></div>
+      <div id="tl-panel" hidden>
+      <div>
       <div style="margin-top:48px;">
         <p style="font-size:20px;font-weight:900;color:#540047;">We beginnen <span style="font-size:14px;font-weight:700;color:#A6124B;padding-left:8px;">2009 tot 2012</span></p>
         <div style="border-left:3px solid #DE0954;margin:24px 0 0 9px;">
@@ -147,7 +171,7 @@ table{border-collapse:collapse;width:100%}
           </div>
           <div style="position:relative;padding:0 0 28px 36px;"><span style="position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:#ffffff;border:4px solid #DE0954;"></span>
             <p style="font-size:14px;font-weight:800;color:#A6124B;">2026</p>
-            <p style="font-size:18px;font-weight:800;line-height:1.4;color:#540047;margin-top:2px;">We lanceren Kelly, je AI-collega.</p><p style="font-size:16px;line-height:1.6;color:#000000;margin-top:4px;">Zij helpt je antwoorden te vinden en begint taken van je over te nemen.</p>
+            <p style="font-size:18px;font-weight:800;line-height:1.4;color:#540047;margin-top:2px;">We lanceren Kelly, je digitale collega.</p><p style="font-size:16px;line-height:1.6;color:#000000;margin-top:4px;">Zij helpt je antwoorden te vinden en begint taken van je over te nemen.</p>
           </div>
           <div style="position:relative;padding:0 0 28px 36px;"><span style="position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:#ffffff;border:4px solid #DE0954;"></span>
             <p style="font-size:14px;font-weight:800;color:#A6124B;">2027</p>
@@ -158,11 +182,13 @@ table{border-collapse:collapse;width:100%}
           </div>
         </div>
       </div>
+      </div>
+      </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="zw-shift" style="width:100%;background:linear-gradient(120deg,#DE0954 0%,#F54E11 100%);">
+  <section class="zw-shift" style="width:100%;background:linear-gradient(120deg,#540047 0%,#DE0954 100%);">
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:72px 40px;display:flex;flex-direction:column;gap:16px;align-items:flex-start;">
       <h2 style="font-size:clamp(30px,4vw,42px);font-weight:900;line-height:1.1;color:#ffffff;max-width:700px;">Wil je helpen het te bouwen?</h2>
       <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;">
@@ -177,7 +203,7 @@ table{border-collapse:collapse;width:100%}
     <div style="max-width:1180px;margin:0 auto;padding:56px 40px 32px;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;">
       <div style="display:flex;flex-direction:column;gap:18px;max-width:340px;">
         <img src="/assets/img/b990ae75806ae001834cc1ea424c2fa8.svg" alt="Workspace 365" style="height:28px;width:auto;align-self:flex-start;">
-        <p style="font-family:'Gochi Hand','Comic Sans MS',cursive;font-size:30px;color:#ffffff;line-height:1.1;">Het begint bij ons.</p>
+        <p style="font-family:'Janitor',Arial,sans-serif;font-size:30px;color:#ffffff;line-height:1.1;">Het begint bij ons.</p>
       </div>
       <div style="display:flex;gap:64px;flex-wrap:wrap;">
         <div style="display:flex;flex-direction:column;gap:12px;">

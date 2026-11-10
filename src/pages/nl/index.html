@@ -1,12 +1,15 @@
 <!--title:Workspace 365: Werken bij-->
-<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;family=Gochi+Hand&amp;display=swap">-->
+<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;display=swap">-->
 <style>
+@font-face{font-family:'Janitor';src:url('/assets/img/8a28093b0240cd674ef05fa221186a1c.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Mulish',Arial,sans-serif;background:#ffffff;color:#000000}
 a{color:#DE0954;text-decoration:none}
 a:hover{color:#A6124B}
 h1,h2,h3{font-family:'Mulish',Arial,sans-serif;margin:0}
 p{margin:0}
+p{max-width:24em!important}
+[style*="text-align:center"] p,p[style*="text-align:center"]{margin-left:auto!important;margin-right:auto!important}
 button{font-family:'Mulish',Arial,sans-serif;cursor:pointer}
 table{border-collapse:collapse;width:100%}
 .zw-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
@@ -23,6 +26,9 @@ table{border-collapse:collapse;width:100%}
 @keyframes zwShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .zw-reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
 .zw-reveal.zw-in{opacity:1;transform:none}
+.zw-cv{position:relative;animation:zwCv 9s ease-in-out infinite}.zw-cv:nth-child(2){animation-delay:3s}.zw-cv:nth-child(3){animation-delay:6s}.zw-cv::before{content:'';position:absolute;left:0;top:0;height:5px;width:100%;background:linear-gradient(90deg,#540047,#DE0954);transform:scaleX(0);transform-origin:left;animation:zwCvBar 9s linear infinite;animation-delay:inherit}.zw-cv-grid:hover .zw-cv,.zw-cv-grid:hover .zw-cv::before{animation-play-state:paused}@keyframes zwCv{0%{transform:none;border-color:#EEE6ED;box-shadow:none}5%,30%{transform:translateY(-10px);border-color:#DE0954;box-shadow:0 26px 50px -24px rgba(84,0,71,.45)}37%,100%{transform:none;border-color:#EEE6ED;box-shadow:none}}@keyframes zwCvBar{0%{transform:scaleX(0);opacity:1}33%{transform:scaleX(1);opacity:1}37%,100%{transform:scaleX(1);opacity:0}}@media (prefers-reduced-motion: reduce){.zw-cv,.zw-cv::before{animation:none}}
+.zw-cvh{position:relative;min-height:450px}.zw-cvh>a{position:absolute;width:280px;display:block;color:inherit;text-decoration:none;transition:transform .3s ease}.zw-cvh>a:hover,.zw-cvh>a:focus-visible{transform:rotate(0deg) scale(1.04)!important;z-index:2}.zw-cvh>a:focus-visible{outline:3px solid #DE0954;outline-offset:4px;border-radius:24px}.zw-cvh-in{animation:zwFloat 7s ease-in-out infinite;border-radius:24px;padding:22px 26px;box-shadow:0 2px 6px rgba(84,0,71,.08),0 26px 50px -24px rgba(84,0,71,.45)}.zw-cvh>a:nth-child(2) .zw-cvh-in{animation-delay:-2.3s}.zw-cvh>a:nth-child(3) .zw-cvh-in{animation-delay:-4.6s}.zw-dot{position:absolute;border-radius:50%;pointer-events:none}@media (max-width:900px){.zw-cvh{min-height:0;display:flex;flex-wrap:wrap;gap:14px}.zw-cvh>a{position:static;width:auto;flex:1 1 220px}.zw-dot{display:none}}@media (prefers-reduced-motion: reduce){.zw-cvh-in{animation:none}}
+a.zw-btn[style*="background:#DE0954"]{box-shadow:0 12px 26px -12px rgba(222,9,84,0.75)}a.zw-btn[style*="background:#DE0954"]:hover{color:#ffffff;filter:brightness(1.05)}
 @media (prefers-reduced-motion: reduce){.zw-float,.zw-shift{animation:none}.zw-card:hover,.zw-btn:hover,.zw-step:hover{transform:none}.zw-reveal{opacity:1;transform:none;transition:none}}
 </style>
 <div style="width:100%;min-height:100vh;background:#ffffff;">
@@ -36,7 +42,7 @@ table{border-collapse:collapse;width:100%}
         <a href="/nl/cultuur/" style="font-weight:600;font-size:14px;color:#000000;">Cultuur</a>
         <a href="/nl/teams/" style="font-weight:600;font-size:14px;color:#000000;">Teams</a>
         <a href="/nl/vacatures/" style="font-weight:600;font-size:14px;color:#000000;">Vacatures</a>
-        <a href="/nl/contact/" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14px;">Neem contact op</a>
+        <a href="/nl/contact/" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:14px;">Neem contact op</a>
         <span data-lang-toggle="true" style="display:inline-flex;align-items:center;gap:2px;font-size:13px;font-weight:800;border:1px solid #EEE6ED;border-radius:999px;padding:3px;"><a href="/en/" lang="en" title="English" style="padding:5px 11px;border-radius:999px;color:#540047;">EN</a><span style="padding:5px 11px;border-radius:999px;background:#540047;color:#ffffff;" aria-current="true">NL</span></span>
       </nav>
     </div>
@@ -44,7 +50,7 @@ table{border-collapse:collapse;width:100%}
 
   <!-- HERO -->
   <section style="width:100%;background:radial-gradient(circle at 88% 18%, rgba(222,9,84,0.16), transparent 42%), radial-gradient(circle at 6% 92%, rgba(245,78,17,0.12), transparent 40%), linear-gradient(180deg,#FCE7EE 0%,#FEEDE7 100%);">
-    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:88px 40px 104px;display:grid;grid-template-columns:minmax(0,1fr);gap:56px;align-items:center;">
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:88px 40px 104px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:56px;align-items:center;">
       <div style="display:flex;flex-direction:column;gap:20px;max-width:760px;">
         <div style="display:inline-flex;align-items:center;gap:8px;background:#ffffff;border:1px solid #EEE6ED;border-radius:999px;padding:7px 16px;width:fit-content;">
           <span style="width:8px;height:8px;border-radius:50%;background:#DE0954;display:inline-block;"></span>
@@ -53,10 +59,12 @@ table{border-collapse:collapse;width:100%}
         <h1 style="font-size:clamp(40px,5.2vw,58px);line-height:1.08;font-weight:900;color:#540047;">Wij maken alles eenvoudig. <span class="zw-grad">Het begint bij ons.</span></h1>
         <p style="font-size:18px;line-height:1.6;color:#000000;max-width:520px;">Onze klanten beloven we een eenvoudige en intelligente werkplek. <span style="color:#540047;font-weight:800;">Bij ons begint dat met hoe we zelf werken.</span></p>
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-top:8px;">
-          <a href="#open-roles" class="zw-btn" style="display:inline-block;padding:15px 28px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:15px;">Bekijk de vacatures</a>
+          <a href="#open-roles" class="zw-btn" style="display:inline-block;padding:15px 28px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:15px;">Bekijk de vacatures</a>
           <a href="#culture" style="font-weight:700;font-size:15px;color:#540047;">Zo werken we →</a>
         </div>
       </div>
+      <div class="zw-cvh" aria-label="Onze kernwaarden"><a href="/nl/cultuur/#own-it" style="top:0;left:4%;transform:rotate(-5deg);"><div class="zw-cvh-in" style="background:#540047;"><p style="font-size:12px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Eigenaarschap</p><p style="font-family:'Mulish',Arial,sans-serif;font-weight:900;font-size:32px;line-height:1.1;color:#ffffff;padding-top:6px;">Pak het op</p><p style="font-family:'Janitor',Arial,sans-serif;font-size:24px;line-height:1.1;color:#FCE7EE;padding-top:8px;transform:rotate(-2deg);transform-origin:left;">Vanaf dag één.</p></div></a><a href="/nl/cultuur/#build-together" style="top:150px;right:0;transform:rotate(4deg);"><div class="zw-cvh-in" style="background:#ffffff;border:1.5px solid #DE0954;"><p style="font-size:12px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Samenwerking</p><p style="font-family:'Mulish',Arial,sans-serif;font-weight:900;font-size:32px;line-height:1.1;color:#540047;padding-top:6px;">Bouw samen</p><p style="font-family:'Janitor',Arial,sans-serif;font-size:24px;line-height:1.1;color:#DE0954;padding-top:8px;transform:rotate(-2deg);transform-origin:left;">Nooit alleen.</p></div></a><a href="/nl/cultuur/#keep-it-simple" style="top:300px;left:12%;transform:rotate(-2deg);"><div class="zw-cvh-in" style="background:#DE0954;"><p style="font-size:12px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Vereenvoudigen</p><p style="font-family:'Mulish',Arial,sans-serif;font-weight:900;font-size:32px;line-height:1.1;color:#ffffff;padding-top:6px;">Houd het simpel</p><p style="font-family:'Janitor',Arial,sans-serif;font-size:24px;line-height:1.1;color:#ffffff;padding-top:8px;transform:rotate(-2deg);transform-origin:left;">Schrappen mag.</p></div></a><span class="zw-dot" aria-hidden="true" style="width:18px;height:18px;background:#DE0954;top:118px;left:52%;"></span><span class="zw-dot" aria-hidden="true" style="width:10px;height:10px;background:#540047;top:270px;left:8%;"></span><span class="zw-dot" aria-hidden="true" style="width:26px;height:26px;background:#A6124B;opacity:.35;bottom:10px;right:14%;"></span></div>
+      
     </div>
     <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:56px;"><path d="M0,34 C420,70 1000,6 1440,30 L1440,80 L0,80 Z" fill="#ffffff"></path></svg>
   </section>
@@ -67,7 +75,7 @@ table{border-collapse:collapse;width:100%}
       <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;">
         <div>
           <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Vacatures</p>
-          <h2 style="font-size:clamp(30px,3.6vw,40px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">Vind de uitdaging <span class="zw-grad">die bij jou past.</span></h2>
+          <h2 style="font-size:clamp(30px,3.6vw,40px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">Vind de uitdaging die bij jou past.</h2>
         </div>
         <a href="/nl/vacatures/" style="font-weight:800;font-size:15px;color:#A6124B;">Alle vacatures →</a>
       </div>
@@ -89,9 +97,9 @@ table{border-collapse:collapse;width:100%}
   <section id="culture" style="scroll-margin-top:80px;width:100%;background:#EEE6ED;">
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:48px 40px 96px;">
       <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Onze cultuur</p>
-      <h2 style="font-size:clamp(30px,3.6vw,40px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;max-width:720px;">Drie manieren van werken die <span class="zw-grad">elke dag vormgeven.</span></h2>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px;padding-top:44px;">
-        <article class="zw-card" style="background:#FCE7EE;border:1px solid #EEE6ED;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;">
+      <h2 style="font-size:clamp(30px,3.6vw,40px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;max-width:720px;">Drie manieren van werken die elke dag vormgeven.</h2>
+      <div class="zw-cv-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px;padding-top:44px;">
+        <article class="zw-card zw-cv" style="background:linear-gradient(160deg,#FCE7EE 0%,#EEE6ED 100%);border:1px solid #EEE6ED;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;">
           <div style="padding:28px;display:flex;flex-direction:column;gap:12px;flex:1;">
             <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Eigenaarschap</p>
             <h3 style="font-family:'Mulish',Arial,sans-serif;font-weight:900;font-size:40px;line-height:1.08;color:#540047;">Pak het op</h3>
@@ -99,7 +107,7 @@ table{border-collapse:collapse;width:100%}
             <a href="/nl/cultuur/#own-it" style="font-size:14.5px;font-weight:800;color:#A6124B;padding-top:4px;">Lees meer over Pak het op →</a>
           </div>
         </article>
-        <article class="zw-card" style="background:#FEEDE7;border:1px solid #EEE6ED;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;">
+        <article class="zw-card zw-cv" style="background:linear-gradient(160deg,#FCE7EE 0%,#EEE6ED 100%);border:1px solid #EEE6ED;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;">
           <div style="padding:28px;display:flex;flex-direction:column;gap:12px;flex:1;">
             <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Samenwerking</p>
             <h3 style="font-family:'Mulish',Arial,sans-serif;font-weight:900;font-size:40px;line-height:1.08;color:#540047;">Bouw samen</h3>
@@ -107,7 +115,7 @@ table{border-collapse:collapse;width:100%}
             <a href="/nl/cultuur/#build-together" style="font-size:14.5px;font-weight:800;color:#A6124B;padding-top:4px;">Lees meer over Bouw samen →</a>
           </div>
         </article>
-        <article class="zw-card" style="background:#FCE7EE;border:1px solid #EEE6ED;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;">
+        <article class="zw-card zw-cv" style="background:linear-gradient(160deg,#FCE7EE 0%,#EEE6ED 100%);border:1px solid #EEE6ED;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;">
           <div style="padding:28px;display:flex;flex-direction:column;gap:12px;flex:1;">
             <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Vereenvoudigen</p>
             <h3 style="font-family:'Mulish',Arial,sans-serif;font-weight:900;font-size:40px;line-height:1.08;color:#540047;">Houd het simpel</h3>
@@ -139,11 +147,11 @@ table{border-collapse:collapse;width:100%}
             <span style="display:block;font-size:15px;line-height:1.55;color:#540047;padding-top:6px;">Bij elke taak vraag je je af wat weg kan, wat slimmer kan en wat simpeler kan.</span>
           </button>
         </div>
-        <div style="border-radius:28px;background:linear-gradient(135deg,#540047 0%,#A6124B 100%);padding:40px 36px;min-height:360px;display:flex;flex-direction:column;justify-content:center;gap:20px;box-shadow:0 30px 60px -30px rgba(84,0,71,0.55);">
+        <div style="border-radius:28px;background:linear-gradient(135deg,#540047 0%,#DE0954 100%);padding:40px 36px;min-height:360px;display:flex;flex-direction:column;justify-content:center;gap:20px;box-shadow:0 30px 60px -30px rgba(84,0,71,0.55);">
           <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">Zo zie je het terug</p>
           <h3 id="wb-step-title" style="font-size:34px;font-weight:900;line-height:1.1;color:#ffffff;">Pak het op</h3>
           <ul id="wb-step-points" style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;">
-            <li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#F54E11;margin-top:8px;"></span><span>Maakt af wat is afgesproken en meldt obstakels op tijd.</span></li><li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#F54E11;margin-top:8px;"></span><span>Neemt verantwoordelijkheid voor het resultaat, goed of slecht, zonder anderen de schuld te geven.</span></li><li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#F54E11;margin-top:8px;"></span><span>Wil winnen: met klanten, in de markt en als team.</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#DE0954;margin-top:8px;"></span><span>Maakt af wat is afgesproken en meldt obstakels op tijd.</span></li><li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#DE0954;margin-top:8px;"></span><span>Neemt verantwoordelijkheid voor het resultaat, goed of slecht, zonder anderen de schuld te geven.</span></li><li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#DE0954;margin-top:8px;"></span><span>Wil winnen: met klanten, in de markt en als team.</span></li>
           </ul>
         </div>
       </div>
@@ -155,7 +163,7 @@ table{border-collapse:collapse;width:100%}
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:96px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:64px;align-items:center;">
       <div>
         <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Bouw samen</p>
-        <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">Samen bouwen betekent ook <span class="zw-grad">samen plezier hebben.</span></h2>
+        <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">Samen bouwen betekent ook samen plezier hebben.</h2>
         <p style="font-size:17px;line-height:1.75;color:#000000;padding-top:20px;max-width:540px;">We kennen elkaar, brengen tijd samen door, staan voor elkaar klaar en vieren succes. Een klant erbij, een geslaagde release of een collega die een stap vooruit zet. Soms onder het genot van een drankje, soms gewoon aan tafel met het team.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;">
@@ -182,7 +190,7 @@ table{border-collapse:collapse;width:100%}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px 64px;align-items:end;">
         <div>
           <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Volg ons</p>
-          <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">Maak kennis met ons <span class="zw-grad">voordat je ons ontmoet.</span></h2>
+          <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">Maak kennis met ons voordat je ons ontmoet.</h2>
         </div>
         <p style="font-size:17px;line-height:1.7;color:#000000;">Een kijkje achter de schermen, teammomenten en de mensen met wie je zou werken. Volg ons op het kanaal dat jij het fijnst vindt.</p>
       </div>
@@ -196,7 +204,7 @@ table{border-collapse:collapse;width:100%}
           <span style="font-size:14.5px;font-weight:800;color:#A6124B;">@workspace.365 →</span>
         </a>
         <a href="https://www.tiktok.com/@life.at.workspace365" target="_blank" rel="noopener" class="zw-card" aria-label="Workspace 365 op TikTok" style="background:#ffffff;border:1px solid #EEE6ED;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px;color:#000000;">
-          <span style="width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,#A6124B 0%,#F54E11 100%);display:inline-flex;align-items:center;justify-content:center;">
+          <span style="width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,#DE0954 0%,#F54E11 100%);display:inline-flex;align-items:center;justify-content:center;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l11-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="17" cy="16" r="3"></circle></svg>
           </span>
           <span style="font-size:20px;font-weight:900;color:#540047;">TikTok</span>
@@ -204,7 +212,7 @@ table{border-collapse:collapse;width:100%}
           <span style="font-size:14.5px;font-weight:800;color:#A6124B;">@life.at.workspace365 →</span>
         </a>
         <a href="https://www.linkedin.com/company/new-day-at-work" target="_blank" rel="noopener" class="zw-card" aria-label="Workspace 365 op LinkedIn" style="background:#ffffff;border:1px solid #EEE6ED;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px;color:#000000;">
-          <span style="width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,#540047 0%,#A6124B 100%);display:inline-flex;align-items:center;justify-content:center;">
+          <span style="width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,#540047 0%,#DE0954 100%);display:inline-flex;align-items:center;justify-content:center;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M3 13h18"></path></svg>
           </span>
           <span style="font-size:20px;font-weight:900;color:#540047;">LinkedIn</span>
@@ -224,7 +232,7 @@ table{border-collapse:collapse;width:100%}
   </section>
 
   <!-- CTA -->
-  <section class="zw-shift" style="width:100%;background:linear-gradient(120deg,#DE0954 0%,#F54E11 100%);">
+  <section class="zw-shift" style="width:100%;background:linear-gradient(120deg,#540047 0%,#DE0954 100%);">
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:80px 40px;display:flex;flex-direction:column;gap:18px;align-items:flex-start;">
       <h2 style="font-size:clamp(32px,4.2vw,46px);font-weight:900;line-height:1.1;color:#ffffff;max-width:700px;">Een uitdaging die van jou is.</h2>
       <p style="font-size:18px;line-height:1.65;color:#FFFFFF;max-width:560px;">Bij ons krijg je geen takenlijst. Je krijgt het vertrouwen en de ruimte om het op te pakken en af te maken.</p>
@@ -237,7 +245,7 @@ table{border-collapse:collapse;width:100%}
     <div style="max-width:1180px;margin:0 auto;padding:56px 40px 32px;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;">
       <div style="display:flex;flex-direction:column;gap:18px;max-width:340px;">
         <img src="/assets/img/b990ae75806ae001834cc1ea424c2fa8.svg" alt="Workspace 365" style="height:28px;width:auto;align-self:flex-start;">
-        <p style="font-family:'Gochi Hand','Comic Sans MS',cursive;font-size:30px;color:#ffffff;line-height:1.1;">Het begint bij ons.</p>
+        <p style="font-family:'Janitor',Arial,sans-serif;font-size:30px;color:#ffffff;line-height:1.1;">Het begint bij ons.</p>
       </div>
       <div style="display:flex;gap:64px;flex-wrap:wrap;">
         <div style="display:flex;flex-direction:column;gap:12px;">
@@ -269,4 +277,4 @@ table{border-collapse:collapse;width:100%}
   </footer>
 
 </div>
-<script>window.__STEPS=[{"title": "Pak het op", "points": ["Maakt af wat is afgesproken en meldt obstakels op tijd.", "Neemt verantwoordelijkheid voor het resultaat, goed of slecht, zonder anderen de schuld te geven.", "Wil winnen: met klanten, in de markt en als team."]}, {"title": "Bouw samen", "points": ["Spreekt collega's direct aan op afspraken en gedrag, nooit achter hun rug.", "Brengt onenigheid in het overleg ter sprake, niet erna, en houdt het bij de inhoud.", "Viert successen en bouwt aan vertrouwen en plezier in het team."]}, {"title": "Houd het simpel", "points": ["Automatiseert herhalend werk met AI en tooling, te beginnen met het eigen werk.", "Omarmt verandering en geeft een nieuwe aanpak een eerlijke kans.", "Zegt nee tegen werk dat weinig waarde toevoegt en legt uit waarom."]}];window.__STEP_LI="<li style=\"display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;\"><span aria-hidden=\"true\" style=\"flex:none;width:10px;height:10px;border-radius:50%;background:#F54E11;margin-top:8px;\"></span><span>{{ pt.text }}</span></li>";</script>
+<script>window.__STEPS=[{"title": "Pak het op", "points": ["Maakt af wat is afgesproken en meldt obstakels op tijd.", "Neemt verantwoordelijkheid voor het resultaat, goed of slecht, zonder anderen de schuld te geven.", "Wil winnen: met klanten, in de markt en als team."]}, {"title": "Bouw samen", "points": ["Spreekt collega's direct aan op afspraken en gedrag, nooit achter hun rug.", "Brengt onenigheid in het overleg ter sprake, niet erna, en houdt het bij de inhoud.", "Viert successen en bouwt aan vertrouwen en plezier in het team."]}, {"title": "Houd het simpel", "points": ["Automatiseert herhalend werk met AI en tooling, te beginnen met het eigen werk.", "Omarmt verandering en geeft een nieuwe aanpak een eerlijke kans.", "Zegt nee tegen werk dat weinig waarde toevoegt en legt uit waarom."]}];window.__STEP_LI="<li style=\"display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;\"><span aria-hidden=\"true\" style=\"flex:none;width:10px;height:10px;border-radius:50%;background:#DE0954;margin-top:8px;\"></span><span>{{ pt.text }}</span></li>";</script>

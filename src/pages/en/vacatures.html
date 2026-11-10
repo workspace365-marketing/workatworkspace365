@@ -1,12 +1,15 @@
 <!--title:Workspace 365: Open roles-->
-<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;family=Gochi+Hand&amp;display=swap">-->
+<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;display=swap">-->
 <style>
+@font-face{font-family:'Janitor';src:url('/assets/img/8a28093b0240cd674ef05fa221186a1c.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Mulish',Arial,sans-serif;background:#ffffff;color:#000000}
 a{color:#DE0954;text-decoration:none}
 a:hover{color:#A6124B}
 h1,h2,h3{font-family:'Mulish',Arial,sans-serif;margin:0}
 p{margin:0}
+p{max-width:24em!important}
+[style*="text-align:center"] p,p[style*="text-align:center"]{margin-left:auto!important;margin-right:auto!important}
 button{font-family:'Mulish',Arial,sans-serif;cursor:pointer}
 table{border-collapse:collapse;width:100%}
 .zw-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
@@ -23,6 +26,8 @@ table{border-collapse:collapse;width:100%}
 @keyframes zwShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .zw-reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
 .zw-reveal.zw-in{opacity:1;transform:none}
+.zw-faq>summary{list-style:none;cursor:pointer}.zw-faq>summary::-webkit-details-marker{display:none}.zw-faq>summary .zw-chev{transition:transform .25s ease;flex:none}.zw-faq[open]>summary .zw-chev{transform:rotate(180deg)}.zw-faq>summary:focus-visible{outline:3px solid #DE0954;outline-offset:3px}.zw-todo{background:#FCE7EE;color:#A6124B;font-weight:700;border-radius:4px;padding:0 3px}
+a.zw-btn[style*="background:#DE0954"]{box-shadow:0 12px 26px -12px rgba(222,9,84,0.75)}a.zw-btn[style*="background:#DE0954"]:hover{color:#ffffff;filter:brightness(1.05)}
 @media (prefers-reduced-motion: reduce){.zw-float,.zw-shift{animation:none}.zw-card:hover,.zw-btn:hover,.zw-step:hover{transform:none}.zw-reveal{opacity:1;transform:none;transition:none}}
 </style>
 <div style="width:100%;min-height:100vh;background:#ffffff;">
@@ -36,7 +41,7 @@ table{border-collapse:collapse;width:100%}
         <a href="/en/culture/" style="font-weight:600;font-size:14px;color:#000000;">Culture</a>
         <a href="/en/teams/" style="font-weight:600;font-size:14px;color:#000000;">Teams</a>
         <a href="/en/open-roles/" style="font-weight:800;font-size:14px;color:#540047;">Open roles</a>
-        <a href="/en/contact/" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14px;">Get in touch</a>
+        <a href="/en/contact/" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:14px;">Get in touch</a>
         <span data-lang-toggle="true" style="display:inline-flex;align-items:center;gap:2px;font-size:13px;font-weight:800;border:1px solid #EEE6ED;border-radius:999px;padding:3px;"><span style="padding:5px 11px;border-radius:999px;background:#540047;color:#ffffff;" aria-current="true">EN</span><a href="/nl/vacatures/" lang="nl" title="Nederlands" style="padding:5px 11px;border-radius:999px;color:#540047;">NL</a></span>
       </nav>
     </div>
@@ -51,7 +56,7 @@ table{border-collapse:collapse;width:100%}
       </div>
       <h1 style="font-size:clamp(40px,5.2vw,58px);line-height:1.08;font-weight:900;color:#540047;max-width:760px;">Find the challenge that is <span class="zw-grad">yours.</span></h1>
       <p style="font-size:18px;line-height:1.6;color:#000000;max-width:600px;">Every role comes with trust, space and colleagues who keep each other sharp. Your team steers itself, so you pick it up and you finish it.</p>
-      <p style="font-family:'Gochi Hand','Comic Sans MS',cursive;font-size:clamp(34px,3.6vw,44px);line-height:1.1;color:#A6124B;transform:rotate(-2deg);transform-origin:left center;width:fit-content;padding-top:4px;">It starts with you.</p>
+      <p style="font-family:'Janitor',Arial,sans-serif;font-size:clamp(34px,3.6vw,44px);line-height:1.1;color:#A6124B;transform:rotate(-2deg);transform-origin:left center;width:fit-content;padding-top:4px;">It starts with you.</p>
     </div>
     <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:56px;"><path d="M0,34 C420,70 1000,6 1440,30 L1440,80 L0,80 Z" fill="#ffffff"></path></svg>
   </section>
@@ -82,14 +87,14 @@ table{border-collapse:collapse;width:100%}
       <div style="display:flex;flex-direction:column;gap:18px;">
         <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Open application</p>
         <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;">Don't see your role?</h2>
-        <p style="font-size:17px;line-height:1.7;color:#000000;max-width:520px;">Tell us what you would make simpler. We keep asking what can go, what can be smarter and what can be simpler, and we like to hear it from someone who has not stopped asking either.</p>
+        <p style="font-size:17px;line-height:1.7;color:#000000;max-width:520px;">Tell us what you would make simpler. A good idea is welcome, even if there is no open role for it yet.</p>
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
-          <a href="https://jobs.workspace365.net/o/open-sollicitatie-nijkerk" target="_blank" rel="noopener" class="zw-btn" style="display:inline-block;padding:15px 28px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:15px;">Send an open application</a>
+          <a href="https://jobs.workspace365.net/o/open-sollicitatie-nijkerk" target="_blank" rel="noopener" class="zw-btn" style="display:inline-block;padding:15px 28px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:15px;">Send an open application</a>
           <a href="https://jobs.workspace365.net/o/maak-kennis-met-workspace-365" target="_blank" rel="noopener" style="font-weight:800;font-size:15px;color:#A6124B;">Not sure which internship fits? Say hello →</a>
         </div>
         <p style="font-size:15.5px;color:#000000;">Or email us at <a href="mailto:work@workspace365.net" style="font-weight:800;color:#A6124B;">work@workspace365.net</a></p>
       </div>
-      <img src="/assets/img/28b7a9648b0be97500d13dcbf15d4eab.jpg" alt="A smiling colleague" style="width:100%;height:420px;object-fit:cover;object-position:center top;border-radius:28px;box-shadow:0 2px 6px rgba(84,0,71,0.08), 0 30px 60px -20px rgba(84,0,71,0.45), 0 60px 120px -40px rgba(222,9,84,0.30);display:block;">
+      <img src="/assets/img/071152f6e78230e050f411f9ac7e83a3.jpg" alt="Colleagues preparing lunch together" style="width:100%;height:420px;object-fit:cover;object-position:center;border-radius:28px;box-shadow:0 2px 6px rgba(84,0,71,0.08), 0 30px 60px -20px rgba(84,0,71,0.45), 0 60px 120px -40px rgba(222,9,84,0.30);display:block;">
     </div>
   </section>
 
@@ -97,13 +102,13 @@ table{border-collapse:collapse;width:100%}
   <section style="width:100%;background:#ffffff;">
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:88px 40px;">
       <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Your future colleagues</p>
-      <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">The people you <span class="zw-grad">build with.</span></h2>
+      <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;padding-top:12px;">The people you build with.</h2>
       <p style="padding-top:12px;"><a href="/en/teams/" style="font-size:15px;font-weight:800;color:#A6124B;">Meet our teams →</a></p>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="zw-shift" style="width:100%;background:linear-gradient(120deg,#DE0954 0%,#F54E11 100%);">
+  <section class="zw-shift" style="width:100%;background:linear-gradient(120deg,#540047 0%,#DE0954 100%);">
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:72px 40px;display:flex;flex-direction:column;gap:16px;align-items:flex-start;">
       <h2 style="font-size:clamp(30px,4vw,42px);font-weight:900;line-height:1.1;color:#ffffff;max-width:700px;">Curious how we work first?</h2>
       <a href="/en/culture/" class="zw-btn" style="display:inline-block;margin-top:8px;padding:15px 30px;border-radius:999px;background:#ffffff;color:#540047;font-weight:800;font-size:15px;">Explore our culture</a>
@@ -115,7 +120,7 @@ table{border-collapse:collapse;width:100%}
     <div style="max-width:1180px;margin:0 auto;padding:56px 40px 32px;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;">
       <div style="display:flex;flex-direction:column;gap:18px;max-width:340px;">
         <img src="/assets/img/b990ae75806ae001834cc1ea424c2fa8.svg" alt="Workspace 365" style="height:28px;width:auto;align-self:flex-start;">
-        <p style="font-family:'Gochi Hand','Comic Sans MS',cursive;font-size:30px;color:#ffffff;line-height:1.1;">It starts with us.</p>
+        <p style="font-family:'Janitor',Arial,sans-serif;font-size:30px;color:#ffffff;line-height:1.1;">It starts with us.</p>
       </div>
       <div style="display:flex;gap:64px;flex-wrap:wrap;">
         <div style="display:flex;flex-direction:column;gap:12px;">
