@@ -110,4 +110,17 @@
     });
     if (reset) reset.addEventListener('click', function () { sent.hidden = true; wrap.hidden = false; });
   }
+
+  // 6. Over ons: uitklapbare tijdlijn
+  var tlBtn = document.getElementById('tl-toggle');
+  var tlPanel = document.getElementById('tl-panel');
+  if (tlBtn && tlPanel) {
+    var chev = tlBtn.querySelector('[data-tl-chev]');
+    tlBtn.addEventListener('click', function () {
+      var open = tlPanel.hidden;
+      tlPanel.hidden = !open;
+      tlBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (chev) chev.style.transform = open ? 'rotate(180deg)' : 'none';
+    });
+  }
 })();

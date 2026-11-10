@@ -1,12 +1,15 @@
 <!--title:Workspace 365: Neem contact op-->
-<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;family=Gochi+Hand&amp;display=swap">-->
+<!--font:<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&amp;display=swap">-->
 <style>
+@font-face{font-family:'Janitor';src:url('/assets/img/8a28093b0240cd674ef05fa221186a1c.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Mulish',Arial,sans-serif;background:#ffffff;color:#000000}
 a{color:#DE0954;text-decoration:none}
 a:hover{color:#A6124B}
 h1,h2,h3{font-family:'Mulish',Arial,sans-serif;margin:0}
 p{margin:0}
+p{max-width:24em!important}
+[style*="text-align:center"] p,p[style*="text-align:center"]{margin-left:auto!important;margin-right:auto!important}
 button{font-family:'Mulish',Arial,sans-serif;cursor:pointer}
 table{border-collapse:collapse;width:100%}
 .zw-card{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
@@ -27,6 +30,7 @@ input,select,textarea{font-family:'Mulish',Arial,sans-serif;font-size:16px;color
 @media (max-width:760px){.zw-formcol{grid-column:auto !important}}
 .zw-reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
 .zw-reveal.zw-in{opacity:1;transform:none}
+a.zw-btn[style*="background:#DE0954"]{box-shadow:0 12px 26px -12px rgba(222,9,84,0.75)}a.zw-btn[style*="background:#DE0954"]:hover{color:#ffffff;filter:brightness(1.05)}
 @media (prefers-reduced-motion: reduce){.zw-float,.zw-shift{animation:none}.zw-card:hover,.zw-btn:hover,.zw-step:hover{transform:none}.zw-reveal{opacity:1;transform:none;transition:none}}
 </style>
 <div style="width:100%;min-height:100vh;background:#ffffff;">
@@ -40,7 +44,7 @@ input,select,textarea{font-family:'Mulish',Arial,sans-serif;font-size:16px;color
         <a href="/nl/cultuur/" style="font-weight:600;font-size:14px;color:#000000;">Cultuur</a>
         <a href="/nl/teams/" style="font-weight:600;font-size:14px;color:#000000;">Teams</a>
         <a href="/nl/vacatures/" style="font-weight:600;font-size:14px;color:#000000;">Vacatures</a>
-        <a href="/nl/vacatures/#get-in-touch" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#540047;color:#ffffff;font-weight:700;font-size:14px;">Neem contact op</a>
+        <a href="/nl/vacatures/#get-in-touch" class="zw-btn" style="display:inline-block;padding:10px 20px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:700;font-size:14px;">Neem contact op</a>
         <span data-lang-toggle="true" style="display:inline-flex;align-items:center;gap:2px;font-size:13px;font-weight:800;border:1px solid #EEE6ED;border-radius:999px;padding:3px;"><a href="/en/contact/" lang="en" title="English" style="padding:5px 11px;border-radius:999px;color:#540047;">EN</a><span style="padding:5px 11px;border-radius:999px;background:#540047;color:#ffffff;" aria-current="true">NL</span></span>
       </nav>
     </div>
@@ -69,7 +73,7 @@ input,select,textarea{font-family:'Mulish',Arial,sans-serif;font-size:16px;color
             <h2 style="font-size:clamp(28px,3.4vw,36px);font-weight:900;line-height:1.15;color:#540047;">Bedankt, we hebben het ontvangen.</h2>
             <p style="font-size:17px;line-height:1.7;color:#000000;max-width:520px;">We lezen elk bericht zelf. Je hoort van ons binnen [aantal] werkdagen.</p>
             <div style="display:flex;gap:14px;flex-wrap:wrap;padding-top:8px;">
-              <a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:14px 26px;border-radius:999px;background:#540047;color:#ffffff;font-weight:800;font-size:15px;">Bekijk de vacatures</a>
+              <a href="/nl/vacatures/" class="zw-btn" style="display:inline-block;padding:14px 26px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:800;font-size:15px;">Bekijk de vacatures</a>
               <button type="button" id="reset-form" style="min-height:44px;padding:13px 24px;border-radius:999px;border:1.5px solid #540047;background:#ffffff;color:#540047;font-weight:800;font-size:15px;">Stuur nog een bericht</button>
             </div>
           </div>
@@ -149,7 +153,7 @@ input,select,textarea{font-family:'Mulish',Arial,sans-serif;font-size:16px;color
           <a href="mailto:work@workspace365.net" style="font-size:20px;font-weight:900;color:#ffffff;">work@workspace365.net</a>
           <p style="font-size:15.5px;line-height:1.65;color:#ffffff;">Ons Talent team leest elk bericht.</p>
         </div>
-        <div style="background:#FEEDE7;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:12px;">
+        <div style="background:#FCE7EE;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:12px;">
           <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Kom langs</p>
           <p style="font-size:16px;line-height:1.65;color:#000000;">Workspace 365<br>Berencamperweg 6D<br>3861 MC Nijkerk</p>
         </div>
@@ -166,7 +170,7 @@ input,select,textarea{font-family:'Mulish',Arial,sans-serif;font-size:16px;color
     <div style="max-width:1180px;margin:0 auto;padding:56px 40px 32px;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;">
       <div style="display:flex;flex-direction:column;gap:18px;max-width:340px;">
         <img src="/assets/img/b990ae75806ae001834cc1ea424c2fa8.svg" alt="Workspace 365" style="height:28px;width:auto;align-self:flex-start;">
-        <p style="font-family:'Gochi Hand','Comic Sans MS',cursive;font-size:30px;color:#ffffff;line-height:1.1;">Het begint bij ons.</p>
+        <p style="font-family:'Janitor',Arial,sans-serif;font-size:30px;color:#ffffff;line-height:1.1;">Het begint bij ons.</p>
       </div>
       <div style="display:flex;gap:64px;flex-wrap:wrap;">
         <div style="display:flex;flex-direction:column;gap:12px;">
