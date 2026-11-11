@@ -7,7 +7,7 @@
       "team": "Strategy and story",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "strategy"
     },
     {
       "img": "d7425b181b617d85dd27d0028012b365.jpg",
@@ -16,7 +16,7 @@
       "team": "Strategy and story",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "strategy"
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
@@ -301,82 +301,82 @@
       "img": "8cc7f8ae54bfccd7baea8c1e0357dbcc.jpg",
       "name": "Fabian Brocken",
       "role": "Security Officer & IT Manager",
-      "team": "Supporting teams",
+      "team": "Security & hosting",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "sec"
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
       "name": "Sybren de Jong",
       "role": "Cloud Engineer",
-      "team": "Supporting teams",
+      "team": "Security & hosting",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "sec"
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
       "name": "Willem van der Mheen",
       "role": "Cloud Engineer",
-      "team": "Supporting teams",
+      "team": "Security & hosting",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "sec"
     },
     {
       "img": "f1f4dd4d2b1a750f06acdcb1e87e67bc.jpg",
       "name": "Hennie van Ginkel",
       "role": "Finance Specialist",
-      "team": "Supporting teams",
+      "team": "Finance & data",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "fin"
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
       "name": "Mathijs van der Meer",
       "role": "Data Engineer",
-      "team": "Supporting teams",
+      "team": "Finance & data",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "fin"
     },
     {
       "img": "900ab676658376436c1be102193c81d8.jpg",
       "name": "Wouter Laseur",
       "role": "Head of Finance",
-      "team": "Supporting teams",
+      "team": "Finance & data",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "fin"
     },
     {
       "img": "21b3dc2def7a890c8e16b70da58af9a5.jpg",
       "name": "Ingrid van den Rijen",
       "role": "Head of Talent",
-      "team": "Supporting teams",
+      "team": "Talent",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "tal"
     },
     {
       "img": "75cb71f8476102e016fbaa3073672873.jpg",
       "name": "Julia van Bergen",
       "role": "Corporate Recruiter",
-      "team": "Supporting teams",
+      "team": "Talent",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "tal"
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
       "name": "Maaike de Jong",
       "role": "Office Manager",
-      "team": "Supporting teams",
+      "team": "Talent",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "tal"
     }
   ],
   "nl": [
@@ -387,7 +387,7 @@
       "team": "Strategie en verhaal",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "strategy"
     },
     {
       "img": "d7425b181b617d85dd27d0028012b365.jpg",
@@ -396,7 +396,7 @@
       "team": "Strategie en verhaal",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "strategy"
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
@@ -681,82 +681,82 @@
       "img": "8cc7f8ae54bfccd7baea8c1e0357dbcc.jpg",
       "name": "Fabian Brocken",
       "role": "Security Officer & IT Manager",
-      "team": "Ondersteunende teams",
+      "team": "Security & hosting",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "sec"
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
       "name": "Sybren de Jong",
       "role": "Cloud Engineer",
-      "team": "Ondersteunende teams",
+      "team": "Security & hosting",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "sec"
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
       "name": "Willem van der Mheen",
       "role": "Cloud Engineer",
-      "team": "Ondersteunende teams",
+      "team": "Security & hosting",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "sec"
     },
     {
       "img": "f1f4dd4d2b1a750f06acdcb1e87e67bc.jpg",
       "name": "Hennie van Ginkel",
       "role": "Finance Specialist",
-      "team": "Ondersteunende teams",
+      "team": "Finance & data",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "fin"
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
       "name": "Mathijs van der Meer",
       "role": "Data Engineer",
-      "team": "Ondersteunende teams",
+      "team": "Finance & data",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "fin"
     },
     {
       "img": "900ab676658376436c1be102193c81d8.jpg",
       "name": "Wouter Laseur",
       "role": "Head of Finance",
-      "team": "Ondersteunende teams",
+      "team": "Finance & data",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "fin"
     },
     {
       "img": "21b3dc2def7a890c8e16b70da58af9a5.jpg",
       "name": "Ingrid van den Rijen",
       "role": "Head of Talent",
-      "team": "Ondersteunende teams",
+      "team": "Talent",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "tal"
     },
     {
       "img": "75cb71f8476102e016fbaa3073672873.jpg",
       "name": "Julia van Bergen",
       "role": "Corporate Recruiter",
-      "team": "Ondersteunende teams",
+      "team": "Talent",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "tal"
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
       "name": "Maaike de Jong",
       "role": "Office Manager",
-      "team": "Ondersteunende teams",
+      "team": "Talent",
       "short": "",
       "intro": "",
-      "kk": "support"
+      "kk": "tal"
     }
   ]
 }
