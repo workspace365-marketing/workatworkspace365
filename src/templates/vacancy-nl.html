@@ -1,0 +1,63 @@
+<!--@style-->
+<style>
+.zw-rich{font-size:17px;line-height:1.75;color:#000000}
+.zw-rich h3{font-size:24px;line-height:1.25;font-weight:900;color:#540047;margin:40px 0 12px}
+.zw-rich h3:first-child{margin-top:0}
+.zw-rich p{max-width:none!important;margin:0 0 14px}
+.zw-rich ul{margin:0 0 18px;padding-left:22px}
+.zw-rich li{margin:0 0 8px;padding-left:4px}
+.zw-rich li::marker{color:#DE0954}
+.zw-rich li p{margin:0}
+.zw-rich a{font-weight:800;color:#A6124B;text-decoration:underline}
+.zw-vgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:56px;align-items:start}
+@media (max-width:900px){.zw-vgrid{grid-template-columns:minmax(0,1fr)}.zw-vaside{position:static!important}}
+</style>
+<div style="width:100%;min-height:100vh;background:#ffffff;">
+
+  <!--@header-->
+
+  <section style="width:100%;background:radial-gradient(circle at 88% 18%, rgba(222,9,84,0.16), transparent 42%), radial-gradient(circle at 6% 92%, rgba(245,78,17,0.12), transparent 40%), linear-gradient(180deg,#FCE7EE 0%,#FEEDE7 100%);">
+    <div style="max-width:1180px;margin:0 auto;padding:48px 40px 64px;display:flex;flex-direction:column;gap:18px;">
+      <a href="{{ v.backUrl }}" style="font-weight:800;font-size:14.5px;color:#540047;width:fit-content;">← Alle vacatures</a>
+      <h1 style="font-size:clamp(36px,4.6vw,52px);line-height:1.1;font-weight:900;color:#540047;max-width:860px;">{{ v.title }}</h1>
+      <p style="font-size:19px;line-height:1.6;color:#000000;max-width:640px;">{{ v.pitch }}</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <span style="display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;border:1px solid {{ v.badgeBorder }};background:{{ v.badgeBg }};color:{{ v.badgeColor }};font-size:13.5px;font-weight:600;">{{ v.badge }}</span>
+        <span style="display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:#ffffff;border:1px solid #EEE6ED;font-size:13.5px;font-weight:600;color:#540047;">{{ v.city }}</span>
+        <span style="display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:#ffffff;border:1px solid #EEE6ED;font-size:13.5px;font-weight:600;color:#540047;">{{ v.work }}</span>
+        <span style="display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:#ffffff;border:1px solid #EEE6ED;font-size:13.5px;font-weight:600;color:#540047;">{{ v.hours }}</span>
+        <sc-if value="{{ v.hasContract }}" hint-placeholder-val="{{ true }}">
+        <span style="display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:#ffffff;border:1px solid #EEE6ED;font-size:13.5px;font-weight:600;color:#540047;">{{ v.contract }}</span>
+        </sc-if>
+        <sc-if value="{{ v.hasSalary }}" hint-placeholder-val="{{ true }}">
+        <span style="display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:#ffffff;border:1.5px solid #540047;font-size:13.5px;font-weight:800;color:#540047;">{{ v.salary }}</span>
+        </sc-if>
+      </div>
+      <div style="padding-top:6px;"><a href="{{ v.applyUrl }}" target="_blank" rel="noopener" class="zw-btn" style="display:inline-block;padding:15px 30px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:800;font-size:16px;">Solliciteer direct</a></div>
+    </div>
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:56px;"><path d="M0,34 C420,70 1000,6 1440,30 L1440,80 L0,80 Z" fill="#ffffff"></path></svg>
+  </section>
+
+  <section style="width:100%;background:#ffffff;">
+    <div class="zw-vgrid" style="max-width:1180px;margin:0 auto;padding:24px 40px 96px;">
+      <article class="zw-rich"><!--@body--></article>
+      <aside class="zw-vaside" style="position:sticky;top:96px;display:flex;flex-direction:column;gap:20px;">
+        <div style="border-radius:24px;overflow:hidden;border:1px solid #EEE6ED;background:#ffffff;">
+          <img src="{{ v.img }}" alt="Het Workspace 365 team op kantoor in Nijkerk" style="display:block;width:100%;height:200px;object-fit:cover;">
+          <div style="padding:24px;display:flex;flex-direction:column;gap:14px;">
+            <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Kerngegevens</p>
+            <p style="font-size:15.5px;line-height:1.6;max-width:none!important;"><strong>Locatie:</strong> {{ v.city }}<br><strong>Werkplek:</strong> {{ v.work }}<br><strong>Uren:</strong> {{ v.hours }}</p>
+            <a href="{{ v.applyUrl }}" target="_blank" rel="noopener" class="zw-btn" style="display:block;text-align:center;padding:14px 24px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:800;font-size:15.5px;">Solliciteer direct</a>
+          </div>
+        </div>
+        <div style="background:#FCE7EE;border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:8px;">
+          <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Eerst een vraag?</p>
+          <p style="font-size:15.5px;line-height:1.6;max-width:none!important;">Mail ons op <a href="mailto:work@workspace365.net" style="font-weight:800;color:#540047;">work@workspace365.net</a></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!--@footer-->
+
+</div>
