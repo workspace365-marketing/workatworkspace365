@@ -6,7 +6,8 @@
     "teams": "/en/teams/",
     "company": "/en/company/",
     "contact": "/en/contact/",
-    "privacy": "/en/privacy/"
+    "privacy": "/en/privacy/",
+    "product": "/en/our-product/"
   },
   "nl": {
     "index": "/nl/",
@@ -15,6 +16,7 @@
     "teams": "/nl/teams/",
     "company": "/nl/over-ons/",
     "contact": "/nl/contact/",
-    "privacy": "/nl/privacy/"
+    "privacy": "/nl/privacy/",
+    "product": "/nl/ons-product/"
   }
 }

@@ -233,7 +233,17 @@ for (const lang of LANGS) {
     page = page.replace(/<!--title:.*?-->\n?/, '').replace(/<!--font:.*?-->\n?/, '');
     page = page.replace('<!--@roles-home-->', roles.map((r) => render(partial('role-card-home'), { r })).join('\n'));
     page = page.replace('<!--@roles-list-->', roles.map((r) => render(partial('role-card-list'), { r })).join('\n'));
-    page = page.replace('<!--@people-->', people[lang].map((p, i) => render(partial('person-card'), { p: { ...p, i, img: '/assets/img/' + p.img } })).join('\n'));
+    // Teamleden per team (veld "kk"), met de teamnaam als kopje. Het teamfilter verbergt of toont hele groepen.
+    {
+      const groups = [];
+      people[lang].forEach((p, i) => {
+        let g = groups[groups.length - 1];
+        if (!g || g.kk !== p.kk) { g = { kk: p.kk, name: p.team, cards: [] }; groups.push(g); }
+        g.cards.push(render(partial('person-card'), { p: { ...p, i, img: '/assets/img/' + p.img } }));
+      });
+      page = page.replace('<!--@people-->', groups.map((g) => '<div class="zw-grp" data-kind="' + esc(g.kk) + '"><h3 class="zw-grp-h">' + esc(g.name) + '</h3><div class="zw-grp-grid">' + g.cards.join('\n') + '</div></div>').join('\n'));
+      page = page.replace('<!--@team-filters-->', [['all', lang === 'nl' ? 'Alles' : 'All'], ...groups.map((g) => [g.kk, g.name])].map(([k, n], i) => '<button type="button" data-filter="' + esc(k) + '" aria-pressed="' + (i ? 'false' : 'true') + '" style="min-height:44px;padding:10px 20px;border-radius:999px;border:1.5px solid ' + (i ? '#EEE6ED' : '#540047') + ';background:' + (i ? '#ffffff' : '#540047') + ';color:' + (i ? '#540047' : '#ffffff') + ';font-weight:700;font-size:14.5px;cursor:pointer;font-family:\'Mulish\',Arial,sans-serif;">' + esc(n) + '</button>').join(''));
+    }
     page = page.replace(/\{\{\s*n\.(all|job|int)\s*\}\}/g, (m, k) => counts[k]);
     let extra = '';
     if (key === 'teams') extra = '<script>window.__PEOPLE=' + JSON.stringify(people[lang].map((p) => ({ ...p, img: '/assets/img/' + p.img }))) + ';</script>';
