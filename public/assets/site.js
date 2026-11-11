@@ -123,6 +123,8 @@
       aerr.textContent = msg; aerr.hidden = false;
       if (afb) { aerr.appendChild(document.createTextNode(' ')); aerr.appendChild(afb.firstElementChild.cloneNode(true)); aerr.lastChild.textContent = afb.textContent.trim() + '.'; }
     };
+    if (/[?&]verzonden=1/.test(location.search)) { awrap.hidden = true; asent.hidden = false; }
+    if (/[?&]fout=1/.test(location.search)) { fail(aform.getAttribute('data-error')); }
     aform.addEventListener('submit', function (e) {
       e.preventDefault();
       aerr.hidden = true;
@@ -130,7 +132,7 @@
       if (tooBig) { aerr.textContent = aform.getAttribute('data-size-error'); aerr.hidden = false; return; }
       var btn = aform.querySelector('button[type=submit]');
       if (btn) btn.disabled = true;
-      fetch(aform.action, { method: 'POST', body: new FormData(aform) })
+      fetch(aform.action, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(aform) })
         .then(function (res) {
           if (!res.ok) throw new Error('HTTP ' + res.status);
           awrap.hidden = true; asent.hidden = false; aform.reset();

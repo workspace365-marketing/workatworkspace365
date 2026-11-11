@@ -6,6 +6,15 @@ const MAX_FILE = 4 * 1024 * 1024; // Netlify Functions accepteren maximaal ongev
 const json = (status, body) =>
   new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json' } });
 
+// Een gewone formulierpost (zonder JavaScript, of met een oude gecachete site.js) sturen we terug naar de vacaturepagina.
+const wantsJson = (req) => (req.headers.get('accept') || '').includes('application/json');
+const back = (req, flag) => {
+  let path = '/';
+  try { path = new URL(req.headers.get('referer') || '').pathname; } catch {}
+  return new Response(null, { status: 303, headers: { location: `${path}?${flag}=1#solliciteer` } });
+};
+const reply = (req, status, body) => (wantsJson(req) ? json(status, body) : back(req, status === 200 ? 'verzonden' : 'fout'));
+
 export default async (req) => {
   if (req.method !== 'POST') return json(405, { error: 'method' });
   const token = process.env.RECRUITEE_CAREERS_TOKEN;
@@ -13,20 +22,20 @@ export default async (req) => {
   const base = (process.env.RECRUITEE_API_BASE || 'https://jobs.workspace365.net').replace(/\/$/, '');
 
   let form;
-  try { form = await req.formData(); } catch { return json(400, { error: 'invalid' }); }
+  try { form = await req.formData(); } catch { return reply(req, 400, { error: 'invalid' }); }
 
-  if (form.get('bot-field')) return json(200, { ok: true }); // honeypot: doen alsof het gelukt is
+  if (form.get('bot-field')) return reply(req, 200, { ok: true }); // honeypot: doen alsof het gelukt is
   const slug = String(form.get('offer') || '');
   const name = String(form.get('name') || '').trim();
   const email = String(form.get('email') || '').trim();
   const phone = String(form.get('phone') || '').trim();
   const cv = form.get('cv');
   const letter = form.get('letter');
-  if (!/^[a-z0-9-]{1,120}$/.test(slug)) return json(400, { error: 'offer' });
-  if (!name || !/^\S+@\S+\.\S+$/.test(email) || !phone) return json(400, { error: 'fields' });
-  if (!form.get('consent')) return json(400, { error: 'consent' });
-  if (!(cv instanceof File) || cv.size === 0) return json(400, { error: 'cv' });
-  if (cv.size > MAX_FILE || (letter instanceof File && letter.size > MAX_FILE)) return json(413, { error: 'size' });
+  if (!/^[a-z0-9-]{1,120}$/.test(slug)) return reply(req, 400, { error: 'offer' });
+  if (!name || !/^\S+@\S+\.\S+$/.test(email) || !phone) return reply(req, 400, { error: 'fields' });
+  if (!form.get('consent')) return reply(req, 400, { error: 'consent' });
+  if (!(cv instanceof File) || cv.size === 0) return reply(req, 400, { error: 'cv' });
+  if (cv.size > MAX_FILE || (letter instanceof File && letter.size > MAX_FILE)) return reply(req, 413, { error: 'size' });
 
   const out = new FormData();
   out.append('candidate[name]', name);
@@ -42,7 +51,7 @@ export default async (req) => {
   });
   if (!res.ok) {
     console.error('Recruitee antwoordde', res.status, (await res.text()).slice(0, 300));
-    return json(502, { error: 'recruitee' });
+    return reply(req, 502, { error: 'recruitee' });
   }
-  return json(200, { ok: true });
+  return reply(req, 200, { ok: true });
 };
