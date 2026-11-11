@@ -111,6 +111,36 @@
     if (reset) reset.addEventListener('click', function () { sent.hidden = true; wrap.hidden = false; });
   }
 
+
+  // 5b. Sollicitatieformulier op vacaturepagina's (gaat via een Netlify-functie naar Recruitee)
+  var aform = document.getElementById('apply-form');
+  if (aform) {
+    var aerr = document.getElementById('apply-error');
+    var asent = document.getElementById('apply-sent');
+    var awrap = document.getElementById('apply-wrap');
+    var afb = document.getElementById('apply-fallback');
+    var fail = function (msg) {
+      aerr.textContent = msg; aerr.hidden = false;
+      if (afb) { aerr.appendChild(document.createTextNode(' ')); aerr.appendChild(afb.firstElementChild.cloneNode(true)); aerr.lastChild.textContent = afb.textContent.trim() + '.'; }
+    };
+    aform.addEventListener('submit', function (e) {
+      e.preventDefault();
+      aerr.hidden = true;
+      var tooBig = Array.prototype.some.call(aform.querySelectorAll('input[type=file]'), function (f) { return f.files[0] && f.files[0].size > 4 * 1024 * 1024; });
+      if (tooBig) { aerr.textContent = aform.getAttribute('data-size-error'); aerr.hidden = false; return; }
+      var btn = aform.querySelector('button[type=submit]');
+      if (btn) btn.disabled = true;
+      fetch(aform.action, { method: 'POST', body: new FormData(aform) })
+        .then(function (res) {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          awrap.hidden = true; asent.hidden = false; aform.reset();
+          asent.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        })
+        .catch(function () { fail(aform.getAttribute('data-error')); })
+        .then(function () { if (btn) btn.disabled = false; });
+    });
+  }
+
   // 6. Over ons: uitklapbare tijdlijn
   var tlBtn = document.getElementById('tl-toggle');
   var tlPanel = document.getElementById('tl-panel');
