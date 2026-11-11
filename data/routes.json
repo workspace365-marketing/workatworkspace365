@@ -5,7 +5,8 @@
     "cultuur": "/en/culture/",
     "teams": "/en/teams/",
     "company": "/en/company/",
-    "contact": "/en/contact/"
+    "contact": "/en/contact/",
+    "privacy": "/en/privacy/"
   },
   "nl": {
     "index": "/nl/",
@@ -13,6 +14,7 @@
     "cultuur": "/nl/cultuur/",
     "teams": "/nl/teams/",
     "company": "/nl/over-ons/",
-    "contact": "/nl/contact/"
+    "contact": "/nl/contact/",
+    "privacy": "/nl/privacy/"
   }
 }
