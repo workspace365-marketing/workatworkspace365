@@ -4,6 +4,9 @@ import { readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync, rea
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
 
+// Hash achter site.js, want /assets/* wordt een jaar gecachet en een oude site.js laat formulieren stuk gaan.
+const SITE_JS_VERSION = createHash('sha256').update(readFileSync(new URL('./public/assets/site.js', import.meta.url))).digest('hex').slice(0, 10);
+
 const ROOT = new URL('.', import.meta.url).pathname;
 const DIST = join(ROOT, 'dist');
 const read = (p) => readFileSync(join(ROOT, p), 'utf8');
@@ -191,7 +194,7 @@ ${jobPosting(o, body.html, lang, SITE + url)}
 </head>
 <body>
 ${page}
-<script src="/assets/site.js" defer></script>
+<script src="/assets/site.js?v=${SITE_JS_VERSION}" defer></script>
 </body>
 </html>
 `;
@@ -255,7 +258,7 @@ ${font}
 </head>
 <body>
 ${page}${extra}
-<script src="/assets/site.js" defer></script>
+<script src="/assets/site.js?v=${SITE_JS_VERSION}" defer></script>
 </body>
 </html>
 `;
