@@ -33,7 +33,7 @@
         <span style="display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;background:#ffffff;border:1.5px solid #540047;font-size:13.5px;font-weight:800;color:#540047;">{{ v.salary }}</span>
         </sc-if>
       </div>
-      <div style="padding-top:6px;"><a href="{{ v.applyUrl }}" target="_blank" rel="noopener" class="zw-btn" style="display:inline-block;padding:15px 30px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:800;font-size:16px;">Solliciteer direct</a></div>
+      <div style="padding-top:6px;"><a href="#solliciteer" class="zw-btn" style="display:inline-block;padding:15px 30px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:800;font-size:16px;">Solliciteer direct</a></div>
     </div>
     <svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:56px;"><path d="M0,34 C420,70 1000,6 1440,30 L1440,80 L0,80 Z" fill="#ffffff"></path></svg>
   </section>
@@ -47,7 +47,7 @@
           <div style="padding:24px;display:flex;flex-direction:column;gap:14px;">
             <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#A6124B;">Kerngegevens</p>
             <p style="font-size:15.5px;line-height:1.6;max-width:none!important;"><strong>Locatie:</strong> {{ v.city }}<br><strong>Werkplek:</strong> {{ v.work }}<br><strong>Uren:</strong> {{ v.hours }}</p>
-            <a href="{{ v.applyUrl }}" target="_blank" rel="noopener" class="zw-btn" style="display:block;text-align:center;padding:14px 24px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:800;font-size:15.5px;">Solliciteer direct</a>
+            <a href="#solliciteer" class="zw-btn" style="display:block;text-align:center;padding:14px 24px;border-radius:999px;background:#DE0954;color:#ffffff;font-weight:800;font-size:15.5px;">Solliciteer direct</a>
             <p style="font-size:13.5px;line-height:1.5;max-width:none!important;">Lees hoe we met je gegevens omgaan in onze <a href="/nl/privacy/" style="font-weight:800;color:#A6124B;">privacyverklaring</a>.</p>
           </div>
         </div>
@@ -58,6 +58,29 @@
       </aside>
     </div>
   </section>
+  <section id="solliciteer" style="width:100%;background:#FCE7EE;scroll-margin-top:80px;">
+    <div style="max-width:760px;margin:0 auto;padding:64px 40px 72px;">
+      <h2 style="font-size:30px;line-height:1.2;font-weight:900;color:#540047;margin:0 0 8px;">Solliciteer direct</h2>
+      <p style="font-size:17px;line-height:1.6;margin:0 0 28px;">Vul je gegevens in en voeg je cv toe. We reageren snel.</p>
+      <div id="apply-wrap">
+      <form id="apply-form" method="POST" action="/.netlify/functions/apply" enctype="multipart/form-data" data-error="Versturen is niet gelukt. Probeer het opnieuw, of solliciteer via onze" data-size-error="Een bestand is te groot. Maximaal 4 MB per bestand." style="display:flex;flex-direction:column;gap:18px;">
+        <input type="hidden" name="offer" value="{{ v.slug }}">
+        <p style="display:none;"><label>Niet invullen <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14.5px;color:#540047;">Volledige naam *<input type="text" name="name" required autocomplete="name" style="display:block;width:100%;padding:13px 16px;border-radius:14px;border:1.5px solid #EEE6ED;font:inherit;font-size:16px;background:#ffffff;"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14.5px;color:#540047;">E-mailadres *<input type="email" name="email" required autocomplete="email" style="display:block;width:100%;padding:13px 16px;border-radius:14px;border:1.5px solid #EEE6ED;font:inherit;font-size:16px;background:#ffffff;"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14.5px;color:#540047;">Telefoonnummer *<input type="tel" name="phone" required autocomplete="tel" style="display:block;width:100%;padding:13px 16px;border-radius:14px;border:1.5px solid #EEE6ED;font:inherit;font-size:16px;background:#ffffff;"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14.5px;color:#540047;">Cv (pdf of Word, max 4 MB) *<input type="file" name="cv" required accept=".pdf,.doc,.docx" style="display:block;width:100%;padding:13px 16px;border-radius:14px;border:1.5px solid #EEE6ED;font:inherit;font-size:16px;background:#ffffff;"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14.5px;color:#540047;">Motivatiebrief (optioneel)<input type="file" name="letter" accept=".pdf,.doc,.docx" style="display:block;width:100%;padding:13px 16px;border-radius:14px;border:1.5px solid #EEE6ED;font:inherit;font-size:16px;background:#ffffff;"></label>
+        <label style="display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.5;"><input type="checkbox" name="consent" required style="margin-top:4px;"><span>Ik heb de <a href="/nl/privacy/" style="font-weight:800;color:#A6124B;">privacyverklaring</a> gelezen.</span></label>
+        <div><button type="submit" class="zw-btn" style="padding:15px 30px;border-radius:999px;border:0;cursor:pointer;background:#DE0954;color:#ffffff;font:inherit;font-weight:800;font-size:16px;">Verstuur sollicitatie</button></div>
+        <p id="apply-error" role="alert" hidden style="color:#A6124B;font-weight:700;margin:0;"></p>
+      </form>
+      </div>
+      <p id="apply-sent" role="status" hidden style="background:#ffffff;border-radius:20px;padding:24px;font-size:18px;font-weight:700;color:#540047;margin:0;">Gelukt! We hebben je sollicitatie ontvangen. Je krijgt een bevestiging per e-mail.</p>
+      <p id="apply-fallback" hidden><a href="{{ v.applyUrl }}" target="_blank" rel="noopener" style="font-weight:800;color:#A6124B;">sollicitatiepagina</a></p>
+    </div>
+  </section>
+
 
   <!--@footer-->
 
