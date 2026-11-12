@@ -7,7 +7,8 @@
     "company": "/en/company/",
     "contact": "/en/contact/",
     "privacy": "/en/privacy/",
-    "product": "/en/our-product/"
+    "product": "/en/our-product/",
+    "open-sollicitatie": "/en/open-application/"
   },
   "nl": {
     "index": "/nl/",
@@ -17,6 +18,7 @@
     "company": "/nl/over-ons/",
     "contact": "/nl/contact/",
     "privacy": "/nl/privacy/",
-    "product": "/nl/ons-product/"
+    "product": "/nl/ons-product/",
+    "open-sollicitatie": "/nl/open-sollicitatie/"
   }
 }
