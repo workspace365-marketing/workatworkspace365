@@ -62,9 +62,9 @@
   <section aria-labelledby="proces-titel" style="width:100%;background:linear-gradient(180deg,#ffffff 0%,#FDF6F3 30%,#FCE7EE 100%);">
     <style>
     .zw-proc-list{list-style:none;margin:0;padding:0;position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
-    .zw-proc-list::before,.zw-proc-list::after{content:"";position:absolute;top:27px;left:10%;right:10%;height:2px;background:#EEE6ED}
+    .zw-proc-list::before,.zw-proc-list::after{content:"";position:absolute;top:27px;left:10%;right:10%;height:2px;background:#EEE6ED;z-index:0}
     .zw-proc-list::after{background:linear-gradient(90deg,#540047 0%,#DE0954 100%);transform-origin:left center}
-    .zw-proc-step{position:relative;display:flex;flex-direction:column;align-items:center;gap:20px}
+    .zw-proc-step{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:20px}
     .zw-proc-dot{position:relative;z-index:1;width:56px;height:56px;flex:none;border-radius:999px;color:#ffffff;font-size:22px;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px #FDF6F3}
     .zw-proc-card{align-self:stretch;flex-grow:1;border-radius:18px;padding:24px;box-shadow:0 10px 30px rgba(84,0,71,0.10);display:flex;flex-direction:column;gap:8px}
     /* Beweging: de lijn loopt van stap 1 naar 5, de stappen verschijnen een voor een en daarna licht steeds de volgende stap op. */
