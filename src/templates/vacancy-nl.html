@@ -58,6 +58,66 @@
       </aside>
     </div>
   </section>
+  <!-- SOLLICITATIEPROCES -->
+  <section aria-labelledby="proces-titel" style="width:100%;background:linear-gradient(180deg,#ffffff 0%,#FDF6F3 30%,#FCE7EE 100%);">
+    <style>
+    .zw-proc-list{list-style:none;margin:0;padding:0;position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
+    .zw-proc-list::before{content:"";position:absolute;top:27px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,#540047 0%,#DE0954 100%)}
+    .zw-proc-step{position:relative;display:flex;flex-direction:column;align-items:center;gap:20px}
+    .zw-proc-dot{width:56px;height:56px;flex:none;border-radius:999px;color:#ffffff;font-size:22px;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px #FDF6F3}
+    .zw-proc-card{align-self:stretch;flex-grow:1;border-radius:18px;padding:24px;box-shadow:0 10px 30px rgba(84,0,71,0.10);display:flex;flex-direction:column;gap:8px}
+    @media (max-width:900px){
+      .zw-proc-list{grid-template-columns:1fr;gap:16px}
+      .zw-proc-list::before{top:28px;bottom:28px;left:27px;right:auto;width:2px;height:auto;background:linear-gradient(180deg,#540047 0%,#DE0954 100%)}
+      .zw-proc-step{flex-direction:row;align-items:flex-start;gap:16px}
+    }
+    </style>
+    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:72px 40px 80px;display:flex;flex-direction:column;gap:48px;">
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;">Zo werven we</p>
+        <h2 id="proces-titel" style="font-size:clamp(30px,3.6vw,44px);line-height:1.12;font-weight:900;color:#540047;">Van cv tot aanbod in vijf stappen</h2>
+        <p style="font-size:18px;line-height:1.6;font-weight:700;color:#540047;">Je weet bij elke stap wat je kunt verwachten.</p>
+      </div>
+      <ol class="zw-proc-list">
+        <li class="zw-proc-step">
+          <span class="zw-proc-dot" style="background:#540047;">1</span>
+          <div class="zw-proc-card" style="background:#ffffff;">
+            <h3 style="font-size:19px;line-height:1.3;font-weight:800;color:#540047;">Je solliciteert</h3>
+            <p style="font-size:15px;line-height:1.5;color:#000000;">Met je cv. Een motivatie mag, hoeft niet.</p>
+          </div>
+        </li>
+        <li class="zw-proc-step">
+          <span class="zw-proc-dot" style="background:#540047;">2</span>
+          <div class="zw-proc-card" style="background:#ffffff;">
+            <h3 style="font-size:19px;line-height:1.3;font-weight:800;color:#540047;">Telefoongesprek</h3>
+            <p style="font-size:15px;line-height:1.5;color:#000000;">Kort over je ervaring en praktische zaken, zoals uren en startdatum.</p>
+          </div>
+        </li>
+        <li class="zw-proc-step">
+          <span class="zw-proc-dot" style="background:#7A0A4C;">3</span>
+          <div class="zw-proc-card" style="background:#ffffff;">
+            <h3 style="font-size:19px;line-height:1.3;font-weight:800;color:#540047;">Kennismaking met Talent</h3>
+            <p style="font-size:15px;line-height:1.5;color:#000000;">Wie ben je en wat drijft je?</p>
+          </div>
+        </li>
+        <li class="zw-proc-step">
+          <span class="zw-proc-dot" style="background:#A6124B;">4</span>
+          <div class="zw-proc-card" style="background:#ffffff;">
+            <h3 style="font-size:19px;line-height:1.3;font-weight:800;color:#540047;">Gesprek met het team</h3>
+            <p style="font-size:15px;line-height:1.5;color:#000000;">Met één of twee collega's, inclusief een vakinhoudelijke challenge.</p>
+          </div>
+        </li>
+        <li class="zw-proc-step">
+          <span class="zw-proc-dot" style="background:#DE0954;">5</span>
+          <div class="zw-proc-card" style="background:#540047;box-shadow:0 12px 28px rgba(222,9,84,0.28);">
+            <h3 style="font-size:19px;line-height:1.3;font-weight:800;color:#ffffff;">Aanbod</h3>
+            <p style="font-size:15px;line-height:1.5;color:#FCE7EE;">Is het een match? Dan doen we je een aanbod.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
   <section id="solliciteer" style="width:100%;background:#FCE7EE;scroll-margin-top:80px;">
     <div style="max-width:760px;margin:0 auto;padding:64px 40px 72px;">
       <h2 style="font-size:30px;line-height:1.2;font-weight:900;color:#540047;margin:0 0 8px;">Solliciteer direct</h2>
