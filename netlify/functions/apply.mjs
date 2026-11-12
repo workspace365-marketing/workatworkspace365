@@ -26,7 +26,7 @@ export default async (req) => {
 
   if (form.get('bot-field')) return reply(req, 200, { ok: true }); // honeypot: doen alsof het gelukt is
   const slug = String(form.get('offer') || '');
-  const name = String(form.get('name') || '').trim();
+  const name = String(form.get('name') || [form.get('first'), form.get('last')].filter(Boolean).join(' ')).trim();
   const email = String(form.get('email') || '').trim();
   const phone = String(form.get('phone') || '').trim();
   const cv = form.get('cv');
@@ -43,6 +43,19 @@ export default async (req) => {
   out.append('candidate[phone]', phone);
   out.append('candidate[cv]', cv, cv.name);
   if (letter instanceof File && letter.size > 0) out.append('candidate[cover_letter_file]', letter, letter.name);
+  // Antwoorden op open vragen uit Recruitee: velden met de naam q_<vraag-id>. Een gekozen team gaat mee in het eerste antwoord.
+  const team = String(form.get('team') || '').trim();
+  let n = 0;
+  for (const [key, value] of form.entries()) {
+    const m = /^q_(\d{1,12})$/.exec(key);
+    if (!m) continue;
+    let text = String(value || '').trim();
+    if (n === 0 && team) text = (text ? text + '\n\n' : '') + 'Voorkeursteam: ' + team;
+    if (!text) continue;
+    out.append(`candidate[open_question_answers_attributes][${n}][open_question_id]`, m[1]);
+    out.append(`candidate[open_question_answers_attributes][${n}][content]`, text.slice(0, 10000));
+    n++;
+  }
 
   const res = await fetch(`${base}/api/offers/${slug}/candidates`, {
     method: 'POST',
