@@ -2,7 +2,7 @@
   "en": [
     {
       "img": "6da1ac9391d5a61dc3867fce9b098632.jpg",
-      "name": "Hans de Graaf",
+      "name": "Hans",
       "role": "CEO and founder",
       "team": "Strategy and story",
       "short": "",
@@ -11,7 +11,7 @@
     },
     {
       "img": "d7425b181b617d85dd27d0028012b365.jpg",
-      "name": "Erik Nicolai",
+      "name": "Erik",
       "role": "CEO and founder",
       "team": "Strategy and story",
       "short": "",
@@ -20,7 +20,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Axel van der Meijden Ruiz",
+      "name": "Axel",
       "role": "Sales Development Representative Intern",
       "team": "Kelly AI",
       "short": "",
@@ -29,7 +29,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Laurens Holtkamp",
+      "name": "Laurens",
       "role": "Product Manager",
       "team": "Kelly AI",
       "short": "",
@@ -38,7 +38,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Moses Okolo",
+      "name": "Moses",
       "role": "Python Engineer",
       "team": "Kelly AI",
       "short": "",
@@ -47,7 +47,7 @@
     },
     {
       "img": "4ddcf5733807656dbaf296b67f865c24.jpg",
-      "name": "Roman Zabrovskiy",
+      "name": "Roman",
       "role": "Manual QA Engineer",
       "team": "Kelly AI",
       "short": "",
@@ -56,7 +56,7 @@
     },
     {
       "img": "f0e82ff5662003cb7a747de20770c4c3.jpg",
-      "name": "Silvan van Hierden",
+      "name": "Silvan",
       "role": "GTM Lead, Kelly",
       "team": "Kelly AI",
       "short": "",
@@ -65,7 +65,7 @@
     },
     {
       "img": "f95b18a6abe61e51175a40d5bc52ebcf.jpg",
-      "name": "Sudhakaran Jain",
+      "name": "Sudhakaran",
       "role": "AI Engineer",
       "team": "Kelly AI",
       "short": "",
@@ -74,7 +74,7 @@
     },
     {
       "img": "94c96f94002a3a9ff85e5082f76962be.jpg",
-      "name": "Wesley de Graaf",
+      "name": "Wesley",
       "role": "Product Lead, Kelly",
       "team": "Kelly AI",
       "short": "",
@@ -83,7 +83,7 @@
     },
     {
       "img": "3ec53bd3e0719bdb73d9f7144723a775.jpg",
-      "name": "Amir Ghadimi",
+      "name": "Amir",
       "role": "Front-end Developer",
       "team": "Zorgworkspace",
       "short": "",
@@ -92,7 +92,7 @@
     },
     {
       "img": "36e33081e15910f1410af30793d9033b.jpg",
-      "name": "Axel Evers",
+      "name": "Axel",
       "role": "Teamlead Sales",
       "team": "Zorgworkspace",
       "short": "",
@@ -101,7 +101,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Cas Hoogendoorn",
+      "name": "Cas",
       "role": "Sales Development Representative Intern",
       "team": "Zorgworkspace",
       "short": "",
@@ -110,7 +110,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Chihoi Man",
+      "name": "Chihoi",
       "role": "Sales Development Representative",
       "team": "Zorgworkspace",
       "short": "",
@@ -119,7 +119,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Ilya Tiunov",
+      "name": "Ilya",
       "role": "Full Stack Developer",
       "team": "Zorgworkspace",
       "short": "",
@@ -128,7 +128,7 @@
     },
     {
       "img": "b8b7ed7f709c2bb3ef2d35530afcd008.jpg",
-      "name": "Jacco Timmer",
+      "name": "Jacco",
       "role": "Customer Success Manager",
       "team": "Zorgworkspace",
       "short": "",
@@ -137,7 +137,7 @@
     },
     {
       "img": "31b26cb303359a4804d1cc35a830edc0.jpg",
-      "name": "Leonie Oosterhoff",
+      "name": "Leonie",
       "role": "Demand Generation Manager",
       "team": "Zorgworkspace",
       "short": "",
@@ -146,7 +146,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Michael Nigbur",
+      "name": "Michael",
       "role": "UX/UI Designer",
       "team": "Zorgworkspace",
       "short": "",
@@ -155,7 +155,7 @@
     },
     {
       "img": "63651e18e0246869a23330b2291c581d.jpg",
-      "name": "Nienke de Ruiter",
+      "name": "Nienke",
       "role": "Customer Success Manager",
       "team": "Zorgworkspace",
       "short": "",
@@ -164,7 +164,7 @@
     },
     {
       "img": "3ea32a63e4ed7d9acbe6468af0a46295.jpg",
-      "name": "Sergey Moroz",
+      "name": "Sergey",
       "role": "Quality Assurance Engineer",
       "team": "Zorgworkspace",
       "short": "",
@@ -173,7 +173,7 @@
     },
     {
       "img": "c1e50f8191333f4bbb88774a7232653f.jpg",
-      "name": "Davey Manuputty",
+      "name": "Davey",
       "role": "Account Executive",
       "team": "Government Workspace",
       "short": "",
@@ -181,8 +181,8 @@
       "kk": "gov"
     },
     {
-      "img": "frans-de-graaf.jpg",
-      "name": "Frans de Graaf",
+      "img": "frans.jpg",
+      "name": "Frans",
       "role": "Cloud Support Engineer",
       "team": "Government Workspace",
       "short": "",
@@ -191,7 +191,7 @@
     },
     {
       "img": "6d4f62b5ffe3799851f9578c24f24d1b.jpg",
-      "name": "Jos Berpee",
+      "name": "Jos",
       "role": "Account Executive",
       "team": "Government Workspace",
       "short": "",
@@ -200,7 +200,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Milan Kroes",
+      "name": "Milan",
       "role": "Sales Development Representative Intern",
       "team": "Government Workspace",
       "short": "",
@@ -209,7 +209,7 @@
     },
     {
       "img": "b3ad14fc97a67e4aaeb6be06aaef24cf.jpg",
-      "name": "Pim Scholten",
+      "name": "Pim",
       "role": "UX/UI Designer",
       "team": "Government Workspace",
       "short": "",
@@ -217,8 +217,8 @@
       "kk": "gov"
     },
     {
-      "img": "sven-de-jong.jpg",
-      "name": "Sven de Jong",
+      "img": "sven.jpg",
+      "name": "Sven",
       "role": "Sales Development Representative",
       "team": "Government Workspace",
       "short": "",
@@ -227,7 +227,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Willem-Jan Groenestein",
+      "name": "Willem-Jan",
       "role": "Software Engineer",
       "team": "Government Workspace",
       "short": "",
@@ -236,7 +236,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Gert-Jan Eijlders",
+      "name": "Gert-Jan",
       "role": "Back-end Developer",
       "team": "Workspace 365",
       "short": "",
@@ -245,7 +245,7 @@
     },
     {
       "img": "eb39f757ad1ca7b27b9d3f8a2b5c2c74.jpg",
-      "name": "Ivo van Bilsen",
+      "name": "Ivo",
       "role": "Integration & Support Consultant",
       "team": "Workspace 365",
       "short": "",
@@ -254,7 +254,7 @@
     },
     {
       "img": "b784192742a95c3db9e834ee59cdb85a.jpg",
-      "name": "Jack van Dijkhuizen",
+      "name": "Jack",
       "role": "Cloud Support Engineer",
       "team": "Workspace 365",
       "short": "",
@@ -263,7 +263,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Kelly van der Horst",
+      "name": "Kelly",
       "role": "Customer Marketer",
       "team": "Workspace 365",
       "short": "",
@@ -272,7 +272,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Oleksandr Kostenko",
+      "name": "Oleksandr",
       "role": "Quality Assurance Engineer",
       "team": "Workspace 365",
       "short": "",
@@ -281,7 +281,7 @@
     },
     {
       "img": "21d1416381ee7ef370911143b4f83ad1.jpg",
-      "name": "Reinier Bakker",
+      "name": "Reinier",
       "role": "Customer Success Manager",
       "team": "Workspace 365",
       "short": "Full of ambition",
@@ -290,7 +290,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Yanis Belkacem",
+      "name": "Yanis",
       "role": "Front-end Developer",
       "team": "Workspace 365",
       "short": "",
@@ -299,7 +299,7 @@
     },
     {
       "img": "8cc7f8ae54bfccd7baea8c1e0357dbcc.jpg",
-      "name": "Fabian Brocken",
+      "name": "Fabian",
       "role": "Security Officer & IT Manager",
       "team": "Security & hosting",
       "short": "",
@@ -308,7 +308,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Sybren de Jong",
+      "name": "Sybren",
       "role": "Cloud Engineer",
       "team": "Security & hosting",
       "short": "",
@@ -317,7 +317,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Willem van der Mheen",
+      "name": "Willem",
       "role": "Cloud Engineer",
       "team": "Security & hosting",
       "short": "",
@@ -326,7 +326,7 @@
     },
     {
       "img": "f1f4dd4d2b1a750f06acdcb1e87e67bc.jpg",
-      "name": "Hennie van Ginkel",
+      "name": "Hennie",
       "role": "Finance Specialist",
       "team": "Finance & data",
       "short": "",
@@ -335,7 +335,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Mathijs van der Meer",
+      "name": "Mathijs",
       "role": "Data Engineer",
       "team": "Finance & data",
       "short": "",
@@ -344,7 +344,7 @@
     },
     {
       "img": "900ab676658376436c1be102193c81d8.jpg",
-      "name": "Wouter Laseur",
+      "name": "Wouter",
       "role": "Head of Finance",
       "team": "Finance & data",
       "short": "",
@@ -353,7 +353,7 @@
     },
     {
       "img": "21b3dc2def7a890c8e16b70da58af9a5.jpg",
-      "name": "Ingrid van den Rijen",
+      "name": "Ingrid",
       "role": "Head of Talent",
       "team": "Talent",
       "short": "",
@@ -362,7 +362,7 @@
     },
     {
       "img": "75cb71f8476102e016fbaa3073672873.jpg",
-      "name": "Julia van Bergen",
+      "name": "Julia",
       "role": "Corporate Recruiter",
       "team": "Talent",
       "short": "",
@@ -371,7 +371,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Maaike de Jong",
+      "name": "Maaike",
       "role": "Office Manager",
       "team": "Talent",
       "short": "",
@@ -382,7 +382,7 @@
   "nl": [
     {
       "img": "6da1ac9391d5a61dc3867fce9b098632.jpg",
-      "name": "Hans de Graaf",
+      "name": "Hans",
       "role": "CEO en oprichter",
       "team": "Strategie en verhaal",
       "short": "",
@@ -391,7 +391,7 @@
     },
     {
       "img": "d7425b181b617d85dd27d0028012b365.jpg",
-      "name": "Erik Nicolai",
+      "name": "Erik",
       "role": "CEO en oprichter",
       "team": "Strategie en verhaal",
       "short": "",
@@ -400,7 +400,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Axel van der Meijden Ruiz",
+      "name": "Axel",
       "role": "Stagiair Sales Development Representative",
       "team": "Kelly AI",
       "short": "",
@@ -409,7 +409,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Laurens Holtkamp",
+      "name": "Laurens",
       "role": "Product Manager",
       "team": "Kelly AI",
       "short": "",
@@ -418,7 +418,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Moses Okolo",
+      "name": "Moses",
       "role": "Python Engineer",
       "team": "Kelly AI",
       "short": "",
@@ -427,7 +427,7 @@
     },
     {
       "img": "4ddcf5733807656dbaf296b67f865c24.jpg",
-      "name": "Roman Zabrovskiy",
+      "name": "Roman",
       "role": "Manual QA Engineer",
       "team": "Kelly AI",
       "short": "",
@@ -436,7 +436,7 @@
     },
     {
       "img": "f0e82ff5662003cb7a747de20770c4c3.jpg",
-      "name": "Silvan van Hierden",
+      "name": "Silvan",
       "role": "GTM Lead, Kelly",
       "team": "Kelly AI",
       "short": "",
@@ -445,7 +445,7 @@
     },
     {
       "img": "f95b18a6abe61e51175a40d5bc52ebcf.jpg",
-      "name": "Sudhakaran Jain",
+      "name": "Sudhakaran",
       "role": "AI Engineer",
       "team": "Kelly AI",
       "short": "",
@@ -454,7 +454,7 @@
     },
     {
       "img": "94c96f94002a3a9ff85e5082f76962be.jpg",
-      "name": "Wesley de Graaf",
+      "name": "Wesley",
       "role": "Product Lead, Kelly",
       "team": "Kelly AI",
       "short": "",
@@ -463,7 +463,7 @@
     },
     {
       "img": "3ec53bd3e0719bdb73d9f7144723a775.jpg",
-      "name": "Amir Ghadimi",
+      "name": "Amir",
       "role": "Front-end Developer",
       "team": "Zorgworkspace",
       "short": "",
@@ -472,7 +472,7 @@
     },
     {
       "img": "36e33081e15910f1410af30793d9033b.jpg",
-      "name": "Axel Evers",
+      "name": "Axel",
       "role": "Teamlead Sales",
       "team": "Zorgworkspace",
       "short": "",
@@ -481,7 +481,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Cas Hoogendoorn",
+      "name": "Cas",
       "role": "Stagiair Sales Development Representative",
       "team": "Zorgworkspace",
       "short": "",
@@ -490,7 +490,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Chihoi Man",
+      "name": "Chihoi",
       "role": "Sales Development Representative",
       "team": "Zorgworkspace",
       "short": "",
@@ -499,7 +499,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Ilya Tiunov",
+      "name": "Ilya",
       "role": "Full Stack Developer",
       "team": "Zorgworkspace",
       "short": "",
@@ -508,7 +508,7 @@
     },
     {
       "img": "b8b7ed7f709c2bb3ef2d35530afcd008.jpg",
-      "name": "Jacco Timmer",
+      "name": "Jacco",
       "role": "Customer Success Manager",
       "team": "Zorgworkspace",
       "short": "",
@@ -517,7 +517,7 @@
     },
     {
       "img": "31b26cb303359a4804d1cc35a830edc0.jpg",
-      "name": "Leonie Oosterhoff",
+      "name": "Leonie",
       "role": "Demand Generation Manager",
       "team": "Zorgworkspace",
       "short": "",
@@ -526,7 +526,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Michael Nigbur",
+      "name": "Michael",
       "role": "UX/UI Designer",
       "team": "Zorgworkspace",
       "short": "",
@@ -535,7 +535,7 @@
     },
     {
       "img": "63651e18e0246869a23330b2291c581d.jpg",
-      "name": "Nienke de Ruiter",
+      "name": "Nienke",
       "role": "Customer Success Manager",
       "team": "Zorgworkspace",
       "short": "",
@@ -544,7 +544,7 @@
     },
     {
       "img": "3ea32a63e4ed7d9acbe6468af0a46295.jpg",
-      "name": "Sergey Moroz",
+      "name": "Sergey",
       "role": "Quality Assurance Engineer",
       "team": "Zorgworkspace",
       "short": "",
@@ -553,7 +553,7 @@
     },
     {
       "img": "c1e50f8191333f4bbb88774a7232653f.jpg",
-      "name": "Davey Manuputty",
+      "name": "Davey",
       "role": "Account Executive",
       "team": "Overheidsworkspace",
       "short": "",
@@ -561,8 +561,8 @@
       "kk": "gov"
     },
     {
-      "img": "frans-de-graaf.jpg",
-      "name": "Frans de Graaf",
+      "img": "frans.jpg",
+      "name": "Frans",
       "role": "Cloud Support Engineer",
       "team": "Overheidsworkspace",
       "short": "",
@@ -571,7 +571,7 @@
     },
     {
       "img": "6d4f62b5ffe3799851f9578c24f24d1b.jpg",
-      "name": "Jos Berpee",
+      "name": "Jos",
       "role": "Account Executive",
       "team": "Overheidsworkspace",
       "short": "",
@@ -580,7 +580,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Milan Kroes",
+      "name": "Milan",
       "role": "Stagiair Sales Development Representative",
       "team": "Overheidsworkspace",
       "short": "",
@@ -589,7 +589,7 @@
     },
     {
       "img": "b3ad14fc97a67e4aaeb6be06aaef24cf.jpg",
-      "name": "Pim Scholten",
+      "name": "Pim",
       "role": "UX/UI Designer",
       "team": "Overheidsworkspace",
       "short": "",
@@ -597,8 +597,8 @@
       "kk": "gov"
     },
     {
-      "img": "sven-de-jong.jpg",
-      "name": "Sven de Jong",
+      "img": "sven.jpg",
+      "name": "Sven",
       "role": "Sales Development Representative",
       "team": "Overheidsworkspace",
       "short": "",
@@ -607,7 +607,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Willem-Jan Groenestein",
+      "name": "Willem-Jan",
       "role": "Software Engineer",
       "team": "Overheidsworkspace",
       "short": "",
@@ -616,7 +616,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Gert-Jan Eijlders",
+      "name": "Gert-Jan",
       "role": "Back-end Developer",
       "team": "Workspace 365",
       "short": "",
@@ -625,7 +625,7 @@
     },
     {
       "img": "eb39f757ad1ca7b27b9d3f8a2b5c2c74.jpg",
-      "name": "Ivo van Bilsen",
+      "name": "Ivo",
       "role": "Integration & Support Consultant",
       "team": "Workspace 365",
       "short": "",
@@ -634,7 +634,7 @@
     },
     {
       "img": "b784192742a95c3db9e834ee59cdb85a.jpg",
-      "name": "Jack van Dijkhuizen",
+      "name": "Jack",
       "role": "Cloud Support Engineer",
       "team": "Workspace 365",
       "short": "",
@@ -643,7 +643,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Kelly van der Horst",
+      "name": "Kelly",
       "role": "Customer Marketeer",
       "team": "Workspace 365",
       "short": "",
@@ -652,7 +652,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Oleksandr Kostenko",
+      "name": "Oleksandr",
       "role": "Quality Assurance Engineer",
       "team": "Workspace 365",
       "short": "",
@@ -661,7 +661,7 @@
     },
     {
       "img": "21d1416381ee7ef370911143b4f83ad1.jpg",
-      "name": "Reinier Bakker",
+      "name": "Reinier",
       "role": "Customer Success Manager",
       "team": "Workspace 365",
       "short": "Vol ambitie",
@@ -670,7 +670,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Yanis Belkacem",
+      "name": "Yanis",
       "role": "Front-end Developer",
       "team": "Workspace 365",
       "short": "",
@@ -679,7 +679,7 @@
     },
     {
       "img": "8cc7f8ae54bfccd7baea8c1e0357dbcc.jpg",
-      "name": "Fabian Brocken",
+      "name": "Fabian",
       "role": "Security Officer & IT Manager",
       "team": "Security & hosting",
       "short": "",
@@ -688,7 +688,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Sybren de Jong",
+      "name": "Sybren",
       "role": "Cloud Engineer",
       "team": "Security & hosting",
       "short": "",
@@ -697,7 +697,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Willem van der Mheen",
+      "name": "Willem",
       "role": "Cloud Engineer",
       "team": "Security & hosting",
       "short": "",
@@ -706,7 +706,7 @@
     },
     {
       "img": "f1f4dd4d2b1a750f06acdcb1e87e67bc.jpg",
-      "name": "Hennie van Ginkel",
+      "name": "Hennie",
       "role": "Finance Specialist",
       "team": "Finance & data",
       "short": "",
@@ -715,7 +715,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Mathijs van der Meer",
+      "name": "Mathijs",
       "role": "Data Engineer",
       "team": "Finance & data",
       "short": "",
@@ -724,7 +724,7 @@
     },
     {
       "img": "900ab676658376436c1be102193c81d8.jpg",
-      "name": "Wouter Laseur",
+      "name": "Wouter",
       "role": "Head of Finance",
       "team": "Finance & data",
       "short": "",
@@ -733,7 +733,7 @@
     },
     {
       "img": "21b3dc2def7a890c8e16b70da58af9a5.jpg",
-      "name": "Ingrid van den Rijen",
+      "name": "Ingrid",
       "role": "Head of Talent",
       "team": "Talent",
       "short": "",
@@ -742,7 +742,7 @@
     },
     {
       "img": "75cb71f8476102e016fbaa3073672873.jpg",
-      "name": "Julia van Bergen",
+      "name": "Julia",
       "role": "Corporate Recruiter",
       "team": "Talent",
       "short": "",
@@ -751,7 +751,7 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Maaike de Jong",
+      "name": "Maaike",
       "role": "Office Manager",
       "team": "Talent",
       "short": "",
