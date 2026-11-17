@@ -1,7 +1,8 @@
 // Ontvangt een sollicitatie van de vacaturepagina en zet die in Recruitee (Careers Site API).
 // Omgevingsvariabelen (alleen in Netlify, nooit in de repository):
 //   RECRUITEE_CAREERS_TOKEN  Careers Site token uit Recruitee
-//   RECRUITEE_API_BASE       optioneel, standaard https://jobs.workspace365.net
+//   RECRUITEE_API_BASE       optioneel, standaard https://workspace365.recruitee.com
+//                            (niet jobs.workspace365.net: dat domein is nu deze site)
 const MAX_FILE = 4 * 1024 * 1024; // Netlify Functions accepteren maximaal ongeveer 6 MB per aanvraag
 const json = (status, body) =>
   new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json' } });
@@ -19,7 +20,7 @@ export default async (req) => {
   if (req.method !== 'POST') return json(405, { error: 'method' });
   const token = process.env.RECRUITEE_CAREERS_TOKEN;
   if (!token) return json(503, { error: 'not-configured' });
-  const base = (process.env.RECRUITEE_API_BASE || 'https://jobs.workspace365.net').replace(/\/$/, '');
+  const base = (process.env.RECRUITEE_API_BASE || 'https://workspace365.recruitee.com').replace(/\/$/, '');
 
   let form;
   try { form = await req.formData(); } catch { return reply(req, 400, { error: 'invalid' }); }

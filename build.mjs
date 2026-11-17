@@ -21,7 +21,9 @@ const people = json('data/people.json');
 const vacancyEn = process.env.VACANCY_EN_FILE ? JSON.parse(readFileSync(process.env.VACANCY_EN_FILE, 'utf8')) : json('data/vacancy-en.json');
 
 // ---------- Vacatures (Recruitee) ----------
-const RECRUITEE = 'https://jobs.workspace365.net/api/offers/';
+// Recruitee zelf, niet jobs.workspace365.net: dat domein is nu deze site.
+const RECRUITEE_SITE = 'https://workspace365.recruitee.com';
+const RECRUITEE = RECRUITEE_SITE + '/api/offers/';
 // Deze twee zijn geen echte vacatures maar de open sollicitatie en kennismaking.
 const SKIP = new Set(['open-sollicitatie-nijkerk', 'maak-kennis-met-workspace-365']);
 
@@ -65,8 +67,8 @@ function toRole(o, lang) {
     title: o.title,
     pitch: pitch.pitch[lang],
     slug: o.slug,
-    url: o.description ? routes[lang].vacatures + o.slug + '/' : 'https://jobs.workspace365.net/o/' + o.slug,
-    applyUrl: o.careers_apply_url || 'https://jobs.workspace365.net/o/' + o.slug + '/c/new',
+    url: o.description ? routes[lang].vacatures + o.slug + '/' : RECRUITEE_SITE + '/o/' + o.slug,
+    applyUrl: RECRUITEE_SITE + '/o/' + o.slug + '/c/new',
     img: '/assets/img/' + pitch.img,
     badge: job ? t.job : t.int,
     badgeBg: job ? '#540047' : '#FEEDE7',
@@ -283,5 +285,19 @@ ${page}${extra}
 // Taalkeuze op de hoofdingang (de Netlify redirects doen het eigenlijke werk)
 writeFileSync(join(DIST, 'index.html'), `<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=/nl/"><title>Werken bij Workspace 365</title><link rel="canonical" href="${SITE}/nl/"></head><body><a href="/nl/">Nederlands</a> | <a href="/en/">English</a></body></html>`);
 writeFileSync(join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${SITE}${u}</loc></url>`).join('\n')}\n</urlset>\n`);
+// Oude Recruitee-links (jobs.workspace365.net/o/<vacature>) komen nu op deze site binnen.
+// Stuur ze naar dezelfde vacature hier, of naar het overzicht als de vacature niet meer bestaat.
+{
+  const lines = [];
+  const add = (from, key) => {
+    for (const f of [from, from + '/*']) {
+      lines.push(`${f}  ${key('en')}  302  Language=en`, `${f}  ${key('nl')}  302`);
+    }
+  };
+  for (const o of live.filter((o) => o.description)) add('/o/' + o.slug, (l) => routes[l].vacatures + o.slug + '/');
+  add('/o/open-sollicitatie-nijkerk', (l) => routes[l]['open-sollicitatie']);
+  add('/o', (l) => routes[l].vacatures);
+  writeFileSync(join(DIST, '_redirects'), lines.join('\n') + '\n');
+}
 writeFileSync(join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`);
 console.log(`Klaar: ${urls.length} pagina's, ${live.length} vacatures.`);
