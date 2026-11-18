@@ -227,15 +227,6 @@
     },
     {
       "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Willem-Jan",
-      "role": "Software Engineer",
-      "team": "Government Workspace",
-      "short": "",
-      "intro": "",
-      "kk": "gov"
-    },
-    {
-      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
       "name": "Gert-Jan",
       "role": "Back-end Developer",
       "team": "Workspace 365",
@@ -600,15 +591,6 @@
       "img": "sven.jpg",
       "name": "Sven",
       "role": "Sales Development Representative",
-      "team": "Overheidsworkspace",
-      "short": "",
-      "intro": "",
-      "kk": "gov"
-    },
-    {
-      "img": "bb796b5947718e0024a48d8c4756b457.jpg",
-      "name": "Willem-Jan",
-      "role": "Software Engineer",
       "team": "Overheidsworkspace",
       "short": "",
       "intro": "",
