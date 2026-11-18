@@ -186,9 +186,9 @@ function buildVacancyPages(lang, offersForPages, vp) {
 <link rel="canonical" href="${SITE}${url}">
 <link rel="alternate" hreflang="${lang}" href="${SITE}${url}">
 <link rel="alternate" hreflang="${other}" href="${SITE}${alt}">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon.png" type="image/png" sizes="512x512">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="/favicon.png?v=2" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
@@ -264,9 +264,9 @@ for (const lang of LANGS) {
 <link rel="canonical" href="${SITE}${url}">
 <link rel="alternate" hreflang="${lang}" href="${SITE}${url}">
 <link rel="alternate" hreflang="${other}" href="${SITE}${alt}">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon.png" type="image/png" sizes="512x512">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="/favicon.png?v=2" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
