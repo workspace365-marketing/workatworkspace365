@@ -17,6 +17,54 @@
   to = "/nl/"
   status = 302
 
+# De marketingvacature heeft in Recruitee een nieuw adres gekregen.
+[[redirects]]
+  from = "/nl/vacatures/marketing-manager-overheid/"
+  to = "/nl/vacatures/marketing-manager-overheid-senior/"
+  status = 301
+
+[[redirects]]
+  from = "/en/open-roles/marketing-manager-overheid/"
+  to = "/en/open-roles/marketing-manager-overheid-senior/"
+  status = 301
+
+# Gesloten vacatures: terug naar het overzicht.
+[[redirects]]
+  from = "/nl/vacatures/finance-operations-specialist/"
+  to = "/nl/vacatures/"
+  status = 301
+
+[[redirects]]
+  from = "/en/open-roles/finance-operations-specialist/"
+  to = "/en/open-roles/"
+  status = 301
+
+# Oude Recruitee-links op jobs.workspace365.net naar de pagina op deze site.
+[[redirects]]
+  from = "/o/open-sollicitatie-nijkerk/*"
+  to = "/nl/open-sollicitatie/"
+  status = 301
+
+[[redirects]]
+  from = "/o/maak-kennis-met-workspace-365/*"
+  to = "/nl/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/o/marketing-manager-overheid/*"
+  to = "/nl/vacatures/marketing-manager-overheid-senior/"
+  status = 301
+
+[[redirects]]
+  from = "/o/:slug/*"
+  to = "/nl/vacatures/:slug/"
+  status = 301
+
+[[redirects]]
+  from = "/o/:slug"
+  to = "/nl/vacatures/:slug/"
+  status = 301
+
 [[headers]]
   for = "/assets/*"
   [headers.values]
