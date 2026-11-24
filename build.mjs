@@ -236,8 +236,10 @@ for (const lang of LANGS) {
     const font = page.match(/<!--font:(.*?)-->/)[1];
     page = page.replace(/<!--title:.*?-->\n?/, '').replace(/<!--font:.*?-->\n?/, '');
     page = page.replace('<!--@roles-home-->', roles.map((r) => render(partial('role-card-home'), { r })).join('\n'));
+    // Uitgesneden portretten (met wit randje) voor de hero staan in public/assets/img/hero/. Ontbreekt er een, dan de gewone foto.
+    const heroImg = (img) => { const w = 'hero/' + img.replace(/\.[a-z]+$/i, '.webp'); return '/assets/img/' + (existsSync(join(ROOT, 'public/assets/img', w)) ? w : img); };
     // Hero homepage: wisselende portretten, alleen collega's met een echte foto.
-    page = page.replace('<!--@hero-portraits-->', people[lang].filter((p) => p.img !== 'bb796b5947718e0024a48d8c4756b457.jpg').map((p) => '<figure aria-hidden="true"><img src="/assets/img/' + esc(p.img) + '" alt="" loading="lazy" width="960" height="1200"><figcaption>' + esc(p.name + ' \u00b7 ' + p.role) + '</figcaption></figure>').join('\n'));
+    page = page.replace('<!--@hero-portraits-->', people[lang].filter((p) => p.img !== 'bb796b5947718e0024a48d8c4756b457.jpg').map((p) => '<figure aria-hidden="true"><img src="' + heroImg(p.img) + '" alt="" loading="lazy" width="960" height="1200"><figcaption>' + esc(p.name + ' \u00b7 ' + p.role) + '</figcaption></figure>').join('\n'));
     page = page.replace('<!--@roles-list-->', roles.map((r) => render(partial('role-card-list'), { r })).join('\n'));
     // Teamleden per team (veld "kk"), met de teamnaam als kopje. Het teamfilter verbergt of toont hele groepen.
     {
