@@ -62,8 +62,24 @@ a.zw-lg-tile:hover .zw-lg-arrow,a.zw-lg-tile:focus-visible .zw-lg-arrow{transfor
 .zw-lg-pink .zw-lg-arrow svg{width:16px;height:16px}
 
 .zw-lg-own{justify-content:space-between}
-.zw-lg-line{font-size:15px;line-height:1.45;color:#FCE7EE;max-width:24ch;padding-right:28px;margin-top:6px}
+.zw-lg-line{font-size:15px;line-height:1.45;color:#FCE7EE;max-width:26ch;margin-top:6px}
 @media (prefers-reduced-motion: reduce){.zw-lg-frame figure,.zw-lg-tile{transition:none}}
+.zw-q{position:relative}
+.zw-q-mark{display:block;font-family:'Janitor',Arial,sans-serif;font-size:56px;line-height:.6;color:#FCE7EE;opacity:.85;height:26px}
+.zw-q-track{display:grid}
+.zw-q-slide{grid-area:1/1;margin:0;opacity:0;visibility:hidden;transition:opacity .6s cubic-bezier(.22,.61,.36,1),visibility .6s;display:flex;flex-direction:column;justify-content:center}
+.zw-q-slide.on{opacity:1;visibility:visible}
+.zw-q-slide blockquote{margin:0 auto;max-width:860px;font-style:italic;font-size:clamp(17px,1.7vw,20px);line-height:1.5;color:#ffffff}
+.zw-q-who{padding-top:14px;color:#FCE7EE;font-size:14px;line-height:1.4}
+.zw-q-who b{color:#ffffff;font-weight:900;font-size:16px}
+.zw-q-nav{display:flex;align-items:center;justify-content:center;gap:4px;padding-top:18px;flex-wrap:wrap}
+.zw-q-dot{width:28px;height:28px;border:0;background:transparent;padding:0;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.zw-q-dot span{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.45);transition:width .25s,background .25s}
+.zw-q-dot[aria-current="true"] span{width:24px;border-radius:999px;background:#ffffff}
+.zw-q-dot:focus-visible,.zw-q-pp:focus-visible{outline:2px solid #ffffff;outline-offset:2px;border-radius:999px}
+.zw-q-pp{margin-left:10px;min-height:32px;padding:0 14px;border:1.5px solid rgba(255,255,255,.6);border-radius:999px;background:transparent;color:#ffffff;font-family:'Mulish',Arial,sans-serif;font-size:12px;font-weight:800;cursor:pointer}
+@media (max-width:640px){.zw-q{padding:40px 24px !important}.zw-q-dot{width:20px}.zw-q-pp{margin-left:6px}.zw-q-mark{font-size:56px;height:26px}}
+@media (prefers-reduced-motion: reduce){.zw-q-slide,.zw-q-dot span{transition:none}}
 </style>
 <div style="width:100%;min-height:100vh;background:#ffffff;">
 
@@ -105,10 +121,10 @@ a.zw-lg-tile:hover .zw-lg-arrow,a.zw-lg-tile:focus-visible .zw-lg-arrow{transfor
           </div>
           <span class="zw-lg-hand">Here, you’re not a number.</span>
         </div>
-        <a class="zw-lg-tile zw-lg-own" href="/en/culture/#own-it"><svg class="zw-lg-ico zw-lg-ico-own" aria-hidden="true" width="52" height="52" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 25V12.5a2.5 2.5 0 0 1 5 0V23"/><path d="M22 22V9.5a2.5 2.5 0 0 1 5 0V22"/><path d="M27 22.5V11.5a2.5 2.5 0 0 1 5 0V24"/><path d="M32 23.5V16a2.5 2.5 0 0 1 5 0v10c0 8-4.5 14-11.5 14h-1.5c-4 0-6.8-2-8.8-5l-5.4-8a2.6 2.6 0 0 1 4.2-3l3 3.8"/><g stroke="#F25A8F"><path d="M8 10l3 3"/><path d="M5 19h4"/><path d="M42 8l-3 3"/><path d="M45 17h-3"/><path d="M27 2.5v2.5"/></g></svg><span style="display:flex;flex-direction:column;gap:6px;"><span class="zw-lg-eye">Ownership</span><span class="zw-lg-big">Own it</span><span class="zw-lg-line">You get trust, influence and responsibility.</span></span><span class="zw-lg-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></a>
+        <a class="zw-lg-tile zw-lg-own" href="/en/culture/#own-it"><svg class="zw-lg-ico zw-lg-ico-own" aria-hidden="true" width="52" height="52" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 25V12.5a2.5 2.5 0 0 1 5 0V23"/><path d="M22 22V9.5a2.5 2.5 0 0 1 5 0V22"/><path d="M27 22.5V11.5a2.5 2.5 0 0 1 5 0V24"/><path d="M32 23.5V16a2.5 2.5 0 0 1 5 0v10c0 8-4.5 14-11.5 14h-1.5c-4 0-6.8-2-8.8-5l-5.4-8a2.6 2.6 0 0 1 4.2-3l3 3.8"/><g stroke="#F25A8F"><path d="M8 10l3 3"/><path d="M5 19h4"/><path d="M42 8l-3 3"/><path d="M45 17h-3"/><path d="M27 2.5v2.5"/></g></svg><span style="display:flex;flex-direction:column;gap:6px;"><span class="zw-lg-eye">Ownership</span><span class="zw-lg-big">Own it</span><span class="zw-lg-line">You get trust, influence and responsibility.</span></span></a>
         <div class="zw-lg-small">
-          <a class="zw-lg-tile zw-lg-pink" href="/en/culture/#build-together"><svg class="zw-lg-ico" aria-hidden="true" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="28" width="14" height="14" rx="3.5"/><rect x="24" y="28" width="14" height="14" rx="3.5"/><rect x="6" y="10" width="14" height="14" rx="3.5"/><rect x="27" y="6" width="14" height="14" rx="3.5" fill="#540047" stroke="#540047" transform="rotate(12 34 13)"/><g stroke="#540047"><path d="M25 22.5l-1.5 1.5"/><path d="M30.5 23.5v2"/></g></svg><span style="display:flex;flex-direction:column;gap:4px;"><span class="zw-lg-eye">Collaboration</span><span class="zw-lg-mid">Build together</span></span><span class="zw-lg-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></a>
-          <a class="zw-lg-tile zw-lg-pink" href="/en/culture/#keep-it-simple"><svg class="zw-lg-ico" aria-hidden="true" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 24c2.5-9 5.5-9 7 0s4.5 9 7 0 4.5-9 7 0c1 3 2 4 4 4h8"/><circle cx="40" cy="28" r="3.2" fill="#540047" stroke="#540047"/></svg><span style="display:flex;flex-direction:column;gap:4px;"><span class="zw-lg-eye">Simplicity</span><span class="zw-lg-mid">Keep it simple</span></span><span class="zw-lg-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></a>
+          <a class="zw-lg-tile zw-lg-pink" href="/en/culture/#build-together"><svg class="zw-lg-ico" aria-hidden="true" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="28" width="14" height="14" rx="3.5"/><rect x="24" y="28" width="14" height="14" rx="3.5"/><rect x="6" y="10" width="14" height="14" rx="3.5"/><rect x="27" y="6" width="14" height="14" rx="3.5" fill="#540047" stroke="#540047" transform="rotate(12 34 13)"/><g stroke="#540047"><path d="M25 22.5l-1.5 1.5"/><path d="M30.5 23.5v2"/></g></svg><span style="display:flex;flex-direction:column;gap:4px;"><span class="zw-lg-eye">Collaboration</span><span class="zw-lg-mid">Build together</span></span></a>
+          <a class="zw-lg-tile zw-lg-pink" href="/en/culture/#keep-it-simple"><svg class="zw-lg-ico" aria-hidden="true" width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 24c2.5-9 5.5-9 7 0s4.5 9 7 0 4.5-9 7 0c1 3 2 4 4 4h8"/><circle cx="40" cy="28" r="3.2" fill="#540047" stroke="#540047"/></svg><span style="display:flex;flex-direction:column;gap:4px;"><span class="zw-lg-eye">Simplicity</span><span class="zw-lg-mid">Keep it simple</span></span></a>
         </div>
       </div>
       <script>(function(){var f=document.getElementById('zw-hp');if(!f)return;var s=f.querySelectorAll('figure');if(!s.length)return;var b=f.querySelector('button'),i=Math.floor(Math.random()*s.length),p=false;function show(n){s.forEach(function(x,k){x.classList.toggle('on',k===n);x.setAttribute('aria-hidden',k===n?'false':'true')});}show(i);function setP(v){p=v;b.textContent=v?f.dataset.play:f.dataset.pause;b.setAttribute('aria-label',v?f.dataset.playLabel:f.dataset.pauseLabel)}try{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)setP(true)}catch(e){}b.addEventListener('click',function(){setP(!p)});setInterval(function(){if(p||document.hidden)return;i=(i+1)%s.length;show(i)},4000)})();</script>
@@ -175,37 +191,6 @@ a.zw-lg-tile:hover .zw-lg-arrow,a.zw-lg-tile:focus-visible .zw-lg-arrow{transfor
     </div>
   </section>
 
-  <!-- EVERY DAY (interactive) -->
-  <section style="width:100%;background:#EEE6ED;border-top:1px solid #EEE6ED;border-bottom:1px solid #EEE6ED;">
-    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:96px 40px;">
-      <p style="font-size:13px;font-weight:800;letter-spacing:0.04em;color:#DE0954;text-transform:uppercase;text-align:center;">What it looks like every day</p>
-      <h2 style="font-size:clamp(28px,3.4vw,34px);font-weight:900;color:#540047;padding-top:12px;text-align:center;">What you notice in your working day</h2>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:center;padding-top:56px;max-width:980px;margin:0 auto;">
-        <div style="display:flex;flex-direction:column;gap:14px;">
-          <button type="button" class="zw-step" id="wb-step-0" data-step="0" aria-pressed="true" style="text-align:left;cursor:pointer;background:#FCE7EE;border:2px solid #540047;border-radius:18px;padding:22px 24px;font-family:'Mulish',Arial,sans-serif;">
-            <span style="display:block;font-size:17px;font-weight:800;color:#540047;">Own it</span>
-            <span style="display:block;font-size:15px;line-height:1.55;color:#540047;padding-top:6px;">You set priorities, make decisions and plan the work with the team. You don't wait for someone to tell you what to do.</span>
-          </button>
-          <button type="button" class="zw-step" id="wb-step-1" data-step="1" aria-pressed="false" style="text-align:left;cursor:pointer;background:#ffffff;border:2px solid #EEE6ED;border-radius:18px;padding:22px 24px;font-family:'Mulish',Arial,sans-serif;">
-            <span style="display:block;font-size:17px;font-weight:800;color:#540047;">Build together</span>
-            <span style="display:block;font-size:15px;line-height:1.55;color:#540047;padding-top:6px;">You ask for feedback, listen without becoming defensive and act on it.</span>
-          </button>
-          <button type="button" class="zw-step" id="wb-step-2" data-step="2" aria-pressed="false" style="text-align:left;cursor:pointer;background:#ffffff;border:2px solid #EEE6ED;border-radius:18px;padding:22px 24px;font-family:'Mulish',Arial,sans-serif;">
-            <span style="display:block;font-size:17px;font-weight:800;color:#540047;">Keep it simple</span>
-            <span style="display:block;font-size:15px;line-height:1.55;color:#540047;padding-top:6px;">With every task, you ask what can go, what can be smarter and what can be simpler.</span>
-          </button>
-        </div>
-        <div style="border-radius:28px;background:linear-gradient(135deg,#540047 0%,#DE0954 100%);padding:40px 36px;min-height:360px;display:flex;flex-direction:column;justify-content:center;gap:20px;box-shadow:0 30px 60px -30px rgba(84,0,71,0.55);">
-          <p style="font-size:12.5px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;">How you see it</p>
-          <h3 id="wb-step-title" style="font-size:34px;font-weight:900;line-height:1.1;color:#ffffff;">Own it</h3>
-          <ul id="wb-step-points" style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;">
-            <li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#DE0954;margin-top:8px;"></span><span>You finish what was agreed and speak up early when something gets stuck.</span></li><li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#DE0954;margin-top:8px;"></span><span>You take responsibility for the result, good or bad, and don't blame others.</span></li><li style="display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:#DE0954;margin-top:8px;"></span><span>You want to win: with customers, in the market and as a team.</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- TOGETHER -->
   <section style="width:100%;background:#ffffff;">
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:96px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:64px;align-items:center;">
@@ -225,10 +210,22 @@ a.zw-lg-tile:hover .zw-lg-arrow,a.zw-lg-tile:focus-visible .zw-lg-arrow{transfor
   <!-- QUOTE -->
   <section style="width:100%;background:#ffffff;">
     <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:0 40px 96px;">
-      <figure class="zw-card" style="margin:0 auto;max-width:880px;text-align:center;background:linear-gradient(120deg,#540047 0%,#DE0954 100%);border-radius:28px;padding:56px 64px;box-shadow:0 30px 60px -30px rgba(84,0,71,0.55);">
-        <blockquote style="margin:0;font-style:italic;font-size:clamp(20px,2.4vw,26px);line-height:1.5;color:#ffffff;">We give you the trust and the space. You take the responsibility and go for the result.</blockquote>
-        <figcaption style="font-size:13px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:#FCE7EE;padding-top:20px;">Own it</figcaption>
-      </figure>
+      <div class="zw-card zw-q" id="zw-q" role="region" aria-roledescription="carousel" aria-label="What colleagues say" data-pause="Pause" data-play="Play" data-pause-label="Pause the rotating quotes" data-play-label="Play the rotating quotes" style="margin:0 auto;max-width:1100px;text-align:center;background:linear-gradient(120deg,#540047 0%,#DE0954 100%);border-radius:28px;padding:36px 80px 26px;box-shadow:0 30px 60px -30px rgba(84,0,71,0.55);">
+        <span class="zw-q-mark" aria-hidden="true">“</span>
+        <div class="zw-q-track">
+          <figure class="zw-q-slide on" aria-hidden="false"><blockquote>The people and the culture: this was the deciding factor. You don’t have to look up to anyone… you’re all the same, whether you’re a junior or the CEO.</blockquote><figcaption class="zw-q-who"><b>Jack</b> · Cloud Support Engineer</figcaption></figure>
+          <figure class="zw-q-slide" aria-hidden="true"><blockquote>I value the freedom to come up with my own ideas and make my own plans to reach my goals. Workspace 365 is open to experiments.</blockquote><figcaption class="zw-q-who"><b>Davey</b> · Customer Success Manager</figcaption></figure>
+          <figure class="zw-q-slide" aria-hidden="true"><blockquote>I can feel that everyone is seen, everyone is okay, you can be yourself.</blockquote><figcaption class="zw-q-who"><b>Roman</b> · Manual QA Engineer</figcaption></figure>
+          <figure class="zw-q-slide" aria-hidden="true"><blockquote>I have the opportunity to make improvements and make a difference. As soon as I see something, I’m free to go and do it.</blockquote><figcaption class="zw-q-who"><b>Jos</b> · Account Executive</figcaption></figure>
+          <figure class="zw-q-slide" aria-hidden="true"><blockquote>Your career path isn’t mapped out for you here. You decide it yourself.</blockquote><figcaption class="zw-q-who"><b>Axel</b> · Teamlead Sales</figcaption></figure>
+          <figure class="zw-q-slide" aria-hidden="true"><blockquote>I work here for the atmosphere and the people. It’s small and personal, and you know everyone. You’re not a number and you have direct contact with the leadership team. That means you get opportunities sooner and can learn a lot. If you do your job well, you get a lot of freedom and trust here.</blockquote><figcaption class="zw-q-who"><b>Ivo</b> · Integration &amp; Support Consultant</figcaption></figure>
+          <figure class="zw-q-slide" aria-hidden="true"><blockquote>Why I work at Workspace 365? Simple: I get energy from the people around me and the trust I’m given. We work together towards one goal: making work simpler. I get the freedom to take ownership and help customers move forward, and my voice is heard. Down-to-earth, ambitious and moving forward together.</blockquote><figcaption class="zw-q-who"><b>Nienke</b> · Customer Success Manager</figcaption></figure>
+          <figure class="zw-q-slide" aria-hidden="true"><blockquote>Every day I’m challenged to bring out the best in myself. That drive to keep getting better keeps me sharp.</blockquote><figcaption class="zw-q-who"><b>Julia</b> · Corporate Recruiter</figcaption></figure>
+          <figure class="zw-q-slide" aria-hidden="true"><blockquote>For me, working at Workspace is the perfect combination of developing myself and making an impact, all with lots of fun and great people around me.</blockquote><figcaption class="zw-q-who"><b>Ingrid</b> · Head of Talent</figcaption></figure>
+        </div>
+        <div class="zw-q-nav"><button type="button" class="zw-q-dot" aria-label="Quote 1 of 9: Jack" aria-current="true"><span></span></button><button type="button" class="zw-q-dot" aria-label="Quote 2 of 9: Davey" aria-current="false"><span></span></button><button type="button" class="zw-q-dot" aria-label="Quote 3 of 9: Roman" aria-current="false"><span></span></button><button type="button" class="zw-q-dot" aria-label="Quote 4 of 9: Jos" aria-current="false"><span></span></button><button type="button" class="zw-q-dot" aria-label="Quote 5 of 9: Axel" aria-current="false"><span></span></button><button type="button" class="zw-q-dot" aria-label="Quote 6 of 9: Ivo" aria-current="false"><span></span></button><button type="button" class="zw-q-dot" aria-label="Quote 7 of 9: Nienke" aria-current="false"><span></span></button><button type="button" class="zw-q-dot" aria-label="Quote 8 of 9: Julia" aria-current="false"><span></span></button><button type="button" class="zw-q-dot" aria-label="Quote 9 of 9: Ingrid" aria-current="false"><span></span></button><button type="button" class="zw-q-pp" aria-label="Pause the rotating quotes">Pause</button></div>
+      </div>
+      <script>(function(){var r=document.getElementById('zw-q');if(!r)return;var s=r.querySelectorAll('.zw-q-slide'),d=r.querySelectorAll('.zw-q-dot'),b=r.querySelector('.zw-q-pp'),i=Math.floor(Math.random()*s.length),p=false,h=false;function show(n){i=n;s.forEach(function(x,k){x.classList.toggle('on',k===n);x.setAttribute('aria-hidden',k===n?'false':'true')});d.forEach(function(x,k){x.setAttribute('aria-current',k===n?'true':'false')})}function setP(v){p=v;b.textContent=v?r.dataset.play:r.dataset.pause;b.setAttribute('aria-label',v?r.dataset.playLabel:r.dataset.pauseLabel)}show(i);try{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)setP(true)}catch(e){}b.addEventListener('click',function(){setP(!p)});d.forEach(function(x,k){x.addEventListener('click',function(){show(k);setP(true)})});r.addEventListener('mouseenter',function(){h=true});r.addEventListener('mouseleave',function(){h=false});r.addEventListener('focusin',function(){h=true});r.addEventListener('focusout',function(){h=false});setInterval(function(){if(p||h||document.hidden)return;show((i+1)%s.length)},7000)})();</script>
     </div>
   </section>
 
@@ -326,4 +323,3 @@ a.zw-lg-tile:hover .zw-lg-arrow,a.zw-lg-tile:focus-visible .zw-lg-arrow{transfor
   </footer>
 
 </div>
-<script>window.__STEPS=[{"title": "Own it", "points": ["You finish what was agreed and speak up early when something gets stuck.", "You take responsibility for the result, good or bad, and don't blame others.", "You want to win: with customers, in the market and as a team."]}, {"title": "Build together", "points": ["You address colleagues directly on agreements and behaviour, never behind their back.", "If you disagree, you say so in the meeting, not afterwards.", "You celebrate successes together and help build trust and fun in the team."]}, {"title": "Keep it simple", "points": ["You automate repetitive work with AI and smart tools, starting with your own work.", "You are open to change and give a new approach a fair try.", "You say no to work that adds little, and explain why."]}];window.__STEP_LI="<li style=\"display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.55;color:#ffffff;\"><span aria-hidden=\"true\" style=\"flex:none;width:10px;height:10px;border-radius:50%;background:#DE0954;margin-top:8px;\"></span><span>{{ pt.text }}</span></li>";</script>
