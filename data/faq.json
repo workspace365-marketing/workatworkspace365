@@ -1,0 +1,122 @@
+{
+  "nl": {
+    "eyebrow": "Veelgestelde vragen",
+    "title": "Goed om te weten",
+    "groups": [
+      {
+        "title": "Werken bij Workspace 365",
+        "items": [
+          {
+            "q": "Waar zit het kantoor en hoe kom je er?",
+            "a": "Ons kantoor zit aan de Berencamperweg 6D in Nijkerk, op vijf minuten van de A28. Er is genoeg parkeerplek. Vanaf station Nijkerk loop je in 20 tot 30 minuten naar kantoor. Met de bus gaat het sneller: neem lijn 142 richting Zeewolde en stap uit bij halte Berencamperweg, dan loop je nog vijf minuten. Je kunt ook bus 101 van RRReis richting Harderwijk nemen tot halte Salentein, dan loop je nog zo’n 18 minuten."
+          },
+          {
+            "q": "Werk je hybride?",
+            "a": "Ja. Elk team bepaalt zelf hoe het hybride werkt, en vaak is er minimaal één vaste dag waarop het hele team op kantoor is. Salescollega’s zijn regelmatig bij klanten. Toch werken de meeste collega’s graag zoveel mogelijk op kantoor, omdat je elkaar daar het makkelijkst vindt."
+          },
+          {
+            "q": "Moet je Nederlands spreken?",
+            "a": "Dat hangt af van je rol. Heb je contact met klanten, dan spreek je vloeiend Nederlands. Voor andere rollen is dat vaak geen eis. Omdat we internationale collega’s hebben, is onze voertaal Engels. Interne communicatie en bedrijfsbrede meetings zijn in het Engels, en schuift er iemand aan die geen Nederlands spreekt, dan schakelen we over op Engels. In een meeting en aan de lunchtafel."
+          },
+          {
+            "q": "Welke arbeidsvoorwaarden heeft iedereen?",
+            "a": "Je krijgt 25 vakantiedagen en een laptop van de zaak. Ben je een kwartaal niet ziek geweest, dan krijg je het kwartaal erna een extra vrije dag, dus maximaal vier per jaar. Je hebt een opleidingsbudget van € 1.000 per jaar (bij 40 uur). Je reiskosten worden vergoed met € 0,25 per kilometer of een ov-vergoeding. En de lunch op kantoor is voor ons."
+          },
+          {
+            "q": "Hoe groot is Workspace 365?",
+            "a": "We zijn met ongeveer 40 collega’s. Je werkt in een van onze teams: Workspace 365, Kelly AI, Zorgworkspace, Overheidsworkspace, Security & Hosting, Finance & Data of Talent."
+          },
+          {
+            "q": "Hoe ziet je inwerkperiode eruit?",
+            "a": "Je start met een onboarding waarin je de organisatie van alle kanten leert kennen. Daarnaast krijg je een persoonlijk inwerktraject, zodat je je eigen rol zo goed mogelijk leert uitvoeren."
+          }
+        ]
+      },
+      {
+        "title": "Solliciteren",
+        "items": [
+          {
+            "q": "Hoe ziet het sollicitatieproces eruit?",
+            "a": "Na je sollicitatie volgt eerst een kort telefoongesprek over je ervaring en de praktische zaken. Daarna heb je een eerste gesprek over je motivatie en wat je bij ons zoekt. In het tweede gesprek maak je kennis met het team, en doe je een assessment en een inhoudelijke opdracht. Daarna volgt het aanbod."
+          },
+          {
+            "q": "Kan ik een dag meelopen?",
+            "a": "Zeker. Het zit niet standaard in het proces, maar we staan er altijd voor open. Je kunt ook een keer komen meelunchen om de sfeer te proeven."
+          },
+          {
+            "q": "Kan ik solliciteren als ik niet alle gevraagde ervaring heb?",
+            "a": "Je kunt het altijd proberen. De ervaring die we vragen heeft wel een reden. Weet je ons te overtuigen dat jij de beste match bent, dan ben je meer dan welkom."
+          },
+          {
+            "q": "Hebben jullie stageplekken?",
+            "a": "Ja, we hebben regelmatig plek voor stagiairs, en meestal staan daar aparte vacatures voor open. Studeer je iets anders en zoek je toch een stage? Stuur dan een open sollicitatie. Soms hebben we toch behoefte aan een stagiair, of juist aan jou."
+          },
+          {
+            "q": "Wanneer hoor ik iets na mijn sollicitatie?",
+            "a": "We proberen binnen drie tot vijf werkdagen te reageren. Lukt dat niet, dan sturen we je vaak een bericht om een belafspraak te plannen. Je hoort in elk geval altijd iets van ons."
+          }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Good to know",
+    "groups": [
+      {
+        "title": "Working at Workspace 365",
+        "items": [
+          {
+            "q": "Where is the office and how do I get there?",
+            "a": "Our office is at Berencamperweg 6D in Nijkerk, five minutes from the A28. There is plenty of parking. From Nijkerk station it’s a 20 to 30 minute walk. The bus is quicker: take line 142 towards Zeewolde and get off at Berencamperweg, then it’s a five minute walk. You can also take RRReis bus 101 towards Harderwijk to the Salentein stop, then it’s about an 18 minute walk."
+          },
+          {
+            "q": "Do you work hybrid?",
+            "a": "Yes. Each team decides how it works hybrid, and there is often at least one fixed day when the whole team is in the office. Sales colleagues are regularly out with customers. Even so, most colleagues like to work from the office as much as possible, because that’s where you find each other most easily."
+          },
+          {
+            "q": "Do I need to speak Dutch?",
+            "a": "That depends on your role. If you work with customers, you speak fluent Dutch. For other roles it’s often not required. Because we have international colleagues, our working language is English. Internal communication and company-wide meetings are in English, and when someone who doesn’t speak Dutch joins the conversation, we switch to English. In a meeting and at the lunch table."
+          },
+          {
+            "q": "What benefits does everyone get?",
+            "a": "You get 25 days of holiday and a company laptop. If you haven’t been ill for a quarter, you get an extra day off the next quarter, so up to four a year. You have a training budget of €1,000 a year (based on 40 hours). Travel is reimbursed at €0.25 per kilometre or through a public transport allowance. And lunch at the office is on us."
+          },
+          {
+            "q": "How big is Workspace 365?",
+            "a": "We have around 40 colleagues. You work in one of our teams: Workspace 365, Kelly AI, Zorgworkspace, Government Workspace, Security & Hosting, Finance & Data or Talent."
+          },
+          {
+            "q": "What does onboarding look like?",
+            "a": "You start with an onboarding where you get to know the organisation from every angle. You also get a personal onboarding plan, so you learn to do your own role as well as possible."
+          }
+        ]
+      },
+      {
+        "title": "Applying",
+        "items": [
+          {
+            "q": "What does the application process look like?",
+            "a": "After you apply, we start with a short phone call about your experience and the practicalities. Next is a first interview about your motivation and what you’re looking for. In the second interview you meet the team and do an assessment and a role-specific assignment. After that comes the offer."
+          },
+          {
+            "q": "Can I spend a day with the team?",
+            "a": "Definitely. It isn’t a standard part of the process, but we’re always open to it. You can also join us for lunch to get a feel for the place."
+          },
+          {
+            "q": "Can I apply if I don’t have all the experience you ask for?",
+            "a": "You can always give it a try. The experience we ask for is there for a reason. But if you can convince us that you’re the best fit, you’re more than welcome."
+          },
+          {
+            "q": "Do you offer internships?",
+            "a": "Yes, we regularly have room for interns, and there are usually separate vacancies for them. Studying something else but still looking for an internship? Send an open application. Sometimes we do need an intern after all, or we need you."
+          },
+          {
+            "q": "When will I hear back after applying?",
+            "a": "We aim to respond within three to five working days. If that doesn’t work out, we often send you a message to schedule a call. Either way, you’ll always hear from us."
+          }
+        ]
+      }
+    ]
+  }
+}
