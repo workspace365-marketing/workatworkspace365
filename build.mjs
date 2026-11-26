@@ -30,6 +30,7 @@ const LANGS = ['nl', 'en'];
 
 const routes = json('data/routes.json');
 const seo = json('data/seo.json');
+const faq = json('data/faq.json');
 const pitches = json('data/pitches.json');
 const people = json('data/people.json');
 const vacancyEn = process.env.VACANCY_EN_FILE ? JSON.parse(readFileSync(process.env.VACANCY_EN_FILE, 'utf8')) : json('data/vacancy-en.json');
@@ -265,6 +266,13 @@ for (const lang of LANGS) {
       });
       page = page.replace('<!--@people-->', groups.map((g) => '<div class="zw-grp" data-kind="' + esc(g.kk) + '"><h3 class="zw-grp-h">' + esc(g.name) + '</h3><div class="zw-grp-grid">' + g.cards.join('\n') + '</div></div>').join('\n'));
       page = page.replace('<!--@team-filters-->', [['all', lang === 'nl' ? 'Alles' : 'All'], ...groups.map((g) => [g.kk, g.name])].map(([k, n], i) => '<button type="button" data-filter="' + esc(k) + '" aria-pressed="' + (i ? 'false' : 'true') + '" style="min-height:44px;padding:10px 20px;border-radius:999px;border:1.5px solid ' + (i ? '#EEE6ED' : '#540047') + ';background:' + (i ? '#ffffff' : '#540047') + ';color:' + (i ? '#540047' : '#ffffff') + ';font-weight:700;font-size:14.5px;cursor:pointer;font-family:\'Mulish\',Arial,sans-serif;">' + esc(n) + '</button>').join(''));
+    }
+    // Veelgestelde vragen (data/faq.json): zichtbare tekst plus FAQPage-gegevens voor Google.
+    if (page.includes('<!--@faq-->')) {
+      const f = faq[lang];
+      const qs = f.groups.flatMap((g) => g.items);
+      const groupsHtml = f.groups.map((g) => '        <h3>' + esc(g.title) + '</h3>\n' + g.items.map((it) => '        <details><summary>' + esc(it.q) + '</summary><p>' + esc(it.a) + '</p></details>').join('\n')).join('\n');
+      page = page.replace('<!--@faq-->', '<!-- FAQ -->\n  <section id="faq" style="scroll-margin-top:80px;width:100%;background:#ffffff;">\n    <div data-reveal="true" style="max-width:1180px;margin:0 auto;padding:96px 40px;">\n      <p style="font-size:13px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#DE0954;">' + esc(f.eyebrow) + '</p>\n      <h2 style="font-size:clamp(30px,3.6vw,42px);line-height:1.12;font-weight:900;color:#540047;padding-top:10px;">' + esc(f.title) + '</h2>\n      <div class="zw-faq" style="max-width:900px;">\n' + groupsHtml + '\n      </div>\n    </div>\n    ' + ldTag({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qs.map((it) => ({ '@type': 'Question', name: it.q, acceptedAnswer: { '@type': 'Answer', text: it.a } })) }) + '\n  </section>');
     }
     page = page.replace(/\{\{\s*n\.(all|job|int)\s*\}\}/g, (m, k) => counts[k]);
     let extra = '';
