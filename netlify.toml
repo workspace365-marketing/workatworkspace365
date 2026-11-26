@@ -36,6 +36,17 @@
   to = "/en/open-roles/marketing-manager-overheid-senior/"
   status = 301
 
+# Senior Customer Success Manager: spelfout in het adres verbeterd.
+[[redirects]]
+  from = "/nl/vacatures/senior-customer-succes-manager/"
+  to = "/nl/vacatures/senior-customer-success-manager/"
+  status = 301
+
+[[redirects]]
+  from = "/en/open-roles/senior-customer-succes-manager/"
+  to = "/en/open-roles/senior-customer-success-manager/"
+  status = 301
+
 # Gesloten vacatures: terug naar het overzicht.
 [[redirects]]
   from = "/nl/vacatures/finance-operations-specialist/"
