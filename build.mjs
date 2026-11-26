@@ -11,7 +11,8 @@ const ROOT = new URL('.', import.meta.url).pathname;
 const DIST = join(ROOT, 'dist');
 const read = (p) => readFileSync(join(ROOT, p), 'utf8');
 const json = (p) => JSON.parse(read(p));
-const SITE = process.env.SITE_URL || 'https://werkenbij.workspace365.net';
+// Het live adres van de site. Canonical, hreflang, sitemap en robots.txt verwijzen hiernaar.
+const SITE = 'https://jobs.workspace365.net';
 const LANGS = ['nl', 'en'];
 
 const routes = json('data/routes.json');

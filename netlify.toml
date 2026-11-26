@@ -5,6 +5,14 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Het Netlify-adres is een kopie van de site. Stuur het door naar het echte domein, zodat Google maar één versie ziet.
+# Deploy previews (deploy-preview-..--workatworkspace365.netlify.app) blijven gewoon werken.
+[[redirects]]
+  from = "https://workatworkspace365.netlify.app/*"
+  to = "https://jobs.workspace365.net/:splat"
+  status = 301
+  force = true
+
 # Taalkeuze op de hoofdingang: Engelstalige bezoekers naar /en/, de rest naar /nl/.
 [[redirects]]
   from = "/"

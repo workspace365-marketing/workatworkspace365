@@ -10,7 +10,7 @@ npx serve dist
 
 ## Eenmalig instellen in Netlify (Erik)
 1. Netlify: Add new project, Import from Git, kies deze repository. Build command `node build.mjs`, publish directory `dist` (staat al in `netlify.toml`).
-2. Domein: koppel het gewenste adres (bijvoorbeeld `werkenbij.workspace365.net`) en zet `SITE_URL` op dat adres.
+2. Domein: de site draait op `jobs.workspace365.net`. Dat adres staat vast in `build.mjs` (const SITE); pas het daar aan als het domein ooit verandert.
 3. Vacatures: zet `RECRUITEE_TOKEN` (Careers API token uit Recruitee: Instellingen, Apps en plugins, API-tokens). Zonder token probeert de build de openbare feed.
 4. Elke ochtend automatisch vernieuwen: maak in Netlify een Build hook en zet die als `BUILD_HOOK_URL`. De functie `netlify/functions/daily-rebuild.mjs` start dan elke ochtend rond 6.30 uur (Nederlandse tijd) een nieuwe build.
 5. Contactformulier: Netlify, Forms, Form notifications, zet het e-mailadres van het Talent team. Het formulier heet `contact`.
