@@ -13,6 +13,19 @@ const read = (p) => readFileSync(join(ROOT, p), 'utf8');
 const json = (p) => JSON.parse(read(p));
 // Het live adres van de site. Canonical, hreflang, sitemap en robots.txt verwijzen hiernaar.
 const SITE = 'https://jobs.workspace365.net';
+// Extra kopregels voor zoekmachines en social: x-default, Open Graph, Twitter en bedrijfsgegevens (schema.org).
+const OG_IMG = '/assets/img/og-werkenbij.jpg';
+const ORG = { '@type': 'Organization', '@id': 'https://workspace365.net/#organization', name: 'Workspace 365', url: 'https://workspace365.net', logo: SITE + '/favicon.png', sameAs: ['https://www.linkedin.com/company/new-day-at-work', 'https://www.instagram.com/workspace.365/', 'https://www.tiktok.com/@life.at.workspace365', 'https://www.youtube.com/@workspace_365'], address: { '@type': 'PostalAddress', streetAddress: 'Berencamperweg 6D', postalCode: '3861 MC', addressLocality: 'Nijkerk', addressCountry: 'NL' } };
+const ldTag = (o) => '<script type="application/ld+json">' + JSON.stringify(o).replace(/</g, '\\u003c') + '</script>';
+const seoExtra = (lang, url, alt, img, withLd) => [
+  `<link rel="alternate" hreflang="x-default" href="${SITE}${lang === 'nl' ? url : alt}">`,
+  `<meta property="og:url" content="${SITE}${url}">`,
+  `<meta property="og:site_name" content="${lang === 'nl' ? 'Werken bij Workspace 365' : 'Careers at Workspace 365'}">`,
+  `<meta property="og:locale" content="${lang === 'nl' ? 'nl_NL' : 'en_GB'}">`,
+  `<meta property="og:image" content="${SITE}${img}">`,
+  '<meta name="twitter:card" content="summary_large_image">',
+  withLd ? ldTag({ '@context': 'https://schema.org', '@graph': [ORG, { '@type': 'WebSite', '@id': SITE + '/#website', name: lang === 'nl' ? 'Werken bij Workspace 365' : 'Careers at Workspace 365', url: SITE + '/', inLanguage: lang, publisher: { '@id': 'https://workspace365.net/#organization' } }] }) : '',
+].filter(Boolean).join('\n');
 const LANGS = ['nl', 'en'];
 
 const routes = json('data/routes.json');
@@ -99,8 +112,8 @@ function render(tpl, scope) {
 
 // ---------- Vacaturepagina's ----------
 const T365 = {
-  nl: { back: '← Alle vacatures', apply: 'Solliciteer direct', facts: 'Kerngegevens', where: 'Locatie', hours: 'Uren', contract: 'Contract', salary: 'Salaris', work: 'Werkplek', askTitle: 'Eerst een vraag?', ask: 'Mail ons op', notice: '', titlePrefix: 'Workspace 365: ' },
-  en: { back: '← All open roles', apply: 'Apply now', facts: 'Key facts', where: 'Location', hours: 'Hours', contract: 'Contract', salary: 'Salary', work: 'Workplace', askTitle: 'A question first?', ask: 'Email us at', notice: 'This text has not been translated into English yet, so you see the Dutch version.', titlePrefix: 'Workspace 365: ' },
+  nl: { back: '← Alle vacatures', apply: 'Solliciteer direct', facts: 'Kerngegevens', where: 'Locatie', hours: 'Uren', contract: 'Contract', salary: 'Salaris', work: 'Werkplek', askTitle: 'Eerst een vraag?', ask: 'Mail ons op', notice: '', titleSuffix: ' | Vacature Nijkerk | Workspace 365' },
+  en: { back: '← All open roles', apply: 'Apply now', facts: 'Key facts', where: 'Location', hours: 'Hours', contract: 'Contract', salary: 'Salary', work: 'Workplace', askTitle: 'A question first?', ask: 'Email us at', notice: 'This text has not been translated into English yet, so you see the Dutch version.', titleSuffix: ' | Job in Nijkerk | Workspace 365' },
 };
 
 function clean(html) {
@@ -145,7 +158,7 @@ function jobPosting(o, body, lang, pageUrl) {
     directApply: false,
     url: pageUrl,
     inLanguage: lang,
-    hiringOrganization: { '@type': 'Organization', name: 'Workspace 365', sameAs: 'https://workspace365.net' },
+    hiringOrganization: { '@type': 'Organization', name: 'Workspace 365', sameAs: 'https://workspace365.net', logo: SITE + '/favicon.png' },
     jobLocation: { '@type': 'Place', address: { '@type': 'PostalAddress', streetAddress: 'Berencamperweg 6D', postalCode: '3861 MC', addressLocality: 'Nijkerk', addressCountry: 'NL' } },
   };
   if (s.min && s.currency === 'EUR') {
@@ -175,7 +188,7 @@ function buildVacancyPages(lang, offersForPages, vp) {
       .replace('<!--@footer-->', footer);
     page = render(page, { v: { ...r, city: o.city || 'Nijkerk', backUrl: routes[lang].vacatures } });
     page = page.replace('<!--@body-->', notice + body.html);
-    const title = t.titlePrefix + o.title;
+    const title = o.title + t.titleSuffix;
     const description = r.pitch;
     const html = `<!doctype html>
 <html lang="${lang}">
@@ -193,7 +206,7 @@ function buildVacancyPages(lang, offersForPages, vp) {
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
-<meta property="og:image" content="${SITE}${r.img}">
+${seoExtra(lang, url, alt, r.img, false)}
 ${font}
 ${jobPosting(o, body.html, lang, SITE + url)}
 </head>
@@ -275,6 +288,7 @@ for (const lang of LANGS) {
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
+${seoExtra(lang, url, alt, OG_IMG, true)}
 ${font}
 </head>
 <body>
